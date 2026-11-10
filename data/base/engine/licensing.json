@@ -1,0 +1,40 @@
+{
+  "referenceBudget": { "teamMonths": 12, "aaaTeams": 4, "revenueFactorBp": 40000 },
+  "templates": {
+    "indie": { "flatFeeShareBp": 0, "flatFeeBase": "mittel", "royaltyBp": 500, "threshold": true, "seat": false, "support": "basis", "updates": "minor", "sourceAccess": false },
+    "standard": { "flatFeeShareBp": 1000, "flatFeeBase": "mittel", "royaltyBp": 500, "threshold": false, "seat": false, "support": "basis", "updates": "minor", "sourceAccess": false },
+    "premium": { "flatFeeShareBp": 500, "flatFeeBase": "aaa", "royaltyBp": 200, "threshold": false, "seat": false, "support": "premium", "updates": "alle", "sourceAccess": true },
+    "abo": { "flatFeeShareBp": 0, "flatFeeBase": "mittel", "royaltyBp": 0, "threshold": false, "seat": true, "support": "basis", "updates": "alle", "sourceAccess": false }
+  },
+  "providerStyles": {
+    "riese": { "templates": ["indie", "standard", "abo"], "royaltyFactorBp": 10000, "flatFactorBp": 10000, "trustStart": 7500 },
+    "spezialist": { "templates": ["standard", "premium"], "royaltyFactorBp": 16000, "flatFactorBp": 15000, "trustStart": 6500 },
+    "spieler": { "templates": ["indie", "standard", "premium"], "royaltyFactorBp": 10000, "flatFactorBp": 10000, "trustStart": 6000 }
+  },
+  "thresholdAnchorsCent": [[1980, 20000000], [2000, 50000000], [2015, 100000000], [2040, 200000000]],
+  "seatFeeAnchorsCent": [[2005, 150000], [2010, 200000], [2040, 400000]],
+  "seatFromYear": 2005,
+  "bigCustomerShareBp": 500,
+  "hurdle": { "h0Bp": 1000, "h1Bp": 3000 },
+  "experiencePerReleaseBp": 2500,
+  "satisfaction": { "startBp": 7000, "z1": 20, "z2": 30, "z3": 4, "z4": 40, "z5Bp": 50, "rejectBp": 200, "neutralSupportBp": 8000 },
+  "statusBp": { "zufrieden": 7000, "sicher": 5000, "gefaehrdet": 3000 },
+  "trust": { "v1": 60, "gainPerQuarterBp": 100, "fromZeroLossBp": 3000, "openSourceReturnExtraBp": 1000, "bigProviderShareBp": 2000, "osBonusBelowBp": 4000, "osBonusBp": 1500, "osBonusWeeks": 104 },
+  "retrain": { "slowWeeks": 4, "slowTempoBp": 5000, "mediumWeeks": 4, "mediumTempoBp": 8000, "referenceWeeks": 26 },
+  "requests": { "chancePerMonthBp": { "basis": 1000, "premium": 2500 }, "deadlineWeeks": 26, "priority": 3 },
+  "weightsBp": {
+    "indie": { "passung": 10000, "qualitaet": 5000, "kosten": 15000, "support": 5000, "ruf": 3000, "unabhaengigkeit": 4000, "wechsel": 6000 },
+    "mittelklasse": { "passung": 10000, "qualitaet": 8000, "kosten": 10000, "support": 7000, "ruf": 5000, "unabhaengigkeit": 3000, "wechsel": 8000 },
+    "aaa": { "passung": 10000, "qualitaet": 14000, "kosten": 5000, "support": 10000, "ruf": 6000, "unabhaengigkeit": 6000, "wechsel": 10000 },
+    "engine": { "passung": 8000, "qualitaet": 12000, "kosten": 6000, "support": 4000, "ruf": 4000, "unabhaengigkeit": 10000, "wechsel": 12000 },
+    "publisher": { "passung": 10000, "qualitaet": 9000, "kosten": 9000, "support": 8000, "ruf": 8000, "unabhaengigkeit": 2000, "wechsel": 7000 }
+  },
+  "hitBonusBp": 1000,
+  "hitBonusMaxBp": 3000,
+  "engineFirms": { "countAnchors": [[1989, 0], [1990, 1], [1999, 1], [2000, 2]], "staff": 6, "startCashMonths": 24, "lagYears": 0 },
+  "ownEngine": { "minPeople": 80, "profitYears": 3, "lagSpreadYears": 5 },
+  "priceShock": { "stagnantYears": 2, "minShareBp": 3000, "chancePerYearBp": 2500, "royaltyAddBp": 700 },
+  "lossReaction": { "lostShareBp": 2000, "cutMinBp": 2000, "cutMaxBp": 4000 },
+  "renegotiateBackBp": 5000,
+  "bigCustomer": { "discountBp": 2000, "exclusiveRoyaltyAddBp": 200 }
+}

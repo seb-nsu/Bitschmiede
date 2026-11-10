@@ -1,0 +1,38 @@
+{
+  "behindWarnLevels": 2,
+  "researchBasePwBp": 200000,
+  "researchGrowthBp": 18000,
+  "researchGrowthByModuleBp": { "rendering": 13400, "audio": 13400 },
+  "minResearchWeeks": 8,
+  "starterLagYears": 6,
+  "starter": { "rendering": 1, "audio": 0, "physik": 0, "ki": 0, "netzwerk": 0, "werkzeuge": 0, "plattformen": 0, "streaming": 0 },
+  "modules": {
+    "rendering": [
+      { "earliestYear": 1980 }, { "earliestYear": 1980 }, { "earliestYear": 1985 }, { "earliestYear": 1990 }, { "earliestYear": 1993 },
+      { "earliestYear": 1995, "requires": [{ "module": "werkzeuge", "level": 1 }] }, { "earliestYear": 1998 }, { "earliestYear": 2002 },
+      { "earliestYear": 2007 }, { "earliestYear": 2012 }, { "earliestYear": 2016 }, { "earliestYear": 2020 }, { "earliestYear": 2026 }
+    ],
+    "audio": [
+      { "earliestYear": 1980 }, { "earliestYear": 1982 }, { "earliestYear": 1985 }, { "earliestYear": 1988 }, { "earliestYear": 1993 }, { "earliestYear": 1997 },
+      { "earliestYear": 2000 }, { "earliestYear": 2006 }, { "earliestYear": 2012 }, { "earliestYear": 2018 }, { "earliestYear": 2025 }
+    ],
+    "physik": [
+      { "earliestYear": 1980 }, { "earliestYear": 1985 }, { "earliestYear": 1998 }, { "earliestYear": 2004 }, { "earliestYear": 2010 }, { "earliestYear": 2028 }
+    ],
+    "ki": [
+      { "earliestYear": 1980 }, { "earliestYear": 1986 }, { "earliestYear": 1992 }, { "earliestYear": 2004 }, { "earliestYear": 2018 }, { "earliestYear": 2028 }
+    ],
+    "netzwerk": [
+      { "earliestYear": 1980 }, { "earliestYear": 1993 }, { "earliestYear": 1997 }, { "earliestYear": 1999 }, { "earliestYear": 2010 }, { "earliestYear": 2020 }
+    ],
+    "werkzeuge": [
+      { "earliestYear": 1980 }, { "earliestYear": 1984 }, { "earliestYear": 1993 }, { "earliestYear": 1998 }, { "earliestYear": 2008 }, { "earliestYear": 2026 }
+    ],
+    "plattformen": [
+      { "earliestYear": 1980 }, { "earliestYear": 1988 }, { "earliestYear": 2000 }, { "earliestYear": 2008 }, { "earliestYear": 2019 }
+    ],
+    "streaming": [
+      { "earliestYear": 1980 }, { "earliestYear": 2001, "requires": [{ "module": "rendering", "level": 3 }] }, { "earliestYear": 2006 }, { "earliestYear": 2020 }
+    ]
+  }
+}

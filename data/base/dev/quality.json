@@ -1,0 +1,100 @@
+{
+  "profileWeightBp": 8000,
+  "steepnessBp": 16000,
+  "scoreBaseBp": 55000,
+  "scoreAmplitudeBp": 45000,
+  "scoreMinBp": 10000,
+  "scoreMaxBp": 98000,
+  "zeitgeistMaxBp": 3000,
+  "pressRandomSdBp": {
+    "aus": 0,
+    "gering": 1500,
+    "normal": 3000
+  },
+  "pressStrictnessStepBp": 800,
+  "qNormStartBp": {
+    "klein": 820000,
+    "mittel": 1550000,
+    "gross": 2170000,
+    "aaa": 2790000
+  },
+  "qNormFallbackGrowthBp": 10300,
+  "marketStrengthAnchors": [
+    [
+      1980,
+      50
+    ],
+    [
+      1985,
+      62
+    ],
+    [
+      1990,
+      70
+    ],
+    [
+      1995,
+      75
+    ],
+    [
+      2000,
+      78
+    ],
+    [
+      2040,
+      90
+    ]
+  ],
+  "marketEngineAnchors": [
+    [
+      1980,
+      10000
+    ],
+    [
+      1984,
+      10000
+    ],
+    [
+      1985,
+      8000
+    ],
+    [
+      2040,
+      8000
+    ]
+  ],
+  "qNormMinReleases": 5,
+  "teamExperienceWeightBp": 2000,
+  "referenceStrength": 50,
+  "synergyMinBp": -3000,
+  "synergyMaxBp": 3000,
+  "seedVariationBp": 2000,
+  "themeFitMinBp": 5000,
+  "themeFitMaxBp": 13000,
+  "featureAgingPerYearBp": 1500,
+  "featureAgingMinBp": 3000,
+  "magazines": [
+    "pixelpost",
+    "joystickJournal",
+    "bitBlatt"
+  ],
+  "magazineSpreadBp": 3000,
+  "pressEraAnchors": [
+    [
+      1980,
+      10800
+    ],
+    [
+      1990,
+      10500
+    ],
+    [
+      1995,
+      10200
+    ],
+    [
+      2000,
+      10000
+    ]
+  ]
+}

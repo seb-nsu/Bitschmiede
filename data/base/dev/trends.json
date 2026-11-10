@@ -1,0 +1,7 @@
+{
+  "startSdBp": 1000,
+  "monthlySdBp": 300,
+  "meanReversionBp": 500,
+  "minBp": 6000,
+  "maxBp": 14000
+}

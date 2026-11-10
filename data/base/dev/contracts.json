@@ -1,0 +1,165 @@
+{
+  "unlockAfterReleases": 1,
+  "chancePerWeekBp": 900,
+  "failPayBp": 7000,
+  "baseExperience": 50,
+  "team": {
+    "_comment": "Entscheidung Projektleitung 03.11.2026: Team-Aufträge, damit ein Auftragsstudio bis 2040 trägt.",
+    "fromYear": 1988,
+    "chanceBp": 6000,
+    "sizeMin": 2,
+    "sizeMaxAnchors": [
+      [
+        1988,
+        3
+      ],
+      [
+        2000,
+        5
+      ],
+      [
+        2015,
+        8
+      ]
+    ],
+    "weeksBp": 25000,
+    "payPerPersonBp": 12000
+  },
+  "kinds": [
+    {
+      "id": "lernprogramm",
+      "area": "gameplay",
+      "weeks": [
+        4,
+        8
+      ],
+      "payPerWeekCent": [
+        80000,
+        120000
+      ],
+      "requirement": [
+        15,
+        35
+      ]
+    },
+    {
+      "id": "umsetzung",
+      "area": "technik",
+      "weeks": [
+        5,
+        10
+      ],
+      "payPerWeekCent": [
+        90000,
+        140000
+      ],
+      "requirement": [
+        20,
+        40
+      ]
+    },
+    {
+      "id": "werbespiel",
+      "area": "grafik",
+      "weeks": [
+        3,
+        6
+      ],
+      "payPerWeekCent": [
+        100000,
+        150000
+      ],
+      "requirement": [
+        20,
+        40
+      ]
+    },
+    {
+      "id": "musikstuecke",
+      "area": "sound",
+      "weeks": [
+        2,
+        5
+      ],
+      "payPerWeekCent": [
+        70000,
+        110000
+      ],
+      "requirement": [
+        15,
+        30
+      ]
+    },
+    {
+      "id": "handbuch",
+      "area": "story",
+      "weeks": [
+        2,
+        4
+      ],
+      "payPerWeekCent": [
+        60000,
+        90000
+      ],
+      "requirement": [
+        10,
+        25
+      ]
+    }
+  ],
+  "clients": [
+    "schulbuchverlag",
+    "kaufhaus",
+    "spielhalle",
+    "radiosender",
+    "computerclub",
+    "versandhaus"
+  ],
+  "epoch": {
+    "_comment": "Entscheidung Projektleitung 02.11.2026: Auftragsstudio soll bis 2040 überleben, aber nicht reich werden. Faktor auf Bezahlung und Wochenchance nach Jahr.",
+    "payBp": [
+      [
+        1980,
+        10000
+      ],
+      [
+        2000,
+        10000
+      ],
+      [
+        2010,
+        13000
+      ],
+      [
+        2020,
+        16000
+      ],
+      [
+        2040,
+        20000
+      ]
+    ],
+    "chanceBp": [
+      [
+        1980,
+        10000
+      ],
+      [
+        2000,
+        10000
+      ],
+      [
+        2010,
+        13000
+      ],
+      [
+        2020,
+        15000
+      ],
+      [
+        2040,
+        15000
+      ]
+    ]
+  }
+}

@@ -1,0 +1,1259 @@
+{
+  "_comment": "MRK-R53 bis MRK-R56 (Etappe 6a.2): Ereignisketten aus Tabelle 5.7 und die Folgestufen der Betriebs-Ereignisse (S06 Abschnitt 9). Stufen (stage) werden nie ausgelost, sie folgen nur aus einer Option. Beträge in 1980er-Cent, Ruf, Moral und Zufriedenheit in bp. Zukunfts-Ketten (Tabelle 5.8, Etappe 6a.7) beginnen mit ihrem Wendepunkt. Endgame-Themen (Auftrag 04.11.2026): Krisen für Große (Kartell, Datenleck, Massenkündigung, Speicher- und Stromkrise).",
+  "events": [
+    {
+      "id": "crunchEnthuellung",
+      "class": "entscheidung",
+      "chain": "krise",
+      "trigger": {
+        "firma.crunchWochen": {
+          ">=": 13
+        }
+      },
+      "weightBp": 20000,
+      "cooldownWeeks": 104,
+      "target": null,
+      "options": [
+        {
+          "id": "entschuldigen",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": -500000
+            },
+            {
+              "type": "ruf",
+              "bp": -300
+            },
+            {
+              "type": "moral",
+              "bp": 500
+            },
+            {
+              "type": "crunchRegel",
+              "rule": "nie"
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "schweigen",
+          "effects": [
+            {
+              "type": "ruf",
+              "bp": -800
+            },
+            {
+              "type": "moral",
+              "bp": -300
+            }
+          ],
+          "isDefault": true
+        },
+        {
+          "id": "dementieren",
+          "effects": [],
+          "isDefault": false,
+          "next": [
+            {
+              "def": "crunchZweiteWelle",
+              "delayWeeks": [
+                3,
+                10
+              ],
+              "chanceBp": 6000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crunchZweiteWelle",
+      "class": "entscheidung",
+      "chain": "krise",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [
+        {
+          "id": "zugeben",
+          "effects": [
+            {
+              "type": "ruf",
+              "bp": -1000
+            },
+            {
+              "type": "moral",
+              "bp": 200
+            },
+            {
+              "type": "crunchRegel",
+              "rule": "nie"
+            }
+          ],
+          "isDefault": true
+        },
+        {
+          "id": "weiterDementieren",
+          "effects": [
+            {
+              "type": "ruf",
+              "bp": -2000
+            },
+            {
+              "type": "moral",
+              "bp": -800
+            }
+          ],
+          "isDefault": false
+        }
+      ]
+    },
+    {
+      "id": "leak",
+      "class": "entscheidung",
+      "chain": "krise",
+      "trigger": {
+        "alle": [
+          {
+            "jahr": {
+              ">=": 1990
+            }
+          },
+          {
+            "firma.mitarbeiter": {
+              ">=": 8
+            }
+          },
+          {
+            "firma.projekte": {
+              ">=": 1
+            }
+          }
+        ]
+      },
+      "weightBp": 6000,
+      "cooldownWeeks": 104,
+      "target": "projekt",
+      "options": [
+        {
+          "id": "ankuendigen",
+          "effects": [
+            {
+              "type": "interesse",
+              "bp": 1500
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "ignorieren",
+          "effects": [],
+          "isDefault": true,
+          "next": [
+            {
+              "def": "leakZweiteWelle",
+              "delayWeeks": [
+                2,
+                8
+              ],
+              "chanceBp": 5000
+            }
+          ]
+        },
+        {
+          "id": "klagen",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": -800000
+            },
+            {
+              "type": "ruf",
+              "bp": -500
+            }
+          ],
+          "isDefault": false
+        }
+      ]
+    },
+    {
+      "id": "leakZweiteWelle",
+      "class": "information",
+      "chain": "krise",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "effects": [
+        {
+          "type": "interesse",
+          "bp": -1500
+        }
+      ]
+    },
+    {
+      "id": "klonUrteil",
+      "class": "information",
+      "chain": "chance",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "effects": [
+        {
+          "type": "geld",
+          "cent": 1500000
+        },
+        {
+          "type": "nachfrage",
+          "bp": 500
+        }
+      ]
+    },
+    {
+      "id": "konsolenEnde",
+      "class": "entscheidung",
+      "chain": "krise",
+      "trigger": {
+        "produkt.altePlattform": {
+          ">=": 1
+        }
+      },
+      "weightBp": 8000,
+      "cooldownWeeks": 52,
+      "target": "altePlattform",
+      "options": [
+        {
+          "id": "portieren",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": -1500000
+            },
+            {
+              "type": "nachfrage",
+              "bp": 2500
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "restbestand",
+          "effects": [
+            {
+              "type": "nachfrage",
+              "bp": 800
+            }
+          ],
+          "isDefault": true
+        },
+        {
+          "id": "einstellen",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": 100000
+            },
+            {
+              "type": "nachfrage",
+              "bp": -5000
+            }
+          ],
+          "isDefault": false
+        }
+      ]
+    },
+    {
+      "id": "verfilmung",
+      "class": "entscheidung",
+      "chain": "chance",
+      "trigger": {
+        "alle": [
+          {
+            "jahr": {
+              ">=": 1985
+            }
+          },
+          {
+            "marke.staerke": {
+              ">=": 80
+            }
+          }
+        ]
+      },
+      "weightBp": 4000,
+      "cooldownWeeks": 260,
+      "target": "starkeMarke",
+      "options": [
+        {
+          "id": "annehmen",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": 20000000
+            }
+          ],
+          "isDefault": false,
+          "next": [
+            {
+              "def": "filmErfolg",
+              "delayWeeks": [
+                8,
+                12
+              ],
+              "chanceBp": 4000
+            },
+            {
+              "def": "filmFlop",
+              "delayWeeks": [
+                8,
+                12
+              ],
+              "chanceBp": 4000
+            }
+          ]
+        },
+        {
+          "id": "mitsprache",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": 8000000
+            }
+          ],
+          "isDefault": false,
+          "next": [
+            {
+              "def": "filmErfolg",
+              "delayWeeks": [
+                8,
+                12
+              ],
+              "chanceBp": 6000
+            },
+            {
+              "def": "filmFlop",
+              "delayWeeks": [
+                8,
+                12
+              ],
+              "chanceBp": 2000
+            }
+          ]
+        },
+        {
+          "id": "serie",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": 12000000
+            }
+          ],
+          "isDefault": false,
+          "next": [
+            {
+              "def": "filmErfolg",
+              "delayWeeks": [
+                10,
+                12
+              ],
+              "chanceBp": 5000
+            },
+            {
+              "def": "filmFlop",
+              "delayWeeks": [
+                10,
+                12
+              ],
+              "chanceBp": 3000
+            }
+          ]
+        },
+        {
+          "id": "ablehnen",
+          "effects": [],
+          "isDefault": true
+        }
+      ]
+    },
+    {
+      "id": "filmErfolg",
+      "class": "information",
+      "chain": "chance",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "effects": [
+        {
+          "type": "markenBekanntheit",
+          "bp": 1500
+        },
+        {
+          "type": "markenRuf",
+          "bp": 500
+        },
+        {
+          "type": "nachfrage",
+          "bp": 1000
+        }
+      ]
+    },
+    {
+      "id": "filmFlop",
+      "class": "information",
+      "chain": "krise",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "effects": [
+        {
+          "type": "markenRuf",
+          "bp": -1000
+        },
+        {
+          "type": "markenBekanntheit",
+          "bp": 500
+        }
+      ]
+    },
+    {
+      "id": "ausfallNachwirkung",
+      "class": "information",
+      "chain": "krise",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "effects": [
+        {
+          "type": "zufriedenheit",
+          "bp": -300
+        },
+        {
+          "type": "spieler",
+          "bp": -500
+        }
+      ]
+    },
+    {
+      "id": "datenleckEntdeckt",
+      "class": "information",
+      "chain": "krise",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "effects": [
+        {
+          "type": "zufriedenheit",
+          "bp": -1000
+        },
+        {
+          "type": "markenRuf",
+          "bp": -500
+        },
+        {
+          "type": "ruf",
+          "bp": -200
+        }
+      ]
+    },
+    {
+      "id": "cheaterAbwanderung",
+      "class": "information",
+      "chain": "krise",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "effects": [
+        {
+          "type": "spieler",
+          "bp": -800
+        },
+        {
+          "type": "zufriedenheit",
+          "bp": -300
+        }
+      ]
+    },
+    {
+      "id": "lootboxBehoerde",
+      "class": "entscheidung",
+      "chain": "krise",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [
+        {
+          "id": "einlenken",
+          "effects": [
+            {
+              "type": "zufriedenheit",
+              "bp": 300
+            },
+            {
+              "type": "nachfrage",
+              "bp": -1000
+            }
+          ],
+          "isDefault": true
+        },
+        {
+          "id": "anfechten",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": -2000000
+            },
+            {
+              "type": "markenRuf",
+              "bp": -300
+            }
+          ],
+          "isDefault": false
+        }
+      ]
+    },
+    {
+      "id": "bugShitstorm",
+      "class": "information",
+      "chain": "krise",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "effects": [
+        {
+          "type": "zufriedenheit",
+          "bp": -500
+        },
+        {
+          "type": "markenRuf",
+          "bp": -200
+        }
+      ]
+    },
+    {
+      "id": "kiWerkzeugWelle",
+      "class": "entscheidung",
+      "chain": "chance",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [
+        {
+          "id": "vollEinsetzen",
+          "effects": [
+            {
+              "type": "werkzeugTempo",
+              "bp": 3000
+            },
+            {
+              "type": "moral",
+              "bp": -500
+            }
+          ],
+          "isDefault": false,
+          "next": [
+            {
+              "def": "kiSkandal",
+              "delayWeeks": [
+                4,
+                12
+              ],
+              "chanceBp": 3000
+            }
+          ]
+        },
+        {
+          "id": "massvoll",
+          "effects": [
+            {
+              "type": "werkzeugTempo",
+              "bp": 1200
+            }
+          ],
+          "isDefault": true
+        },
+        {
+          "id": "verzichten",
+          "effects": [
+            {
+              "type": "ruf",
+              "bp": 500
+            },
+            {
+              "type": "moral",
+              "bp": 300
+            }
+          ],
+          "isDefault": false
+        }
+      ]
+    },
+    {
+      "id": "kiSkandal",
+      "class": "information",
+      "chain": "krise",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "effects": [
+        {
+          "type": "ruf",
+          "bp": -800
+        }
+      ]
+    },
+    {
+      "id": "letzteKonsolengeneration",
+      "class": "entscheidung",
+      "chain": "chance",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [
+        {
+          "id": "cloudPartner",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": 30000000
+            },
+            {
+              "type": "plattformErfahrung",
+              "platform": "wolke",
+              "bp": 2000
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "plattformneutral",
+          "effects": [],
+          "isDefault": true
+        }
+      ]
+    },
+    {
+      "id": "regulierungswelle",
+      "class": "entscheidung",
+      "chain": "krise",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [
+        {
+          "id": "umbauen",
+          "effects": [
+            {
+              "type": "haerte",
+              "bp": -2000
+            },
+            {
+              "type": "ruf",
+              "bp": 300
+            }
+          ],
+          "isDefault": true
+        },
+        {
+          "id": "regionVerlassen",
+          "effects": [
+            {
+              "type": "nachfrageAlle",
+              "bp": -1500
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "anfechten",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": -5000000
+            }
+          ],
+          "isDefault": false,
+          "next": [
+            {
+              "def": "regulierungGekippt",
+              "delayWeeks": [
+                8,
+                12
+              ],
+              "chanceBp": 4000
+            },
+            {
+              "def": "regulierungBestaetigt",
+              "delayWeeks": [
+                8,
+                12
+              ],
+              "chanceBp": 6000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regulierungGekippt",
+      "class": "information",
+      "chain": "chance",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "effects": [
+        {
+          "type": "ruf",
+          "bp": 200
+        }
+      ]
+    },
+    {
+      "id": "regulierungBestaetigt",
+      "class": "information",
+      "chain": "krise",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "effects": [
+        {
+          "type": "haerte",
+          "bp": -3000
+        },
+        {
+          "type": "ruf",
+          "bp": -300
+        }
+      ]
+    },
+    {
+      "id": "kartellverfahren",
+      "class": "entscheidung",
+      "chain": "krise",
+      "trigger": {
+        "alle": [
+          {
+            "jahr": {
+              ">=": 1995
+            }
+          },
+          {
+            "firma.rang": {
+              "<=": 2
+            }
+          },
+          {
+            "firma.marktanteil": {
+              ">=": 1200
+            }
+          },
+          {
+            "firma.mitarbeiter": {
+              ">=": 60
+            }
+          }
+        ]
+      },
+      "weightBp": 6000,
+      "cooldownWeeks": 520,
+      "target": null,
+      "options": [
+        {
+          "id": "vergleich",
+          "effects": [
+            {
+              "type": "strafeKasse",
+              "bp": 2000
+            },
+            {
+              "type": "ruf",
+              "bp": -200
+            },
+            {
+              "type": "krisenfest"
+            }
+          ],
+          "isDefault": true
+        },
+        {
+          "id": "kaempfen",
+          "effects": [
+            {
+              "type": "geldMonatskosten",
+              "bp": 30000
+            }
+          ],
+          "isDefault": false,
+          "next": [
+            {
+              "def": "kartellSieg",
+              "delayWeeks": [
+                8,
+                12
+              ],
+              "chanceBp": 5000
+            },
+            {
+              "def": "kartellNiederlage",
+              "delayWeeks": [
+                8,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "id": "zugestaendnis",
+          "effects": [
+            {
+              "type": "nachfrageAlle",
+              "bp": -1500
+            },
+            {
+              "type": "ruf",
+              "bp": 200
+            },
+            {
+              "type": "krisenfest"
+            }
+          ],
+          "isDefault": false
+        }
+      ]
+    },
+    {
+      "id": "kartellSieg",
+      "class": "information",
+      "chain": "krise",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "effects": [
+        {
+          "type": "ruf",
+          "bp": 300
+        },
+        {
+          "type": "krisenfest"
+        }
+      ]
+    },
+    {
+      "id": "kartellNiederlage",
+      "class": "information",
+      "chain": "krise",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "effects": [
+        {
+          "type": "strafeKasse",
+          "bp": 4000
+        },
+        {
+          "type": "ruf",
+          "bp": -500
+        },
+        {
+          "type": "krisenfest"
+        }
+      ]
+    },
+    {
+      "id": "datenleck",
+      "class": "entscheidung",
+      "chain": "krise",
+      "trigger": {
+        "alle": [
+          {
+            "jahr": {
+              ">=": 2000
+            }
+          },
+          {
+            "betrieb.server": {
+              ">=": 1
+            }
+          },
+          {
+            "firma.mitarbeiter": {
+              ">=": 40
+            }
+          }
+        ]
+      },
+      "weightBp": 5000,
+      "cooldownWeeks": 520,
+      "target": null,
+      "options": [
+        {
+          "id": "offenlegen",
+          "effects": [
+            {
+              "type": "geldMonatskosten",
+              "bp": 20000
+            },
+            {
+              "type": "zufriedenheitAlle",
+              "bp": -800
+            },
+            {
+              "type": "ruf",
+              "bp": -300
+            },
+            {
+              "type": "krisenfest"
+            }
+          ],
+          "isDefault": true
+        },
+        {
+          "id": "vertuschen",
+          "effects": [],
+          "isDefault": false,
+          "next": [
+            {
+              "def": "leckEnthuellt",
+              "delayWeeks": [
+                6,
+                12
+              ],
+              "chanceBp": 4000
+            }
+          ]
+        },
+        {
+          "id": "absichern",
+          "effects": [
+            {
+              "type": "geldMonatskosten",
+              "bp": 40000
+            },
+            {
+              "type": "serverKosten",
+              "bp": 2000,
+              "weeks": 52
+            },
+            {
+              "type": "ruf",
+              "bp": -100
+            },
+            {
+              "type": "krisenfest"
+            }
+          ],
+          "isDefault": false
+        }
+      ]
+    },
+    {
+      "id": "leckEnthuellt",
+      "class": "information",
+      "chain": "krise",
+      "stage": true,
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "effects": [
+        {
+          "type": "strafeKasse",
+          "bp": 2500
+        },
+        {
+          "type": "ruf",
+          "bp": -1500
+        },
+        {
+          "type": "zufriedenheitAlle",
+          "bp": -2000
+        },
+        {
+          "type": "krisenfest"
+        }
+      ]
+    },
+    {
+      "id": "massenkuendigung",
+      "class": "entscheidung",
+      "chain": "krise",
+      "trigger": {
+        "alle": [
+          {
+            "firma.mitarbeiter": {
+              ">=": 50
+            }
+          },
+          {
+            "eines": [
+              {
+                "firma.moral": {
+                  "<": 45
+                }
+              },
+              {
+                "firma.crunchWochen": {
+                  ">=": 10
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "weightBp": 6000,
+      "cooldownWeeks": 260,
+      "target": null,
+      "options": [
+        {
+          "id": "gehalt",
+          "effects": [
+            {
+              "type": "gehalt",
+              "bp": 1000,
+              "who": "alle"
+            },
+            {
+              "type": "moral",
+              "bp": 1500
+            },
+            {
+              "type": "krisenfest"
+            }
+          ],
+          "isDefault": true
+        },
+        {
+          "id": "gehenlassen",
+          "effects": [
+            {
+              "type": "kuendigung",
+              "bp": 1500
+            },
+            {
+              "type": "krisenfest"
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "kultur",
+          "effects": [
+            {
+              "type": "geldJePerson",
+              "cent": -300000
+            },
+            {
+              "type": "moral",
+              "bp": 2500
+            },
+            {
+              "type": "crunchRegel",
+              "rule": "nie"
+            },
+            {
+              "type": "krisenfest"
+            }
+          ],
+          "isDefault": false
+        }
+      ]
+    },
+    {
+      "id": "speicherkrise",
+      "class": "entscheidung",
+      "chain": "krise",
+      "trigger": {
+        "alle": [
+          {
+            "jahr": {
+              ">=": 2005
+            }
+          },
+          {
+            "betrieb.server": {
+              ">=": 1
+            }
+          }
+        ]
+      },
+      "weightBp": 4000,
+      "cooldownWeeks": 520,
+      "target": null,
+      "options": [
+        {
+          "id": "zahlen",
+          "effects": [
+            {
+              "type": "serverKosten",
+              "bp": 6000,
+              "weeks": 26
+            },
+            {
+              "type": "krisenfest"
+            }
+          ],
+          "isDefault": true
+        },
+        {
+          "id": "aufraeumen",
+          "effects": [
+            {
+              "type": "serverKosten",
+              "bp": 2500,
+              "weeks": 26
+            },
+            {
+              "type": "zufriedenheitAlle",
+              "bp": -500
+            },
+            {
+              "type": "krisenfest"
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "vorrat",
+          "effects": [
+            {
+              "type": "geldMonatskosten",
+              "bp": 30000
+            },
+            {
+              "type": "serverKosten",
+              "bp": 500,
+              "weeks": 26
+            },
+            {
+              "type": "krisenfest"
+            }
+          ],
+          "isDefault": false
+        }
+      ]
+    },
+    {
+      "id": "stromkrise",
+      "class": "entscheidung",
+      "chain": "krise",
+      "trigger": {
+        "alle": [
+          {
+            "jahr": {
+              ">=": 2010
+            }
+          },
+          {
+            "betrieb.server": {
+              ">=": 1
+            }
+          }
+        ]
+      },
+      "weightBp": 4000,
+      "cooldownWeeks": 520,
+      "target": null,
+      "options": [
+        {
+          "id": "zahlen",
+          "effects": [
+            {
+              "type": "serverKosten",
+              "bp": 8000,
+              "weeks": 13
+            },
+            {
+              "type": "krisenfest"
+            }
+          ],
+          "isDefault": true
+        },
+        {
+          "id": "drosseln",
+          "effects": [
+            {
+              "type": "zufriedenheitAlle",
+              "bp": -1200
+            },
+            {
+              "type": "serverKosten",
+              "bp": 2000,
+              "weeks": 13
+            },
+            {
+              "type": "krisenfest"
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "notstrom",
+          "effects": [
+            {
+              "type": "geldMonatskosten",
+              "bp": 20000
+            },
+            {
+              "type": "serverKosten",
+              "bp": 1000,
+              "weeks": 13
+            },
+            {
+              "type": "krisenfest"
+            }
+          ],
+          "isDefault": false
+        }
+      ]
+    }
+  ]
+}

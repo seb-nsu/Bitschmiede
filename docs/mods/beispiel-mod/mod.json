@@ -1,0 +1,13 @@
+{
+  "id": "beispiel-mod",
+  "name": "Beispiel: Rätselkarte und mehr Startgeld",
+  "version": "1.0.0",
+  "gameVersion": ">=0.1.0 <1.0.0",
+  "author": "Game Studio Tycoon",
+  "description": "Zeigt die drei Operationen: eine neue Karte (add), ein geändertes Genre (modify) und ein Feld der Startwerte (set).",
+  "dependencies": [],
+  "conflicts": [],
+  "loadAfter": [],
+  "tier": "daten",
+  "affectsBalance": true
+}

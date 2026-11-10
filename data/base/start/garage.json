@@ -1,0 +1,46 @@
+{
+  "startYear": 1980,
+  "startMoneyCent": 5000000,
+  "teamSize": 2,
+  "baseStrength": 40,
+  "founderBonus": 25,
+  "workPerPersonWeekBp": 10000,
+  "costPerPersonMonthCent": 250000,
+  "experienceGainPerWeekBp": 50,
+  "hasTestLab": false,
+  "firstProject": {
+    "genre": "action",
+    "theme": "scifi",
+    "scope": "klein",
+    "features": [
+      "einfacheSteuerung",
+      "grosseSprites",
+      "titelmelodie"
+    ],
+    "platforms": [
+      "fuchs"
+    ]
+  },
+  "secondFounderBonus": 15,
+  "maxPersons": 1000,
+  "secondProjectFromPersons": 3,
+  "maxOwnProjects": 2,
+  "transferWeeks": 1,
+  "minContributionWeeks": 4,
+  "startYearRange": [
+    1980,
+    2030
+  ],
+  "startYearQuick": [
+    1980,
+    1990,
+    2000,
+    2010,
+    2020
+  ],
+  "firstProjectAreas": [
+    "gameplay",
+    "grafik",
+    "sound"
+  ]
+}

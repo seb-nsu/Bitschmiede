@@ -1,0 +1,12 @@
+{
+  "_comment": "S05 MKT-R41 bis MKT-R43 und V_Katalog (Etappe 5.12). Ertrag je Monat = Stärke × Welttiefe × Fans × centPerFanMonth.",
+  "minStrengthBp": 2000,
+  "centPerFanMonth": 2,
+  "ownFactorBp": 20000,
+  "ownRiskBp": 3000,
+  "licenseFactorBp": 10000,
+  "weakStrengthBp": 3000,
+  "weakReputationLossBp": 50,
+  "catalog": { "fromYear": 2005, "shareBp": 50, "minScoreBp": 50000 },
+  "extras": { "fromYear": 1995, "attachBp": 300, "priceBp": 1500 }
+}

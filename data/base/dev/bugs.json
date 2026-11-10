@@ -1,0 +1,13 @@
+{
+  "bugsPerPackageBp": 8000,
+  "halfValue": {
+    "klein": 200,
+    "mittel": 800,
+    "gross": 2000,
+    "aaa": 4500
+  },
+  "qaFindRateBp": 1500,
+  "testLabBonusBp": 3000,
+  "innovationWeightBp": 5000,
+  "innovationScalePoints": 5
+}

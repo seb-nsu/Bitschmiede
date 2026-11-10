@@ -1,0 +1,17 @@
+{
+  "_comment": "Bühne (UI-R70, S11 8.3): CC0-Sprites für Figuren und Pflanzen (public/CREDITS.md). Je Figur eine Vorder- und eine Rückansicht: Figuren hinter dem Tisch schauen nach vorn, Figuren davor zum Tisch. Leere Liste = gezeichnete Platzhalter-Figuren. „boxes“: Kartons bei hohem Lagerbestand.",
+  "figures": [
+    "gfx/stage/person-0",
+    "gfx/stage/person-1",
+    "gfx/stage/person-2",
+    "gfx/stage/person-4",
+    "gfx/stage/person-5"
+  ],
+  "figureSize": 28,
+  "plants": [
+    "gfx/stage/plant-0.png",
+    "gfx/stage/plant-1.png"
+  ],
+  "plantSize": 24,
+  "boxes": "gfx/stage/boxes.png"
+}

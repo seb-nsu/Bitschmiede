@@ -1,0 +1,29 @@
+{
+  "id": "base",
+  "version": "0.0.1",
+  "files": [
+    "dev/quality.json",
+    "dev/bugs.json",
+    "dev/phases.json",
+    "dev/projects.json",
+    "dev/features.json",
+    "dev/genres.json",
+    "dev/themes.json",
+    "dev/synergies.json",
+    "dev/trends.json",
+    "dev/sales.json",
+    "start/garage.json",
+    "core/time.json",
+    "dev/events.json",
+    "dev/playtests.json",
+    "dev/contracts.json",
+    "dev/applications.json",
+    "core/presets.json",
+    "core/economy.json",
+    "market/platforms.json",
+    "core/offices.json",
+    "dev/producttypes.json",
+    "events/katalog.json",
+    "core/unlocks.json"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "feeScopeBp": {
+    "klein": 6000,
+    "mittel": 15000,
+    "gross": 30000,
+    "aaa": 60000
+  },
+  "vendors": [
+    {
+      "id": "klangwerk",
+      "module": "audio",
+      "fromYear": 1983,
+      "lagYears": 0,
+      "licenseFeeCent": 400000,
+      "feeModel": "beteiligung",
+      "royaltyBp": 800,
+      "buyPerPwCent": 130000,
+      "debtBp": 3000
+    },
+    {
+      "id": "pinselei",
+      "module": "werkzeuge",
+      "fromYear": 1986,
+      "lagYears": 1,
+      "licenseFeeCent": 500000,
+      "feeModel": "groesse",
+      "royaltyBp": 0,
+      "buyPerPwCent": 110000,
+      "debtBp": 2000
+    },
+    {
+      "id": "physikus",
+      "module": "physik",
+      "fromYear": 1986,
+      "lagYears": 0,
+      "licenseFeeCent": 350000,
+      "feeModel": "beteiligung",
+      "royaltyBp": 800,
+      "buyPerPwCent": 130000,
+      "debtBp": 4000
+    },
+    {
+      "id": "denkmaschine",
+      "module": "ki",
+      "fromYear": 1988,
+      "lagYears": 1,
+      "licenseFeeCent": 900000,
+      "feeModel": "groesse",
+      "royaltyBp": 0,
+      "buyPerPwCent": 140000,
+      "debtBp": 3500
+    },
+    {
+      "id": "portwerk",
+      "module": "plattformen",
+      "fromYear": 1989,
+      "lagYears": 0,
+      "licenseFeeCent": 600000,
+      "feeModel": "groesse",
+      "royaltyBp": 0,
+      "buyPerPwCent": 120000,
+      "debtBp": 2500
+    },
+    {
+      "id": "netzbruecke",
+      "module": "netzwerk",
+      "fromYear": 1994,
+      "lagYears": 0,
+      "licenseFeeCent": 500000,
+      "feeModel": "beteiligung",
+      "royaltyBp": 1000,
+      "buyPerPwCent": 150000,
+      "debtBp": 4500
+    }
+  ],
+  "playerOffer": {
+    "_comment": "S13 AUS-R70, AUS-R71 (1.3, Prüfung Fable: Schalter an der Lizenzvorlage): eigene Module einzeln an KI-Studios mit Hausmitteln. Gebühr je Stufe Vorsprung und Jahr in 1980er Preisen.",
+    "chanceBp": 2500,
+    "minLevelGap": 2,
+    "feePerLevelCent": 150000,
+    "maxModulesPerStudio": 2,
+    "cashYears": 2
+  }
+}

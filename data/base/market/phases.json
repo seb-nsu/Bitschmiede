@@ -1,0 +1,16 @@
+{
+  "_comment": "MRK-R36, MRK-R59, MRK-R60 (Etappe 6a.3): Marktphasen. Bis 2025 fest nach Datenblatt Abschnitt 3, ab seedFromYear aus dem Seed. Zinsen in bp-Punkten (100 = 1 Prozentpunkt), Faktoren in bp.",
+  "historical": [
+    { "from": 1983, "to": 1985, "phase": "krise" },
+    { "from": 2008, "to": 2009, "phase": "krise" },
+    { "from": 2020, "to": 2021, "phase": "boom" },
+    { "from": 2022, "to": 2025, "phase": "krise" }
+  ],
+  "seedFromYear": 2026,
+  "durationYears": { "boom": [2, 4], "normal": [3, 6], "krise": [1, 3] },
+  "effects": {
+    "boom": { "aiBudgetBp": 10000, "aiTeamSizeBp": 10000, "loanRateAddBp": -100, "salaryBp": 10500, "foundPerQuarter": [1, 3], "applicationsBp": 10000 },
+    "normal": { "aiBudgetBp": 10000, "aiTeamSizeBp": 10000, "loanRateAddBp": 0, "salaryBp": 10000, "foundPerQuarter": [0, 1], "applicationsBp": 10000 },
+    "krise": { "aiBudgetBp": 8000, "aiTeamSizeBp": 8500, "loanRateAddBp": 100, "salaryBp": 10000, "foundPerQuarter": [0, 0], "applicationsBp": 15000 }
+  }
+}

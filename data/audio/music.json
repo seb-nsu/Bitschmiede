@@ -1,0 +1,37 @@
+{
+  "_comment": "4b.5, UI-R80/R81: Platzhalter-Musik je Epoche (S11 Ton und Musik). Noten als MIDI-Nummern, 0 = Pause; je Schritt ein Achtel. Stimmungen verändern Tempo, Tonlage und Klang. „tracks“: CC0-Musik je Epoche und Stimmung (public/CREDITS.md), „trackGain“: Lautstärke der Stücke relativ zur Musik-Einstellung.",
+  "trackGain": 0.35,
+  "tracks": {
+    "80": { "ruhig": "audio/music/80-ruhig.ogg", "angespannt": "audio/music/80-angespannt.ogg", "festlich": "audio/music/80-festlich.ogg" },
+    "90": { "ruhig": "audio/music/90-ruhig.ogg", "angespannt": "audio/music/90-angespannt.ogg", "festlich": "audio/music/90-festlich.ogg" },
+    "00": { "ruhig": "audio/music/00-ruhig.ogg", "angespannt": "audio/music/00-angespannt.ogg", "festlich": "audio/music/00-festlich.ogg" },
+    "10": { "ruhig": "audio/music/10-ruhig.ogg", "angespannt": "audio/music/10-angespannt.ogg", "festlich": "audio/music/10-festlich.ogg" },
+    "20": { "ruhig": "audio/music/20-ruhig.ogg", "angespannt": "audio/music/20-angespannt.ogg", "festlich": "audio/music/20-festlich.ogg" }
+  },
+  "fadeMs": 2000,
+  "pauseDamp": 0.35,
+  "gain": 0.06,
+  "epochs": {
+    "80": { "bpm": 112, "lead": "square", "bass": "triangle",
+      "melody": [72, 0, 76, 79, 76, 0, 74, 72, 69, 0, 72, 74, 76, 0, 0, 0, 72, 0, 76, 79, 81, 79, 76, 74, 72, 0, 69, 67, 69, 0, 0, 0],
+      "bassline": [48, 48, 55, 55, 45, 45, 52, 52, 41, 41, 48, 48, 43, 43, 50, 50] },
+    "90": { "bpm": 100, "lead": "triangle", "bass": "sawtooth",
+      "melody": [69, 72, 76, 0, 74, 72, 71, 0, 67, 71, 74, 0, 72, 71, 69, 0, 69, 72, 76, 79, 77, 76, 74, 0, 72, 0, 71, 0, 69, 0, 0, 0],
+      "bassline": [45, 45, 52, 52, 43, 43, 50, 50, 41, 41, 48, 48, 40, 40, 47, 47] },
+    "00": { "bpm": 92, "lead": "sine", "bass": "triangle",
+      "melody": [67, 0, 71, 0, 74, 0, 71, 72, 0, 0, 69, 0, 72, 0, 76, 74, 71, 0, 67, 0, 69, 71, 72, 0, 74, 0, 0, 72, 71, 0, 0, 0],
+      "bassline": [43, 43, 43, 50, 40, 40, 40, 47, 36, 36, 36, 43, 38, 38, 38, 45] },
+    "10": { "bpm": 96, "lead": "sine", "bass": "sine",
+      "melody": [76, 0, 0, 74, 0, 72, 0, 0, 71, 0, 72, 0, 74, 0, 0, 0, 76, 0, 79, 0, 76, 0, 74, 72, 74, 0, 0, 0, 0, 0, 0, 0],
+      "bassline": [48, 0, 48, 0, 43, 0, 43, 0, 45, 0, 45, 0, 41, 0, 41, 0] },
+    "20": { "bpm": 88, "lead": "triangle", "bass": "sine",
+      "melody": [74, 0, 77, 0, 81, 0, 79, 77, 76, 0, 0, 74, 72, 0, 74, 0, 77, 0, 76, 0, 74, 0, 72, 0, 69, 0, 0, 0, 72, 0, 74, 0],
+      "bassline": [50, 50, 0, 50, 46, 46, 0, 46, 43, 43, 0, 43, 45, 45, 0, 45] }
+  },
+  "moods": {
+    "ruhig": { "tempoPct": 100, "transpose": 0, "leadGain": 100 },
+    "angespannt": { "tempoPct": 118, "transpose": -1, "leadGain": 80 },
+    "festlich": { "tempoPct": 108, "transpose": 5, "leadGain": 120 }
+  },
+  "atmo": { "gain": 0.03, "filterHz": 420 }
+}

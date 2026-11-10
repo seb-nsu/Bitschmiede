@@ -1,0 +1,76 @@
+{
+  "curves": {
+    "qualitaet": {
+      "curve": "logistisch",
+      "midBp": 10000,
+      "steepBp": 60000
+    },
+    "trend": {
+      "curve": "linear",
+      "loBp": 5000,
+      "hiBp": 15000
+    },
+    "marke": {
+      "curve": "linear",
+      "loBp": 0,
+      "hiBp": 10000
+    },
+    "kosten": {
+      "curve": "invers",
+      "loBp": 0,
+      "hiBp": 20000
+    },
+    "risiko": {
+      "curve": "invers",
+      "loBp": 0,
+      "hiBp": 10000
+    },
+    "plattform": {
+      "curve": "logistisch",
+      "midBp": 4000,
+      "steepBp": 50000
+    },
+    "dichte": {
+      "curve": "invers",
+      "loBp": 0,
+      "hiBp": 200000
+    },
+    "schwerpunkt": {
+      "curve": "linear",
+      "loBp": 0,
+      "hiBp": 15000
+    },
+    "ziel": {
+      "curve": "linear",
+      "loBp": 0,
+      "hiBp": 10000
+    }
+  },
+  "extraWeightsBp": {
+    "dichte": 5000,
+    "schwerpunkt": 4000,
+    "ziel": 0
+  },
+  "focusRawBp": 15000,
+  "favoriteRawBp": 10000,
+  "betRawBp": 5000,
+  "densityWindowWeeks": 8,
+  "topForSoftmax": 8,
+  "topForGut": 5,
+  "affordableUtilityBp": 6000,
+  "potOverrunBp": 12000,
+  "mainGenreChanceBp": 5000,
+  "scopeRiskBp": 3000,
+  "bigScope": { "gross": { "minTeam": 5, "shareBp": 3500 }, "aaa": { "minTeam": 7, "shareBp": 1500 } },
+  "flopRiskWeightBp": 12000,
+  "flopRiskWeeks": 104,
+  "conferenceEveryYearsSmall": 2,
+  "conferencePeople": 50,
+  "extraConferenceSwingBp": 3000,
+  "favoriteGenres": 2,
+  "logSize": 50,
+  "cancelCheckBp": 2000,
+  "cancelMarginBp": 15000,
+  "cancelBudgetBp": 5000,
+  "savingsMonths": 2
+}

@@ -1,0 +1,9 @@
+{
+  "add": [
+    {
+      "id": "beispielRaetselkiste", "area": "gameplay", "effort": { "gameplay": 120000, "story": 30000 },
+      "baseValue": 450000, "innovation": 30000, "stability": 0, "fun": 20000, "tags": ["denken"],
+      "contentLevel": 0, "availableFrom": 1981, "requires": { "module": "werkzeuge", "level": 0 }, "performanceCost": 3
+    }
+  ]
+}

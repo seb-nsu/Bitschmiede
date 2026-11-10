@@ -1,0 +1,150 @@
+{
+  "salaryAnchorsCent": [
+    [
+      1980,
+      250000
+    ],
+    [
+      1990,
+      400000
+    ],
+    [
+      1995,
+      600000
+    ],
+    [
+      2000,
+      1000000
+    ],
+    [
+      2010,
+      1400000
+    ],
+    [
+      2020,
+      2000000
+    ],
+    [
+      2030,
+      2400000
+    ],
+    [
+      2040,
+      2800000
+    ]
+  ],
+  "rentPerPlaceAnchorsCent": [
+    [
+      1980,
+      15000
+    ],
+    [
+      1990,
+      25000
+    ],
+    [
+      2000,
+      40000
+    ],
+    [
+      2010,
+      60000
+    ],
+    [
+      2020,
+      90000
+    ],
+    [
+      2030,
+      110000
+    ],
+    [
+      2040,
+      130000
+    ]
+  ],
+  "creditNotes": [
+    {
+      "note": "A",
+      "rateBp": 400,
+      "limitFactorBp": 20000
+    },
+    {
+      "note": "B",
+      "rateBp": 600,
+      "limitFactorBp": 10000
+    },
+    {
+      "note": "C",
+      "rateBp": 900,
+      "limitFactorBp": 5000
+    },
+    {
+      "note": "D",
+      "rateBp": 1400,
+      "limitFactorBp": 2000
+    },
+    {
+      "note": "E",
+      "rateBp": 0,
+      "limitFactorBp": 0
+    }
+  ],
+  "startLoanLimitCent": 5000000,
+  "startLoanRateBp": 900,
+  "cushionRepayMonths": 24,
+  "decisionDensityBp": {
+    "ruhig": 6000,
+    "normal": 10000,
+    "dicht": 14000
+  },
+  "lossCarryQuarters": 20,
+  "success": {
+    "_comment": "Balancing Spätspiel (Entscheidung Projektleitung 04.11.2026 „Kosten wachsen mit Erfolg“). Gewinnbeteiligung: Anteil am Gewinn des Vorquartals je Jahr plus Zuschlag je Firmengröße; Star-Gehälter: starke Leute verlangen jedes Jahr mehr, solange die Kasse über reserveMonths Monatskosten liegt, bis capBp des Marktgehalts. ANNAHME, siehe OFFENE-FRAGEN.",
+    "profitShare": {
+      "fromYear": 1990,
+      "minPeople": 12,
+      "shareAnchorsBp": [
+        [
+          1990,
+          1000
+        ],
+        [
+          2005,
+          2000
+        ],
+        [
+          2020,
+          3000
+        ],
+        [
+          2040,
+          3000
+        ]
+      ],
+      "sizeSteps": [
+        [
+          20,
+          500
+        ],
+        [
+          50,
+          1000
+        ],
+        [
+          100,
+          1500
+        ]
+      ],
+      "moraleBp": 200,
+      "minReserveMonths": 12
+    },
+    "starSalary": {
+      "fromYear": 1995,
+      "minStrength": 80,
+      "reserveMonths": 36,
+      "raiseBp": 500,
+      "capBp": 15000
+    }
+  }
+}

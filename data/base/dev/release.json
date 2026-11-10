@@ -1,0 +1,20 @@
+{
+  "earlyAccess": {
+    "fromYear": 2013, "priceMinBp": 6000, "priceMaxBp": 8000, "priceDefaultBp": 7000, "decayFactorBp": 20000,
+    "updateWeeks": 4, "pauseWeeks": 8, "updateSatisfactionBp": 200, "pauseSatisfactionBp": 300, "updateEffortBp": 100, "startSatisfactionBp": 6000
+  },
+  "priceFromYear": 2000,
+  "priceMinBp": 5000,
+  "priceMaxBp": 15000,
+  "priceElasticityBp": 15000,
+  "priceDemandMinBp": 2500,
+  "postponeInterestBp": 1000,
+  "postponePreorderInterestBp": 2000,
+  "deluxeFromYear": 2000,
+  "deluxeAvgPriceBp": 750,
+  "collectorPriceBp": 25000,
+  "collectorUnitCostBp": 40000,
+  "collectorShareBp": 300,
+  "collectorMaxUnits": 50000,
+  "duelBoostShareBp": 1000
+}

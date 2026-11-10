@@ -1,0 +1,169 @@
+{
+  "minGapMs": 2000,
+  "sounds": {
+    "hit": {
+      "type": "triangle",
+      "notes": [
+        523,
+        659,
+        784,
+        1047
+      ],
+      "noteMs": 110,
+      "gain": 0.25,
+      "file": "audio/sfx/hit.ogg"
+    },
+    "release": {
+      "type": "triangle",
+      "notes": [
+        440,
+        554,
+        659
+      ],
+      "noteMs": 120,
+      "gain": 0.22,
+      "file": "audio/sfx/release.ogg"
+    },
+    "flop": {
+      "type": "sawtooth",
+      "notes": [
+        330,
+        262,
+        196
+      ],
+      "noteMs": 160,
+      "gain": 0.15,
+      "file": "audio/sfx/flop.ogg"
+    },
+    "decision": {
+      "type": "sine",
+      "notes": [
+        660,
+        880
+      ],
+      "noteMs": 90,
+      "gain": 0.2,
+      "file": "audio/sfx/decision.ogg"
+    },
+    "unlock": {
+      "type": "square",
+      "notes": [
+        392,
+        523,
+        659,
+        784
+      ],
+      "noteMs": 80,
+      "gain": 0.12,
+      "file": "audio/sfx/unlock.ogg"
+    },
+    "yearbook": {
+      "type": "triangle",
+      "notes": [
+        392,
+        494,
+        587,
+        784
+      ],
+      "noteMs": 140,
+      "gain": 0.2,
+      "file": "audio/sfx/yearbook.ogg"
+    },
+    "click": {
+      "type": "sine",
+      "notes": [
+        1200
+      ],
+      "noteMs": 25,
+      "gain": 0.08,
+      "file": "audio/sfx/click.ogg"
+    },
+    "error": {
+      "type": "square",
+      "notes": [
+        200,
+        160
+      ],
+      "noteMs": 90,
+      "gain": 0.1,
+      "file": "audio/sfx/error.ogg"
+    },
+    "messe": {
+      "type": "triangle",
+      "notes": [
+        523,
+        523,
+        659,
+        784
+      ],
+      "noteMs": 90,
+      "gain": 0.18,
+      "file": "audio/sfx/messe.ogg"
+    },
+    "award": {
+      "type": "triangle",
+      "notes": [
+        659,
+        784,
+        988,
+        1319,
+        1568
+      ],
+      "noteMs": 120,
+      "gain": 0.22,
+      "file": "audio/sfx/award.ogg"
+    },
+    "bug": {
+      "type": "square",
+      "notes": [
+        880,
+        0,
+        880,
+        622
+      ],
+      "noteMs": 70,
+      "gain": 0.1,
+      "file": "audio/sfx/bug.ogg"
+    },
+    "crunch": {
+      "type": "sawtooth",
+      "notes": [
+        196,
+        233,
+        196,
+        233
+      ],
+      "noteMs": 110,
+      "gain": 0.1,
+      "file": "audio/sfx/crunch.ogg"
+    }
+  },
+  "channels": {
+    "hit": "events",
+    "release": "events",
+    "flop": "events",
+    "decision": "events",
+    "unlock": "events",
+    "yearbook": "events",
+    "click": "ui",
+    "error": "ui",
+    "messe": "events",
+    "award": "events",
+    "bug": "events",
+    "crunch": "events"
+  },
+  "logSounds": {
+    "log.fairShown": "messe",
+    "log.conference": "messe",
+    "log.awardWon": "award",
+    "log.awardWonStudio": "award",
+    "log.awardNominated": "award",
+    "log.burnoutHigh": "crunch",
+    "log.certFailed": "bug",
+    "log.modsBroken": "bug"
+  },
+  "eventSounds": {
+    "kritischerBug": "bug",
+    "goldReview": "decision"
+  }
+}

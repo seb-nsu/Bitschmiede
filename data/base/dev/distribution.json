@@ -1,0 +1,20 @@
+{
+  "channels": [
+    { "id": "eigen", "shareBp": 7500, "reachBp": 1500, "returns": false, "fromYear": 1980, "toYear": 2040, "minStaff": 0 },
+    { "id": "distributor", "shareBp": 6000, "reachBp": 9000, "returns": true, "fromYear": 1980, "toYear": 2040, "minStaff": 0 },
+    { "id": "handelsvertrieb", "shareBp": 6500, "reachBp": 9000, "returns": true, "fromYear": 1980, "toYear": 2040, "minStaff": 30 },
+    { "id": "shareware", "shareBp": 8000, "reachBp": 10000, "returns": false, "fromYear": 1988, "toYear": 2000, "minStaff": 0, "platformTypes": ["heimcomputer", "pc"] }
+  ],
+  "returnsAfterWeeks": 17,
+  "returnsShareBp": 3000,
+  "refundFromYear": 2010,
+  "refundBaseBp": 200,
+  "refundShortBp": 500,
+  "refundBugsBp": 500,
+  "refundBugsThreshold": 10,
+  "refundShortScopes": ["klein"],
+  "extras": { "unitCostBp": 3000, "fansBp": 500, "protectionAs": "abfrage" },
+  "shareware": { "buyersBp": 3000, "interestBp": 5000 },
+  "bundle": { "minScoreBp": 85000, "afterWeeks": 4, "feeCentAnchors": [[1985, 300], [2010, 800]], "devicesShareBp": 50, "relationBp": 500 },
+  "coverMount": { "fromYear": 1985, "toYear": 2005, "minAgeWeeks": 104, "chancePerQuarterBp": 2500, "feeCentAnchors": [[1985, 1000000], [2005, 3000000]], "awarenessBp": 500, "platformTypes": ["heimcomputer", "pc"] }
+}

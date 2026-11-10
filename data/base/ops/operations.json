@@ -1,0 +1,143 @@
+{
+  "_comment": "S06 Abschnitt 5 (BTR-F2, BTR-F3, BTR-F4, Startwerte), Etappe 5 Schritte 5.1 bis 5.4. Zufriedenheit in bp: 10.000 = 100 Punkte.",
+  "knownAtReleaseBp": 4000,
+  "severitySharesBp": {
+    "leicht": 6000,
+    "mittel": 3000,
+    "schwer": 1000
+  },
+  "findRateBp": 2500,
+  "findHalfPlayers": 20000,
+  "playerWeeks": 12,
+  "patch": {
+    "effortPersonWeeks": {
+      "klein": 4,
+      "gross": 12
+    },
+    "bugsPerPersonWeekAnchors": [
+      [
+        1980,
+        2
+      ],
+      [
+        1990,
+        3
+      ],
+      [
+        2000,
+        4
+      ],
+      [
+        2010,
+        5
+      ],
+      [
+        2020,
+        6
+      ],
+      [
+        2040,
+        7
+      ]
+    ],
+    "consoleFromYear": 2000,
+    "consoleCertWeeks": 1
+  },
+  "satisfaction": {
+    "neutralBp": 6000,
+    "rhoBp": 200,
+    "patchBp": 300,
+    "freeUpdateBp": 500,
+    "severePerTen": 100,
+    "severeMaxPerWeekBp": 500,
+    "wordOfMouthBp": 2000,
+    "backlogPer10PctBp": 100,
+    "backlogMaxBp": 1000,
+    "answeredBp": 50,
+    "outsourcedAnsweredBp": 30,
+    "dlcFloodPerYear": 3,
+    "dlcFloodBp": 400
+  },
+  "tickets": {
+    "baseBp": 200,
+    "bugsBp": 500,
+    "onlineBp": 300,
+    "perLivePlayerBp": 50,
+    "bugNorm": 200,
+    "weights": {
+      "leicht": 1,
+      "mittel": 3,
+      "schwer": 10
+    },
+    "salesWeeks": 4
+  },
+  "department": {
+    "unlockOpenTickets": 20,
+    "splitBp": {
+      "liveops": 2000,
+      "service": 6000,
+      "community": 1000,
+      "support": 1000
+    },
+    "ticketsPerPersonMonthAnchors": [
+      [
+        1980,
+        250
+      ],
+      [
+        2000,
+        400
+      ],
+      [
+        2010,
+        520
+      ],
+      [
+        2020,
+        680
+      ],
+      [
+        2030,
+        880
+      ],
+      [
+        2040,
+        1150
+      ]
+    ],
+    "outsourceCostBp": 5000,
+    "autoHeadroomBp": 11000,
+    "maxSize": 500,
+    "supportRequestsPerContract": {
+      "keiner": 0,
+      "basis": 4,
+      "premium": 10
+    },
+    "supportPerPersonMonth": 40,
+    "engineSupportDaysPerRequestBp": 5000,
+    "engineSupportMaxMalusBp": 3000,
+    "workDaysPerWeek": 5
+  },
+  "channels": [
+    [
+      1980,
+      "hotline"
+    ],
+    [
+      1995,
+      "email"
+    ],
+    [
+      2000,
+      "forum"
+    ],
+    [
+      2008,
+      "social"
+    ],
+    [
+      2016,
+      "discord"
+    ]
+  ]
+}

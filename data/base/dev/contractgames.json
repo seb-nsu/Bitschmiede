@@ -1,0 +1,20 @@
+{
+  "unlockAfterReleases": 1,
+  "maxOffers": 3,
+  "newOfferChanceBp": 5000,
+  "expiresWeeks": [6, 12],
+  "themeChanceBp": 6000,
+  "audienceChanceBp": 5000,
+  "teamRef": { "klein": 3, "mittel": 6, "gross": 15, "aaa": 35 },
+  "polishWeeks": 6,
+  "clientTechLagYears": 2,
+  "deadlineSlackBp": [13000, 16000],
+  "marginBp": [13000, 17000],
+  "advanceBp": 3000,
+  "bonusBp": 2500,
+  "bonusMarginBp": 10000,
+  "penaltyBp": 2000,
+  "minScoreBp": { "klein": [55000, 70000], "mittel": [60000, 75000], "gross": [65000, 80000], "aaa": [70000, 85000] },
+  "scopeWeightBp": { "klein": 10000, "mittel": 7000, "gross": 4000, "aaa": 2000 },
+  "clients": ["Nordlicht Verlag", "Blauwal Medien", "Kronenspiel AG", "Pixelhafen Vertrieb", "Sternwarte Software", "Uferlos Interaktiv", "Graufalke Media", "Morgenrot Publishing"]
+}

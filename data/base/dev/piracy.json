@@ -1,0 +1,179 @@
+{
+  "onlineMaxBp": 100,
+  "baseRateAnchors": {
+    "heimcomputer": [
+      [
+        1980,
+        6000
+      ],
+      [
+        1995,
+        5000
+      ]
+    ],
+    "pc": [
+      [
+        1980,
+        6000
+      ],
+      [
+        1990,
+        5000
+      ],
+      [
+        2009,
+        5000
+      ],
+      [
+        2010,
+        2000
+      ],
+      [
+        2019,
+        2000
+      ],
+      [
+        2020,
+        1000
+      ]
+    ],
+    "konsole": [
+      [
+        1980,
+        500
+      ],
+      [
+        1996,
+        500
+      ],
+      [
+        1997,
+        2000
+      ],
+      [
+        2002,
+        2000
+      ],
+      [
+        2003,
+        500
+      ]
+    ],
+    "handheld": [
+      [
+        1980,
+        1000
+      ],
+      [
+        2006,
+        1000
+      ],
+      [
+        2007,
+        3000
+      ],
+      [
+        2009,
+        3000
+      ],
+      [
+        2010,
+        1000
+      ]
+    ],
+    "mobil": [
+      [
+        1980,
+        1000
+      ]
+    ]
+  },
+  "levels": [
+    {
+      "id": "keiner",
+      "fromYear": 1980,
+      "strengthBp": 0,
+      "holdWeeks": [
+        0,
+        0
+      ],
+      "restBp": 0,
+      "satisfaction": 0
+    },
+    {
+      "id": "abfrage",
+      "fromYear": 1980,
+      "strengthBp": 2000,
+      "holdWeeks": [
+        1,
+        4
+      ],
+      "restBp": 0,
+      "satisfaction": -1
+    },
+    {
+      "id": "datentraeger",
+      "fromYear": 1990,
+      "strengthBp": 3000,
+      "holdWeeks": [
+        1,
+        2
+      ],
+      "restBp": 0,
+      "satisfaction": -3
+    },
+    {
+      "id": "aktivierung",
+      "fromYear": 2000,
+      "strengthBp": 6000,
+      "holdWeeks": [
+        1,
+        4
+      ],
+      "restBp": 0,
+      "satisfaction": -5
+    },
+    {
+      "id": "store",
+      "fromYear": 2005,
+      "strengthBp": 1000,
+      "holdWeeks": null,
+      "restBp": 1000,
+      "satisfaction": 0
+    },
+    {
+      "id": "online",
+      "fromYear": 2010,
+      "strengthBp": 8000,
+      "holdWeeks": [
+        4,
+        12
+      ],
+      "restBp": 0,
+      "satisfaction": -12
+    },
+    {
+      "id": "middleware",
+      "fromYear": 2014,
+      "strengthBp": 8000,
+      "holdWeeks": [
+        4,
+        4
+      ],
+      "lateFromYear": 2019,
+      "lateHoldWeeks": [
+        1,
+        1
+      ],
+      "restBp": 0,
+      "satisfaction": -4,
+      "royaltyBp": 200
+    }
+  ],
+  "autopilotMaxSatisfactionLoss": 5,
+  "fansPerCopyBp": 100,
+  "lostSaleBp": 3500,
+  "defiantHoldWeeks": 12,
+  "reputationPerMomentBp": 100,
+  "removeRecoveryBp": 5000
+}

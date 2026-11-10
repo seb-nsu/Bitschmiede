@@ -1,0 +1,23 @@
+{
+  "deadlineWeeks": {
+    "projekt": 4,
+    "welt": 3
+  },
+  "maxWorldEventsPerWeek": 1,
+  "plannerMaxDelayWeeks": 2,
+  "prototypeReviewAtBp": 3000,
+  "reviewReworkEffortBp": 10000,
+  "criticalBug": {
+    "chanceBp": 4000,
+    "fromBp": 8500,
+    "toBp": 9800,
+    "extraShareBp": 3000,
+    "minExtraBugs": 10,
+    "delayWeeks": 2
+  },
+  "dayOnePatch": {
+    "bugReductionBp": 4000,
+    "weeks": 2
+  },
+  "forecastTestWeeks": 3
+}

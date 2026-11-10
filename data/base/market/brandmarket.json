@@ -1,0 +1,43 @@
+{
+  "fromYear": 1985,
+  "buyRateBp": 2500,
+  "transferBp": { "same": 10000, "near": 6000, "far": 2500 },
+  "yearsFactorBp": [5000, 9000, 12500, 15500, 18000],
+  "saleYearsFactorBp": 25000,
+  "depthBonusBp": 2000,
+  "templates": {
+    "offen": { "royaltyFactorBp": 10000, "flatBp": 1000, "minScoreBp": 60000, "autoAccept": true, "minTransferBp": 6000 },
+    "genreExklusiv": { "royaltyFactorBp": 12000, "flatBp": 1500, "minScoreBp": 70000, "autoAccept": true, "minTransferBp": 10000 },
+    "premium": { "royaltyFactorBp": 14000, "flatBp": 2000, "minScoreBp": 80000, "autoAccept": false, "minTransferBp": 6000 }
+  },
+  "royaltyBaseBp": 500,
+  "royaltySpanBp": 1500,
+  "royaltyMaxBp": 2000,
+  "refUnits": 40000,
+  "licenseYears": 3,
+  "gamesMax": 2,
+  "maxActiveLicenses": 2,
+  "penaltyFlatTimes": 2,
+  "weakScoreBp": 60000,
+  "weakExtraFatigueBp": 1000,
+  "autoAcceptReputation": 40,
+  "offerWeeks": 26,
+  "aiOfferRestYears": 3,
+  "aiOfferCashMonths": 6,
+  "aiExperienceMinBp": 4000,
+  "aiBuyMaxValueBp": 12000,
+  "aiBuyCashMonths": 6,
+  "indieChancePerYearBp": 3000,
+  "aiDemandChancePerYearBp": 800,
+  "factoryArchetypes": ["aaa", "publisher"],
+  "buyerArchetypes": ["publisher", "aaa"],
+  "grudgeBp": -5000,
+  "aiBrandFromScoreBp": 80000,
+  "auction": { "startFactorBp": 4000, "biddersMin": 2, "biddersMax": 3, "aiMaxCashBp": 4000, "winStepBp": 500, "unsoldDiscountBp": 2500, "unsoldOfferWeeks": 104 },
+  "names": [
+    "Sternenfeuer", "Eisenkrone", "Nebelreich", "Glutherz", "Silberpfad", "Donnerklinge", "Mondsegler", "Schattenwacht", "Kristallsturm", "Wolkenstadt",
+    "Funkenflug", "Drachenbucht", "Eichenschwur", "Sturmbrecher", "Lichtgarten", "Rostwüste", "Frostfeuer", "Himmelsrad", "Tiefenruf", "Bernsteinjagd",
+    "Pixelritter", "Turbofuchs", "Nachtfalke", "Wellenläufer", "Steinmond", "Feuerwerk Rallye", "Zeitenwende", "Kupferkrieger", "Blitzkobold", "Gezeitenlied",
+    "Morgenrot", "Ascheklinge", "Sonnenwanderer", "Glücksrad Kids", "Orbitwerk", "Seenebel", "Funkturm", "Kometenjagd", "Weltenbaum", "Vulkaninsel"
+  ]
+}

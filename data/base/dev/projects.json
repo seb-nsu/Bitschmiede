@@ -1,0 +1,23 @@
+{
+  "featureSlots": {
+    "klein": 3,
+    "mittel": 5,
+    "gross": 7,
+    "aaa": 9
+  },
+  "resumeWeeks": 3,
+  "archiveSavingBp": 2500,
+  "steerGenreKeepBp": 3000,
+  "scopeFromYear": {
+    "klein": 1980,
+    "mittel": 1980,
+    "gross": 1990,
+    "aaa": 1998
+  },
+  "gatePhase": {
+    "klein": null,
+    "mittel": "preprod",
+    "gross": "vslice",
+    "aaa": "vslice"
+  }
+}

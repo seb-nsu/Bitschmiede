@@ -1,0 +1,15 @@
+{
+  "maxFigures": 40,
+  "tiredBurnoutBp": 6000,
+  "happyMoraleBp": 8000,
+  "hitWeeks": 4,
+  "oldHardwareBp": 9000,
+  "boxesStockShareBp": 5000,
+  "epochs": [
+    { "id": "80", "from": 1980 },
+    { "id": "90", "from": 1990 },
+    { "id": "00", "from": 2000 },
+    { "id": "10", "from": 2010 },
+    { "id": "20", "from": 2020 }
+  ]
+}

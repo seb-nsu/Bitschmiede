@@ -1,0 +1,29 @@
+{
+  "fairWeekOfYear": 22,
+  "tradeFairUntilYear": 1995,
+  "conferenceWeekOfYear": 10,
+  "conferenceFromYear": 1988,
+  "trailerBp": 1500,
+  "demoBp": 3000,
+  "demoBadBp": 2000,
+  "announceFactorBp": 15000,
+  "announceSeedBp": 1000,
+  "tradeShelfExtraWeeks": 4,
+  "tradeShelfWithinWeeks": 52,
+  "aiShows": 2,
+  "conferenceReputationBp": 50,
+  "booths": {
+    "klein": {
+      "effectBp": 7000,
+      "costCent": 100000
+    },
+    "mittel": {
+      "effectBp": 10000,
+      "costCent": 300000
+    },
+    "gross": {
+      "effectBp": 14000,
+      "costCent": 1000000
+    }
+  }
+}

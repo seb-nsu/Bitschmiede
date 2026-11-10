@@ -1,0 +1,268 @@
+{
+  "countAnchors": [
+    [
+      1980,
+      20
+    ],
+    [
+      1990,
+      30
+    ],
+    [
+      2000,
+      45
+    ],
+    [
+      2010,
+      55
+    ],
+    [
+      2020,
+      60
+    ]
+  ],
+  "countVariationBp": 1000,
+  "minStudios": 20,
+  "maxStudios": 60,
+  "sizeSharesBp": {
+    "klein": 6000,
+    "mittel": 3000,
+    "gross": 1000
+  },
+  "teamsBySize": {
+    "klein": 1,
+    "mittel": 2,
+    "gross": 4
+  },
+  "teamSizeAnchors": [
+    [
+      1980,
+      3
+    ],
+    [
+      1985,
+      4
+    ],
+    [
+      1990,
+      5
+    ],
+    [
+      2000,
+      7
+    ],
+    [
+      2040,
+      7
+    ]
+  ],
+  "maxArchetypeShareBp": 3500,
+  "sizeArchetypes": {
+    "gross": [
+      {
+        "id": "aaa",
+        "minShareBp": 1000
+      },
+      {
+        "id": "publisher",
+        "minShareBp": 0
+      }
+    ],
+    "mittel": [
+      {
+        "id": "publisher",
+        "minShareBp": 1000
+      },
+      {
+        "id": "mittelklasse",
+        "minShareBp": 0
+      },
+      {
+        "id": "engine",
+        "minShareBp": 0
+      }
+    ],
+    "klein": [
+      {
+        "id": "engine",
+        "minShareBp": 1000
+      },
+      {
+        "id": "indie",
+        "minShareBp": 1000
+      },
+      {
+        "id": "mittelklasse",
+        "minShareBp": 1000
+      }
+    ]
+  },
+  "archetypes": {
+    "indie": {
+      "weightsBp": {
+        "q": 8000,
+        "m": 2000,
+        "k": 12000,
+        "r": 6000,
+        "p": 3000
+      },
+      "engineLagYears": 3,
+      "strengthOffset": -3,
+      "polishWeeks": 2,
+      "mittelShareBp": 1500,
+      "maxPlatforms": 1,
+      "maxTeams": 1,
+      "reserveMonths": 3,
+      "minScoreBp": 55000,
+      "budgetBp": {
+        "projekte": 7000,
+        "engine": 1000,
+        "marketing": 500,
+        "uebernahmen": 0,
+        "ruecklage": 1500
+      }
+    },
+    "mittelklasse": {
+      "weightsBp": {
+        "q": 10000,
+        "m": 6000,
+        "k": 10000,
+        "r": 8000,
+        "p": 6000
+      },
+      "engineLagYears": 2,
+      "strengthOffset": 0,
+      "polishWeeks": 4,
+      "mittelShareBp": 5000,
+      "maxPlatforms": 2,
+      "maxTeams": 3,
+      "reserveMonths": 4,
+      "minScoreBp": 55000,
+      "budgetBp": {
+        "projekte": 6000,
+        "engine": 1000,
+        "marketing": 1000,
+        "uebernahmen": 500,
+        "ruecklage": 1500
+      }
+    },
+    "aaa": {
+      "weightsBp": {
+        "q": 12000,
+        "m": 10000,
+        "k": 6000,
+        "r": 9000,
+        "p": 10000
+      },
+      "engineLagYears": 1,
+      "strengthOffset": 4,
+      "polishWeeks": 6,
+      "mittelShareBp": 9000,
+      "maxPlatforms": 3,
+      "maxTeams": 6,
+      "reserveMonths": 6,
+      "minScoreBp": 65000,
+      "budgetBp": {
+        "projekte": 5500,
+        "engine": 1000,
+        "marketing": 1500,
+        "uebernahmen": 500,
+        "ruecklage": 1500
+      }
+    },
+    "engine": {
+      "weightsBp": {
+        "q": 9000,
+        "m": 4000,
+        "k": 9000,
+        "r": 7000,
+        "p": 6000
+      },
+      "engineLagYears": 0,
+      "strengthOffset": 2,
+      "polishWeeks": 4,
+      "mittelShareBp": 4000,
+      "maxPlatforms": 2,
+      "maxTeams": 2,
+      "reserveMonths": 4,
+      "minScoreBp": 55000,
+      "budgetBp": {
+        "projekte": 4500,
+        "engine": 3000,
+        "marketing": 500,
+        "uebernahmen": 500,
+        "ruecklage": 1500
+      }
+    },
+    "publisher": {
+      "weightsBp": {
+        "q": 7000,
+        "m": 12000,
+        "k": 8000,
+        "r": 10000,
+        "p": 8000
+      },
+      "engineLagYears": 2,
+      "strengthOffset": 0,
+      "polishWeeks": 3,
+      "mittelShareBp": 6000,
+      "maxPlatforms": 3,
+      "maxTeams": 5,
+      "reserveMonths": 6,
+      "minScoreBp": 55000,
+      "budgetBp": {
+        "projekte": 5000,
+        "engine": 500,
+        "marketing": 2000,
+        "uebernahmen": 1000,
+        "ruecklage": 1500
+      }
+    }
+  },
+  "strengthShift": -8,
+  "strengthSd": 6,
+  "areaSd": 5,
+  "startCashMonths": [
+    12,
+    30
+  ],
+  "minCapitalCent": [
+    [
+      1980,
+      5000000
+    ],
+    [
+      1990,
+      10000000
+    ],
+    [
+      2000,
+      20000000
+    ],
+    [
+      2010,
+      40000000
+    ],
+    [
+      2020,
+      80000000
+    ],
+    [
+      2030,
+      160000000
+    ],
+    [
+      2040,
+      320000000
+    ]
+  ],
+  "candidates": 20,
+  "foundCashMonths": 9,
+  "growCashMonths": 18,
+  "payoutAboveMonths": 24,
+  "creditMonths": 12,
+  "creditInterestPerMonthBp": 100,
+  "densityPerReleaseBp": 2500,
+  "densityWindowWeeks": 2,
+  "historyYears": 2
+}

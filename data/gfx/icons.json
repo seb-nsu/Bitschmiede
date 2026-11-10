@@ -1,0 +1,452 @@
+{
+  "_comment": "UI-R60 ff.: CC0-Motive (Kenney 1-Bit Pack, public/CREDITS.md) für Meldungen, Entscheidungen und Räume. Einfarbig, die Oberfläche färbt sie in der Textfarbe. Berichtszeilen: erster Eintrag in „logs“, dessen Text im Schlüssel vorkommt (mit ^ am Anfang: Schlüssel beginnt damit).",
+  "icons": {
+    "buch": "gfx/icons/buch.png",
+    "bug": "gfx/icons/bug.png",
+    "chip": "gfx/icons/chip.png",
+    "forschung": "gfx/icons/forschung.png",
+    "geld": "gfx/icons/geld.png",
+    "gruppe": "gfx/icons/gruppe.png",
+    "info": "gfx/icons/info.png",
+    "kantine": "gfx/icons/kantine.png",
+    "krise": "gfx/icons/krise.png",
+    "labor": "gfx/icons/labor.png",
+    "markt": "gfx/icons/markt.png",
+    "messe": "gfx/icons/messe.png",
+    "musik": "gfx/icons/musik.png",
+    "personal": "gfx/icons/personal.png",
+    "preis": "gfx/icons/preis.png",
+    "presse": "gfx/icons/presse.png",
+    "projekt": "gfx/icons/projekt.png",
+    "schild": "gfx/icons/schild.png",
+    "technik": "gfx/icons/technik.png",
+    "vertrag": "gfx/icons/vertrag.png"
+  },
+  "rooms": {
+    "akademie": "buch",
+    "forschungslabor": "forschung",
+    "kantine": "kantine",
+    "motionCapture": "personal",
+    "performanceCapture": "gruppe",
+    "qualitaetszentrum": "schild",
+    "rechenzentrum": "chip",
+    "serverraum": "technik",
+    "showroom": "projekt",
+    "testlabor": "labor",
+    "tonstudio": "musik"
+  },
+  "events": {
+    "aboDeal": "vertrag",
+    "abwerbung": "personal",
+    "anforderungVerpasst": "projekt",
+    "auftrag": "vertrag",
+    "bewerbung": "personal",
+    "cheaterWelle": "krise",
+    "datenleck": "krise",
+    "einstellenVorschlag": "personal",
+    "exklusivdeal": "vertrag",
+    "gate": "projekt",
+    "gegenangebot": "geld",
+    "gehaltsforderung": "personal",
+    "goldReview": "presse",
+    "grosskunde": "vertrag",
+    "hardwareBundle": "vertrag",
+    "hardwareUpgrade": "technik",
+    "hauptversammlung": "geld",
+    "heftBeilage": "vertrag",
+    "katalog": "info",
+    "konkursmasse": "geld",
+    "kooperation": "vertrag",
+    "kritischerBug": "bug",
+    "launchAnfrage": "vertrag",
+    "ligaAnfrage": "vertrag",
+    "lizenzanfrage": "vertrag",
+    "lootboxDebatte": "krise",
+    "markenanfrage": "vertrag",
+    "markenjubilaeum": "preis",
+    "merchWahl": "vertrag",
+    "modsKaputt": "bug",
+    "nachproduktion": "projekt",
+    "neubau": "projekt",
+    "preisschock": "geld",
+    "prototypReview": "presse",
+    "publisherAbbruch": "vertrag",
+    "rabattwoche": "geld",
+    "releaseDuell": "krise",
+    "schutzEntfernen": "projekt",
+    "schwererBug": "bug",
+    "serverAusfall": "technik",
+    "suche": "personal",
+    "verwertung": "geld"
+  },
+  "logs": [
+    [
+      "award",
+      "preis"
+    ],
+    [
+      "legendary",
+      "preis"
+    ],
+    [
+      "goalReached",
+      "preis"
+    ],
+    [
+      "scenarioWon",
+      "preis"
+    ],
+    [
+      "milestone",
+      "preis"
+    ],
+    [
+      "fair",
+      "messe"
+    ],
+    [
+      "conference",
+      "messe"
+    ],
+    [
+      "Bug",
+      "bug"
+    ],
+    [
+      "certFailed",
+      "bug"
+    ],
+    [
+      "modsBroken",
+      "bug"
+    ],
+    [
+      "autoPatch",
+      "bug"
+    ],
+    [
+      "patchDone",
+      "bug"
+    ],
+    [
+      "protectionCracked",
+      "bug"
+    ],
+    [
+      "insolven",
+      "krise"
+    ],
+    [
+      "burnout",
+      "krise"
+    ],
+    [
+      "leak",
+      "krise"
+    ],
+    [
+      "serverOutage",
+      "krise"
+    ],
+    [
+      "debtSymptom",
+      "krise"
+    ],
+    [
+      "satisfactionLow",
+      "krise"
+    ],
+    [
+      "disappointment",
+      "krise"
+    ],
+    [
+      "Failed",
+      "krise"
+    ],
+    [
+      "Missed",
+      "krise"
+    ],
+    [
+      "scenarioLost",
+      "krise"
+    ],
+    [
+      "goalFailed",
+      "krise"
+    ],
+    [
+      "AtRisk",
+      "krise"
+    ],
+    [
+      "hired",
+      "personal"
+    ],
+    [
+      "fired",
+      "personal"
+    ],
+    [
+      "person",
+      "personal"
+    ],
+    [
+      "^key",
+      "personal"
+    ],
+    [
+      "poach",
+      "personal"
+    ],
+    [
+      "producer",
+      "personal"
+    ],
+    [
+      "leadOverload",
+      "personal"
+    ],
+    [
+      "searchEmpty",
+      "personal"
+    ],
+    [
+      "stock",
+      "geld"
+    ],
+    [
+      "^ipo",
+      "geld"
+    ],
+    [
+      "loan",
+      "geld"
+    ],
+    [
+      "^tax",
+      "geld"
+    ],
+    [
+      "capital",
+      "geld"
+    ],
+    [
+      "excessCash",
+      "geld"
+    ],
+    [
+      "price",
+      "geld"
+    ],
+    [
+      "returns",
+      "geld"
+    ],
+    [
+      "licenseFees",
+      "geld"
+    ],
+    [
+      "acq",
+      "geld"
+    ],
+    [
+      "publisher",
+      "vertrag"
+    ],
+    [
+      "contract",
+      "vertrag"
+    ],
+    [
+      "license",
+      "vertrag"
+    ],
+    [
+      "brand",
+      "vertrag"
+    ],
+    [
+      "exclusiveDeal",
+      "vertrag"
+    ],
+    [
+      "subscription",
+      "vertrag"
+    ],
+    [
+      "bundle",
+      "vertrag"
+    ],
+    [
+      "coverMount",
+      "vertrag"
+    ],
+    [
+      "merch",
+      "vertrag"
+    ],
+    [
+      "moduleLicensed",
+      "vertrag"
+    ],
+    [
+      "platform",
+      "markt"
+    ],
+    [
+      "marketPhase",
+      "markt"
+    ],
+    [
+      "future",
+      "markt"
+    ],
+    [
+      "^ai",
+      "markt"
+    ],
+    [
+      "engineFirm",
+      "markt"
+    ],
+    [
+      "engineRival",
+      "markt"
+    ],
+    [
+      "pioneer",
+      "markt"
+    ],
+    [
+      "hardware",
+      "technik"
+    ],
+    [
+      "devkit",
+      "technik"
+    ],
+    [
+      "techUpdate",
+      "technik"
+    ],
+    [
+      "vendorUpdate",
+      "technik"
+    ],
+    [
+      "research",
+      "technik"
+    ],
+    [
+      "^engine",
+      "technik"
+    ],
+    [
+      "^module",
+      "technik"
+    ],
+    [
+      "^room",
+      "technik"
+    ],
+    [
+      "^live",
+      "technik"
+    ],
+    [
+      "^ops",
+      "technik"
+    ],
+    [
+      "released",
+      "projekt"
+    ],
+    [
+      "earlyAccess",
+      "projekt"
+    ],
+    [
+      "playtest",
+      "projekt"
+    ],
+    [
+      "review",
+      "presse"
+    ],
+    [
+      "major",
+      "projekt"
+    ],
+    [
+      "request",
+      "projekt"
+    ],
+    [
+      "steered",
+      "projekt"
+    ],
+    [
+      "postponed",
+      "projekt"
+    ],
+    [
+      "content",
+      "projekt"
+    ],
+    [
+      "certStarted",
+      "projekt"
+    ],
+    [
+      "jubilee",
+      "projekt"
+    ],
+    [
+      "reprint",
+      "projekt"
+    ],
+    [
+      "collection",
+      "projekt"
+    ],
+    [
+      "^info",
+      "info"
+    ],
+    [
+      "unlock",
+      "info"
+    ],
+    [
+      "delegation",
+      "info"
+    ],
+    [
+      "launchSubsidy",
+      "geld"
+    ],
+    [
+      "protection",
+      "technik"
+    ],
+    [
+      "location",
+      "gruppe"
+    ],
+    [
+      "move",
+      "gruppe"
+    ],
+    [
+      "officeExtended",
+      "gruppe"
+    ],
+    [
+      "comfortBought",
+      "gruppe"
+    ]
+  ]
+}

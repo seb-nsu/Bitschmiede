@@ -1,0 +1,23 @@
+{
+  "layoutOrder": ["garage", "etage", "buerohaus", "gebaeude", "campus"],
+  "epochFactorsBp": [[1980, 4000], [1990, 7000], [2000, 10000], [2010, 12500], [2020, 15000], [2030, 17000]],
+  "copyFactorBp": 7000,
+  "upgradeYears": [1990, 2000, 2010, 2020, 2030],
+  "hardware": { "perPlaceLevelCent": 300000, "upkeepBp": 100, "baseBp": 9000, "perLevelBp": 500, "agePerYearBp": 400, "minBp": 7000, "bugsPerLevelBp": 200, "startLevel": 2, "maxLevel": 5, "symptomBelowBp": 9000 },
+  "comfort": { "perPlaceLevelCent": 150000, "upkeepBp": 100, "moralePerLevel": 2, "burnoutPerLevelBp": 1000, "maxLevel": 5 },
+  "rooms": [
+    { "id": "tonstudio", "slots": 1, "priceCent": 25000000, "upkeepCent": 400000, "from": 1990, "minLayout": "etage", "effects": { "areaQuality": { "sound": 1000 } } },
+    { "id": "testlabor", "slots": 1, "priceCent": 20000000, "upkeepCent": 500000, "from": 1990, "minLayout": "etage", "effects": { "qaBp": 3000, "playtestSpreadBp": -2000 } },
+    { "id": "serverraum", "slots": 1, "priceCent": 40000000, "upkeepCent": 1500000, "from": 1995, "minLayout": "buerohaus", "effects": {} },
+    { "id": "motionCapture", "slots": 1, "priceCent": 120000000, "upkeepCent": 2000000, "from": 2000, "minLayout": "gebaeude", "effects": { "featureQuality": 1500, "areaQuality": { "story": 500 } } },
+    { "id": "showroom", "slots": 1, "priceCent": 30000000, "upkeepCent": 600000, "from": 1985, "minLayout": "etage", "effects": {} },
+    { "id": "kantine", "slots": 1, "priceCent": 80000000, "upkeepCent": 2500000, "from": 1995, "minLayout": "gebaeude", "effects": { "moralePoints": 3 } },
+    { "id": "rechenzentrum", "slots": 2, "priceCent": 200000000, "upkeepCent": 6000000, "from": 2005, "minLayout": "gebaeude", "effects": {} },
+    { "id": "forschungslabor", "slots": 2, "priceCent": 150000000, "upkeepCent": 4000000, "from": 2000, "minLayout": "gebaeude", "effects": { "researchBp": 2000 } },
+    { "id": "qualitaetszentrum", "slots": 2, "priceCent": 100000000, "upkeepCent": 3000000, "from": 2005, "minLayout": "gebaeude", "effects": { "qaBp": 6000, "bugsBp": -1000 } },
+    { "id": "performanceCapture", "slots": 2, "priceCent": 250000000, "upkeepCent": 5000000, "from": 2010, "minLayout": "campus", "effects": { "featureQuality": 2500, "areaQuality": { "story": 1000 } } },
+    { "id": "akademie", "slots": 2, "priceCent": 120000000, "upkeepCent": 3500000, "from": 1995, "minLayout": "gebaeude", "effects": { "hireQualityPoints": 5 } }
+  ],
+  "capacityRooms": ["tonstudio", "testlabor", "serverraum", "rechenzentrum"],
+  "animationFeatures": ["animierteFiguren", "motionCapture"]
+}

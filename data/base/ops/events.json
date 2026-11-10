@@ -1,0 +1,17 @@
+{
+  "_comment": "S06 Abschnitt 9 (Etappe 5.9): Ereignisse im Betrieb. Beträge in 1980er-Cent (hochgerechnet mit dem Lohnniveau), Zufriedenheit in bp (100 = 1 Punkt).",
+  "lowSatisfactionBp": 4000,
+  "severeBug": { "cooldownWeeks": 8, "hotfixCentPerBug": 50000, "hotfixSatisfactionBp": 300, "ignoreSatisfactionBp": 200 },
+  "outage": { "compensationCentPerPlayer": 100, "compensationSatisfactionBp": 400, "sitOutSatisfactionBp": 300 },
+  "cheater": { "baseRiskBp": 100, "uncoveredFactorBp": 20000, "playersPerCommunityPerson": 50000, "antiCheatCent": 2000000, "antiCheatSatisfactionBp": 200, "banShareBp": 300, "banSatisfactionBp": 100, "ignoreSatisfactionBp": 500 },
+  "lootbox": { "fromYear": 2015, "fromHardnessBp": 6000, "perTenPointsBp": 200, "intensiveFactorBp": 15000, "softenBp": 2000, "abolishSatisfactionBp": 300, "defendSatisfactionBp": 800, "defendReputationBp": 300 },
+  "leak": { "fromYear": 2005, "baseRiskBp": 50, "affectedBp": 10000, "compensationCentPerPlayer": 20, "discloseSatisfactionBp": 200 },
+  "league": { "fromYear": 2000, "minPlayers": 200000, "riskBp": 100, "genres": ["shooter", "kampfspiel", "strategie", "sportspiel", "rennspiel"], "playersBp": 500, "awarenessBp": 500 },
+  "chains": {
+    "serverAusfall:aussitzen": { "def": "ausfallNachwirkung", "delayWeeks": [2, 6], "chanceBp": 5000 },
+    "datenleck:stillBeheben": { "def": "datenleckEntdeckt", "delayWeeks": [2, 12], "chanceBp": 5000 },
+    "cheaterWelle:nichts": { "def": "cheaterAbwanderung", "delayWeeks": [2, 6], "chanceBp": 6000 },
+    "lootboxDebatte:verteidigen": { "def": "lootboxBehoerde", "delayWeeks": [4, 12], "chanceBp": 4000 },
+    "schwererBug:ignorieren": { "def": "bugShitstorm", "delayWeeks": [1, 4], "chanceBp": 3000 }
+  }
+}

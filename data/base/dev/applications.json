@@ -1,0 +1,37 @@
+{
+  "firstAfterReleases": 1,
+  "chancePerWeekBp": 500,
+  "baseStrength": [
+    30,
+    45
+  ],
+  "focusBonus": [
+    15,
+    30
+  ],
+  "salaryBaseCent": 150000,
+  "salaryPerFocusPointCent": 2000,
+  "firstNames": [
+    "Anna",
+    "Ben",
+    "Clara",
+    "David",
+    "Elif",
+    "Frank",
+    "Greta",
+    "Hakan",
+    "Ines",
+    "Jonas",
+    "Katrin",
+    "Lukas",
+    "Mira",
+    "Nils",
+    "Olga",
+    "Paul",
+    "Rosa",
+    "Sven",
+    "Tara",
+    "Ugo"
+  ],
+  "lastInitials": "ABDEFGHKLMNPRSTVW"
+}

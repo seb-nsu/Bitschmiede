@@ -1,0 +1,21 @@
+{
+  "_comment": "S07 FRM-R32 bis FRM-R34, FRM-R72, Tabelle 5.5 (Etappe 6a.6): Regionen und Standorte. Die Firma startet in der Heimatregion; Lohnfaktor gegenüber dem Basisgehalt, Förderung auf Lohnkosten, Steuersatz auf den Gewinnanteil der Region.",
+  "home": "na",
+  "regions": {
+    "na": { "wageFactorBp": 10000, "subsidyBp": 0, "taxRateBp": 2500 },
+    "eu": { "wageFactorBp": 9000, "subsidyBp": 1000, "taxRateBp": 3000 },
+    "jp": { "wageFactorBp": 10500, "subsidyBp": 0, "taxRateBp": 3000 },
+    "cn": { "wageFactorBp": 6000, "subsidyBp": 1500, "taxRateBp": 2500 },
+    "latam": { "wageFactorBp": 6000, "subsidyBp": 1000, "taxRateBp": 3000 }
+  },
+  "locations": {
+    "buildWeeks": 26,
+    "buildWorkBp": 5000,
+    "places": 50,
+    "depositMonths": 3,
+    "onboardWeeks": 8,
+    "maxLocations": 10,
+    "leadUnits": 1,
+    "closeReputationBp": 1000
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "makers": {
+    "morgenstern": [
+      "nova",
+      "pocket",
+      "sonata",
+      "atlas",
+      "faro",
+      "wuerfel",
+      "delta",
+      "kreisel",
+      "delta2",
+      "kreisel2",
+      "wandel",
+      "wandel2"
+    ],
+    "wellenreiter": [
+      "meridian",
+      "vega",
+      "taschenblitz",
+      "orbit",
+      "pyramide"
+    ],
+    "lichtblick": [
+      "prisma",
+      "zenit",
+      "funke",
+      "quasar",
+      "funke2",
+      "quasar2",
+      "quasar3"
+    ],
+    "sonnenhaus": [
+      "zentrum",
+      "helios",
+      "helios2",
+      "helios3",
+      "helios4",
+      "wolke"
+    ],
+    "weitblick": [
+      "reisepc",
+      "brille"
+    ],
+    "glanzwerk": [
+      "lumen",
+      "cdwerk"
+    ]
+  },
+  "relation": {
+    "startBp": 5000,
+    "wave1Bp": 8000,
+    "wave2AutoBp": 5000,
+    "wave2FreeBp": 7000,
+    "lowBp": 3000,
+    "premiumBp": 8500,
+    "launchAskBp": 6000,
+    "minReputationBp": 30000
+  },
+  "announceMonths": [
+    12,
+    24
+  ],
+  "wave1Months": [
+    18,
+    24
+  ],
+  "wave2Months": [
+    9,
+    12
+  ],
+  "devkitFeeAnchorsCent": [
+    [
+      1980,
+      1000000
+    ],
+    [
+      2000,
+      2500000
+    ],
+    [
+      2020,
+      5000000
+    ],
+    [
+      2040,
+      8000000
+    ]
+  ],
+  "launchWeeks": 8,
+  "launchDensityBp": 5000,
+  "launchInterestBp": 12000,
+  "launchRequests": 3,
+  "launchSubsidyAnchorsCent": [
+    [
+      1980,
+      5000000
+    ],
+    [
+      2000,
+      50000000
+    ],
+    [
+      2020,
+      200000000
+    ],
+    [
+      2040,
+      300000000
+    ]
+  ],
+  "clockCut": {
+    "chanceBp": 2000,
+    "cutBp": 1000
+  },
+  "rangeBp": 1500,
+  "licenseCutBp": 200,
+  "strictCertBp": 8000,
+  "exclusive": {
+    "payAnchorsCent": [
+      [
+        1980,
+        10000000
+      ],
+      [
+        2000,
+        100000000
+      ],
+      [
+        2020,
+        500000000
+      ],
+      [
+        2040,
+        800000000
+      ]
+    ],
+    "scopeBp": { "klein": 3000, "mittel": 10000, "gross": 20000, "aaa": 35000 },
+    "weeks": 52
+  },
+  "hitScoreBp": 80000,
+  "flopScoreBp": 50000,
+  "deltas": {
+    "hit": 500,
+    "flop": -300,
+    "weakVersion": -300,
+    "exclusive": 1000,
+    "rivalExclusive": -500,
+    "certFirst": 100,
+    "certFail": -400,
+    "launch": 500,
+    "missedLaunch": -1000,
+    "rejectLaunch": -300
+  }
+}

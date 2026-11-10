@@ -1,0 +1,912 @@
+{
+  "chancePerWeekBp": 1500,
+  "events": [
+    {
+      "id": "messe",
+      "class": "entscheidung",
+      "trigger": {
+        "alle": [
+          {
+            "jahr": {
+              ">=": 1981
+            }
+          },
+          {
+            "firma.releases": {
+              ">=": 1
+            }
+          },
+          {
+            "firma.projekte": {
+              ">=": 1
+            }
+          }
+        ]
+      },
+      "weightBp": 10000,
+      "cooldownWeeks": 52,
+      "target": "projekt",
+      "options": [
+        {
+          "id": "stand",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": -300000
+            },
+            {
+              "type": "trend",
+              "on": "genre",
+              "bp": 600
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "besuch",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": -50000
+            },
+            {
+              "type": "trend",
+              "on": "genre",
+              "bp": 200
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "nein",
+          "effects": [],
+          "isDefault": true
+        }
+      ]
+    },
+    {
+      "id": "interview",
+      "class": "entscheidung",
+      "trigger": {
+        "alle": [
+          {
+            "firma.releases": {
+              ">=": 1
+            }
+          },
+          {
+            "firma.projekte": {
+              ">=": 1
+            }
+          }
+        ]
+      },
+      "weightBp": 8000,
+      "cooldownWeeks": 26,
+      "target": "projekt",
+      "options": [
+        {
+          "id": "zusagen",
+          "effects": [
+            {
+              "type": "aufwand",
+              "pwPerPerson": 1
+            },
+            {
+              "type": "trend",
+              "on": "thema",
+              "bp": 400
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "absagen",
+          "effects": [],
+          "isDefault": true
+        }
+      ]
+    },
+    {
+      "id": "fortbildung",
+      "class": "entscheidung",
+      "trigger": {
+        "alle": [
+          {
+            "firma.kasse": {
+              ">=": 5000
+            }
+          }
+        ]
+      },
+      "weightBp": 8000,
+      "cooldownWeeks": 26,
+      "target": "person",
+      "options": [
+        {
+          "id": "buchen",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": -150000
+            },
+            {
+              "type": "staerke",
+              "who": "ziel",
+              "area": "beste",
+              "points": 4
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "nein",
+          "effects": [],
+          "isDefault": true
+        }
+      ]
+    },
+    {
+      "id": "entwicklungsrechner",
+      "class": "entscheidung",
+      "trigger": {
+        "alle": [
+          {
+            "jahr": {
+              ">=": 1983
+            }
+          },
+          {
+            "firma.kasse": {
+              ">=": 8000
+            }
+          }
+        ]
+      },
+      "weightBp": 5000,
+      "cooldownWeeks": 104,
+      "target": null,
+      "options": [
+        {
+          "id": "kaufen",
+          "effects": [
+            {
+              "type": "geldJePerson",
+              "cent": -150000
+            },
+            {
+              "type": "staerke",
+              "who": "alle",
+              "area": "technik",
+              "points": 3
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "nein",
+          "effects": [],
+          "isDefault": true
+        }
+      ]
+    },
+    {
+      "id": "klon",
+      "class": "entscheidung",
+      "trigger": {
+        "alle": [
+          {
+            "firma.releases": {
+              ">=": 1
+            }
+          },
+          {
+            "produkt.verkauftAktiv": {
+              ">=": 1
+            }
+          }
+        ]
+      },
+      "weightBp": 6000,
+      "cooldownWeeks": 52,
+      "target": "letztesProdukt",
+      "options": [
+        {
+          "id": "anwalt",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": -400000
+            }
+          ],
+          "isDefault": false,
+          "next": [
+            {
+              "def": "klonUrteil",
+              "delayWeeks": [
+                6,
+                12
+              ],
+              "chanceBp": 5000
+            }
+          ]
+        },
+        {
+          "id": "nachlegen",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": -300000
+            },
+            {
+              "type": "nachfrage",
+              "bp": 1000
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "ignorieren",
+          "effects": [
+            {
+              "type": "nachfrage",
+              "bp": -2000
+            }
+          ],
+          "isDefault": true
+        }
+      ],
+      "chain": "krise"
+    },
+    {
+      "id": "radiowerbung",
+      "class": "entscheidung",
+      "trigger": {
+        "alle": [
+          {
+            "firma.releases": {
+              ">=": 1
+            }
+          },
+          {
+            "produkt.verkauftAktiv": {
+              ">=": 1
+            }
+          }
+        ]
+      },
+      "weightBp": 6000,
+      "cooldownWeeks": 26,
+      "target": "letztesProdukt",
+      "options": [
+        {
+          "id": "buchen",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": -250000
+            },
+            {
+              "type": "nachfrage",
+              "bp": 2500
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "nein",
+          "effects": [],
+          "isDefault": true
+        }
+      ]
+    },
+    {
+      "id": "abwerbung",
+      "class": "entscheidung",
+      "trigger": {
+        "alle": [
+          {
+            "firma.mitarbeiter": {
+              ">=": 3
+            }
+          }
+        ]
+      },
+      "weightBp": 5000,
+      "cooldownWeeks": 52,
+      "target": "angestellter",
+      "options": [
+        {
+          "id": "halten",
+          "effects": [
+            {
+              "type": "gehalt",
+              "bp": 2000
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "gehenLassen",
+          "effects": [
+            {
+              "type": "geht"
+            }
+          ],
+          "isDefault": true
+        }
+      ]
+    },
+    {
+      "id": "jugendschutz",
+      "class": "entscheidung",
+      "trigger": {
+        "alle": [
+          {
+            "jahr": {
+              ">=": 1985
+            }
+          },
+          {
+            "firma.inhaltsstufe": {
+              ">=": 2
+            }
+          }
+        ]
+      },
+      "weightBp": 6000,
+      "cooldownWeeks": 104,
+      "target": "letztesProdukt",
+      "options": [
+        {
+          "id": "schnittfassung",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": -200000
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "standhalten",
+          "effects": [
+            {
+              "type": "nachfrage",
+              "bp": -1500
+            }
+          ],
+          "isDefault": true
+        }
+      ]
+    },
+    {
+      "id": "betatest",
+      "class": "entscheidung",
+      "trigger": {
+        "alle": [
+          {
+            "projekt.anteil": {
+              ">=": 5000
+            }
+          },
+          {
+            "projekt.anteil": {
+              "<": 9000
+            }
+          }
+        ]
+      },
+      "weightBp": 7000,
+      "cooldownWeeks": 26,
+      "target": "projekt",
+      "options": [
+        {
+          "id": "annehmen",
+          "effects": [
+            {
+              "type": "bugs",
+              "bp": -2500
+            },
+            {
+              "type": "aufwand",
+              "pwPerPerson": 1
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "ablehnen",
+          "effects": [],
+          "isDefault": true
+        }
+      ],
+      "scope": "projekt"
+    },
+    {
+      "id": "endspurt",
+      "class": "entscheidung",
+      "trigger": {
+        "alle": [
+          {
+            "projekt.anteil": {
+              ">=": 7500
+            }
+          },
+          {
+            "projekt.anteil": {
+              "<": 9500
+            }
+          }
+        ]
+      },
+      "weightBp": 7000,
+      "cooldownWeeks": 26,
+      "target": "projekt",
+      "options": [
+        {
+          "id": "crunch",
+          "effects": [
+            {
+              "type": "aufwand",
+              "pwPerPerson": -2
+            },
+            {
+              "type": "bugs",
+              "bp": 1500
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "normal",
+          "effects": [],
+          "isDefault": true
+        }
+      ],
+      "scope": "projekt"
+    },
+    {
+      "id": "crash1983",
+      "class": "information",
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "historical": {
+        "year": 1983,
+        "weekOfYear": 0
+      }
+    },
+    {
+      "id": "erholung1986",
+      "class": "information",
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "historical": {
+        "year": 1986,
+        "weekOfYear": 13
+      }
+    },
+    {
+      "id": "pcWende1988",
+      "class": "information",
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "historical": {
+        "year": 1988,
+        "weekOfYear": 0
+      }
+    },
+    {
+      "id": "cdZeitalter1993",
+      "class": "information",
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "historical": {
+        "year": 1993,
+        "weekOfYear": 0
+      }
+    },
+    {
+      "id": "dreiD1995",
+      "class": "information",
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [],
+      "historical": {
+        "year": 1995,
+        "weekOfYear": 0
+      }
+    },
+    {
+      "id": "hardware1990",
+      "class": "entscheidung",
+      "trigger": null,
+      "weightBp": 0,
+      "cooldownWeeks": 0,
+      "target": null,
+      "options": [
+        {
+          "id": "kaufen",
+          "effects": [
+            {
+              "type": "geldJePerson",
+              "cent": -200000
+            },
+            {
+              "type": "staerke",
+              "who": "alle",
+              "area": "technik",
+              "points": 5
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "warten",
+          "effects": [],
+          "isDefault": true
+        }
+      ],
+      "historical": {
+        "year": 1990,
+        "weekOfYear": 1
+      }
+    },
+    {
+      "id": "insolvenzwarnung",
+      "class": "entscheidung",
+      "trigger": {
+        "firma.kasse": {
+          "<": 0
+        }
+      },
+      "weightBp": 0,
+      "cooldownWeeks": 13,
+      "target": null,
+      "options": [
+        {
+          "id": "gehaltsverzicht",
+          "effects": [
+            {
+              "type": "gehalt",
+              "who": "alle",
+              "bp": -1500
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "privateinlage",
+          "effects": [
+            {
+              "type": "geldJePerson",
+              "cent": 100000
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "durchhalten",
+          "effects": [],
+          "isDefault": true
+        }
+      ],
+      "forced": true
+    },
+    {
+      "id": "zeitschriftTest",
+      "class": "entscheidung",
+      "trigger": {
+        "alle": [
+          {
+            "firma.releases": {
+              ">=": 1
+            }
+          },
+          {
+            "firma.projekte": {
+              ">=": 1
+            }
+          }
+        ]
+      },
+      "weightBp": 6000,
+      "cooldownWeeks": 39,
+      "target": "projekt",
+      "options": [
+        {
+          "id": "schicken",
+          "effects": [
+            {
+              "type": "aufwand",
+              "pwPerPerson": 1
+            },
+            {
+              "type": "trend",
+              "on": "genre",
+              "bp": 300
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "nein",
+          "effects": [],
+          "isDefault": true
+        }
+      ]
+    },
+    {
+      "id": "sammlung",
+      "class": "entscheidung",
+      "trigger": {
+        "alle": [
+          {
+            "jahr": {
+              ">=": 1982
+            }
+          },
+          {
+            "produkt.verkauftAktiv": {
+              ">=": 1
+            }
+          }
+        ]
+      },
+      "weightBp": 5000,
+      "cooldownWeeks": 52,
+      "target": "letztesProdukt",
+      "options": [
+        {
+          "id": "zustimmen",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": 300000
+            },
+            {
+              "type": "nachfrage",
+              "bp": -2000
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "ablehnen",
+          "effects": [],
+          "isDefault": true
+        }
+      ]
+    },
+    {
+      "id": "fanclub",
+      "class": "entscheidung",
+      "trigger": {
+        "alle": [
+          {
+            "firma.releases": {
+              ">=": 2
+            }
+          },
+          {
+            "produkt.verkauftAktiv": {
+              ">=": 1
+            }
+          }
+        ]
+      },
+      "weightBp": 5000,
+      "cooldownWeeks": 52,
+      "target": "letztesProdukt",
+      "options": [
+        {
+          "id": "unterstuetzen",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": -80000
+            },
+            {
+              "type": "nachfrage",
+              "bp": 1200
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "nein",
+          "effects": [],
+          "isDefault": true
+        }
+      ]
+    },
+    {
+      "id": "festplatte",
+      "class": "entscheidung",
+      "trigger": {
+        "alle": [
+          {
+            "jahr": {
+              ">=": 1984
+            }
+          },
+          {
+            "firma.projekte": {
+              ">=": 1
+            }
+          }
+        ]
+      },
+      "weightBp": 4000,
+      "cooldownWeeks": 78,
+      "target": "projekt",
+      "options": [
+        {
+          "id": "ersetzen",
+          "effects": [
+            {
+              "type": "geld",
+              "cent": -80000
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "riskieren",
+          "effects": [
+            {
+              "type": "aufwand",
+              "pwPerPerson": 2
+            }
+          ],
+          "isDefault": true
+        }
+      ]
+    },
+    {
+      "id": "teamwochenende",
+      "class": "entscheidung",
+      "trigger": {
+        "alle": [
+          {
+            "firma.mitarbeiter": {
+              ">=": 3
+            }
+          },
+          {
+            "firma.kasse": {
+              ">=": 5000
+            }
+          }
+        ]
+      },
+      "weightBp": 4000,
+      "cooldownWeeks": 52,
+      "target": null,
+      "options": [
+        {
+          "id": "buchen",
+          "effects": [
+            {
+              "type": "geldJePerson",
+              "cent": -30000
+            },
+            {
+              "type": "staerke",
+              "who": "alle",
+              "area": "beste",
+              "points": 1
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "nein",
+          "effects": [],
+          "isDefault": true
+        }
+      ]
+    },
+    {
+      "id": "gastvortrag",
+      "class": "entscheidung",
+      "trigger": {
+        "alle": [
+          {
+            "firma.releases": {
+              ">=": 3
+            }
+          }
+        ]
+      },
+      "weightBp": 4000,
+      "cooldownWeeks": 52,
+      "target": "person",
+      "options": [
+        {
+          "id": "zusagen",
+          "effects": [
+            {
+              "type": "staerke",
+              "who": "ziel",
+              "area": "beste",
+              "points": 2
+            },
+            {
+              "type": "geld",
+              "cent": 20000
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "absagen",
+          "effects": [],
+          "isDefault": true
+        }
+      ]
+    },
+    {
+      "id": "clubTreffen",
+      "class": "entscheidung",
+      "trigger": {
+        "alle": [
+          {
+            "projekt.anteil": {
+              ">=": 3000
+            }
+          },
+          {
+            "projekt.anteil": {
+              "<": 6000
+            }
+          }
+        ]
+      },
+      "weightBp": 5000,
+      "cooldownWeeks": 26,
+      "target": "projekt",
+      "options": [
+        {
+          "id": "vorfuehren",
+          "effects": [
+            {
+              "type": "bugs",
+              "bp": -1000
+            },
+            {
+              "type": "trend",
+              "on": "thema",
+              "bp": 200
+            },
+            {
+              "type": "aufwand",
+              "pwPerPerson": 1
+            }
+          ],
+          "isDefault": false
+        },
+        {
+          "id": "nein",
+          "effects": [],
+          "isDefault": true
+        }
+      ],
+      "scope": "projekt"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "perUpdateBp": 800,
+  "maintenancePerPwBp": 100,
+  "tempoPerDebtBp": 4000,
+  "bugsPerDebtBp": 10000,
+  "updateCostPerDebtBp": 10000,
+  "rebuildRecommendBp": 8000,
+  "highDebtCostFactorBp": 20000,
+  "afterRebuildBp": 500,
+  "recommendCooldownWeeks": 52
+}

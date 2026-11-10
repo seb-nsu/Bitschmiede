@@ -1,0 +1,302 @@
+{
+  "spontaneousBp": 5,
+  "competitionKappaBp": 5000,
+  "competitionDensityAnchors": [
+    [
+      1980,
+      4000
+    ],
+    [
+      1982,
+      30000
+    ],
+    [
+      1985,
+      40000
+    ],
+    [
+      1990,
+      80000
+    ],
+    [
+      1995,
+      100000
+    ],
+    [
+      2000,
+      120000
+    ],
+    [
+      2040,
+      160000
+    ]
+  ],
+  "scopeDemandBp": {
+    "klein": 10000,
+    "mittel": 22000,
+    "gross": 50000,
+    "aaa": 95000
+  },
+  "scopeEraAnchors": {
+    "klein": [
+      [
+        1995,
+        10000
+      ],
+      [
+        2005,
+        9500
+      ],
+      [
+        2020,
+        8500
+      ],
+      [
+        2040,
+        8500
+      ]
+    ],
+    "mittel": [
+      [
+        1995,
+        10000
+      ],
+      [
+        2005,
+        9500
+      ],
+      [
+        2020,
+        9000
+      ],
+      [
+        2040,
+        9000
+      ]
+    ],
+    "gross": [
+      [
+        1995,
+        10000
+      ],
+      [
+        2005,
+        11000
+      ],
+      [
+        2020,
+        12000
+      ],
+      [
+        2040,
+        12000
+      ]
+    ],
+    "aaa": [
+      [
+        1998,
+        10000
+      ],
+      [
+        2005,
+        11500
+      ],
+      [
+        2020,
+        13000
+      ],
+      [
+        2040,
+        13000
+      ]
+    ]
+  },
+  "qRelDivisorBp": 70000,
+  "qRelMinBp": 3000,
+  "qRelMaxBp": 15000,
+  "decayK0Bp": 1200,
+  "seasonQ4Bp": 16000,
+  "seasonSummerBp": 8000,
+  "retailShareBp": 4000,
+  "digitalShareAnchors": {
+    "konsole": [
+      [
+        1980,
+        0
+      ],
+      [
+        2000,
+        0
+      ],
+      [
+        2010,
+        1000
+      ],
+      [
+        2020,
+        6000
+      ],
+      [
+        2030,
+        9000
+      ],
+      [
+        2040,
+        9500
+      ]
+    ],
+    "handheld": [
+      [
+        1980,
+        0
+      ],
+      [
+        2008,
+        0
+      ],
+      [
+        2015,
+        1500
+      ],
+      [
+        2020,
+        5000
+      ],
+      [
+        2030,
+        9000
+      ],
+      [
+        2040,
+        9500
+      ]
+    ],
+    "heimcomputer": [
+      [
+        1980,
+        0
+      ]
+    ],
+    "pc": [
+      [
+        1980,
+        0
+      ],
+      [
+        2000,
+        0
+      ],
+      [
+        2005,
+        500
+      ],
+      [
+        2010,
+        5000
+      ],
+      [
+        2020,
+        9500
+      ],
+      [
+        2030,
+        9800
+      ],
+      [
+        2040,
+        9800
+      ]
+    ],
+    "mobil": [
+      [
+        1980,
+        10000
+      ]
+    ]
+  },
+  "storeShareBp": 3000,
+  "storeShareReducedBp": 2000,
+  "storeThresholdCent": 1000000000,
+  "discontinuedShareBp": 500,
+  "shelfAfterWeeks": 8,
+  "shelfThresholdBp": 2000,
+  "shelfFactorBp": 5000,
+  "storageCentPerUnitMonth": 2,
+  "recommendWeeks": 8,
+  "neutralForecastBp": 60000,
+  "minSalesWeeks": 26,
+  "priceAnchorsCent": [
+    [
+      1980,
+      3000
+    ],
+    [
+      1990,
+      5000
+    ],
+    [
+      2000,
+      5000
+    ],
+    [
+      2010,
+      6000
+    ],
+    [
+      2020,
+      7000
+    ],
+    [
+      2030,
+      8000
+    ],
+    [
+      2040,
+      9000
+    ]
+  ],
+  "certification": {
+    "weeks": 4,
+    "failDelayWeeks": 4,
+    "thresholdBugs": 15
+  },
+  "extraPlatformEffortBp": 1500,
+  "platformGapEffortBp": 3500,
+  "otherTypeGapBp": 10000,
+  "pricing": {
+    "discountFromYear": 2005,
+    "discountWeeks": [
+      11,
+      25,
+      43,
+      50
+    ],
+    "r1Bp": 30000,
+    "r2Bp": 5000,
+    "habitPerDiscountBp": 500,
+    "habitMinDiscountBp": 3000,
+    "habitDecayPerMonthBp": 100,
+    "discountOptionsBp": [
+      2500,
+      5000
+    ],
+    "ruleAfterWeeks": 52,
+    "ruleDiscountBp": 2500,
+    "ruleMaxDiscountBp": 9000,
+    "curve": [
+      [
+        26,
+        2000
+      ],
+      [
+        52,
+        4000
+      ]
+    ],
+    "aiCutAfterWeeks": 52,
+    "aiCutBp": 2500,
+    "aiDiscountBp": 2500,
+    "aiEvery": 2,
+    "aiEveryPublisher": 3
+  }
+}

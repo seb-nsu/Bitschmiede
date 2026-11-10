@@ -1,0 +1,21 @@
+{
+  "default": "kern",
+  "list": [
+    {
+      "id": "kinder", "demandBp": 9000, "decayBp": 10000, "expectationBp": 9000, "fansBp": 9000, "maxRating": 1,
+      "genreFitBp": { "jumpnrun": 13000, "lernspiel": 13000, "denkspiel": 12000, "musikspiel": 12000, "brettspiel": 11000, "abenteuer": 11000, "strategie": 8000, "kampfspiel": 6000, "shooter": 5000 }
+    },
+    {
+      "id": "gelegenheit", "demandBp": 13000, "decayBp": 13000, "expectationBp": 9500, "fansBp": 8000, "maxRating": 3,
+      "genreFitBp": { "denkspiel": 12000, "brettspiel": 12000, "musikspiel": 12000, "sportspiel": 11000, "rennspiel": 11000, "simulation": 9000, "strategie": 8000, "rollenspiel": 8000 }
+    },
+    {
+      "id": "kern", "demandBp": 10000, "decayBp": 10000, "expectationBp": 10000, "fansBp": 10000, "maxRating": 3,
+      "genreFitBp": {}
+    },
+    {
+      "id": "enthusiasten", "demandBp": 6000, "decayBp": 7000, "expectationBp": 11000, "fansBp": 13000, "maxRating": 3,
+      "genreFitBp": { "rollenspiel": 12000, "strategie": 12000, "simulation": 12000, "aufbauspiel": 11000, "kampfspiel": 11000, "denkspiel": 8000, "musikspiel": 8000, "lernspiel": 6000 }
+    }
+  ]
+}

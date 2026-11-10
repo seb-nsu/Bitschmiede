@@ -1,0 +1,110 @@
+{
+  "_comment": "S07 FRM-R51 bis FRM-R54, FRM-R74, FRM-R75, Formel 5.7 (Etappe 6b.2). Stimmung als ganze Zahl 0–100, Faktoren in bp, Beträge in Cent.",
+  "ipo": {
+    "fromYear": 2000,
+    "minPeople": 60,
+    "profitYears": 3,
+    "minRevenueCent": 5000000000,
+    "minRevenueYear": 2005,
+    "creditNotes": [
+      "A",
+      "B"
+    ],
+    "shareBp": [
+      2000,
+      4900
+    ],
+    "shares": 10000000,
+    "startSentiment": 60,
+    "moodBp": {
+      "boom": 10000,
+      "normal": 5000,
+      "krise": 0
+    }
+  },
+  "priceBaseBp": 7000,
+  "priceSpanBp": 6000,
+  "tickerChangeBp": 1000,
+  "target": {
+    "basis": "umsatz",
+    "growthBp": 10500,
+    "lossBp": 5000,
+    "revenueShareBp": 500
+  },
+  "delta": {
+    "strongBp": 2000,
+    "strongUp": 10,
+    "up": 5,
+    "down": -5,
+    "strongDown": -10,
+    "lossMiss": -15
+  },
+  "meanRevert": {
+    "center": 50,
+    "factorBp": 1000
+  },
+  "events": {
+    "hitScoreBp": 90000,
+    "hit": 5,
+    "flopScoreBp": 50000,
+    "flop": -5,
+    "delay": -3,
+    "kinds": {
+      "crunchEnthuellung": -10,
+      "datenleck": -8,
+      "lootboxDebatte": -5
+    },
+    "acquisition": 3,
+    "record": 3,
+    "phase": {
+      "boom": 2,
+      "normal": 0,
+      "krise": -3
+    },
+    "maxAbs": 15
+  },
+  "dividend": {
+    "shareBp": {
+      "keine": 0,
+      "niedrig": 2000,
+      "hoch": 5000
+    },
+    "delta": {
+      "keine": 0,
+      "niedrig": 1,
+      "hoch": 3
+    },
+    "cut": -8
+  },
+  "raise": {
+    "maxShareBp": 1000,
+    "minSentiment": 70,
+    "delta": -5
+  },
+  "assembly": {
+    "below": 30,
+    "accept": 8,
+    "reject": -10,
+    "savingsBp": 1000,
+    "savingsWeeks": 52,
+    "moraleBp": -500
+  },
+  "excitedFrom": 70,
+  "excitedApplicantsBp": 11000,
+  "hostile": {
+    "_comment": "S13 AUS-R83, AUS-R90, AUS-R91 (1.4, Prüfung Fable: nur feindliche Übernahme gegen den Spieler, Übernahmeschutz, Rückkauf). Verwässerung durch ein Mitarbeiter-Aktienprogramm (ANNAHME).",
+    "dilutionPerYearBp": 150,
+    "majorityBp": 5000,
+    "chanceBp": 2500,
+    "premiumBp": 13000,
+    "decisionWeeks": 8,
+    "cooldownWeeks": 104,
+    "acceptBaseBp": 5000,
+    "acceptCenter": 50,
+    "acceptPerPointBp": 150,
+    "protectionSentiment": -2,
+    "buybackMaxBp": 1000,
+    "buybackPremiumBp": 10500,
+    "buybackSentiment": 2
+  }
+}

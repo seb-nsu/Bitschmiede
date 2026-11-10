@@ -1,0 +1,23 @@
+{
+  "_comment": "Feedback-Formular im Spiel (Wunsch Projektleitung 03.11.2026). email: Empfänger für mailto (leer = kein E-Mail-Knopf). issueUrl: Basis-URL für neue GitHub-Issues, z. B. https://github.com/<besitzer>/<repo>/issues/new (leer = kein Issue-Knopf). Text kopieren gibt es immer. formUrl: Google-/Tally-Formular (Link bis /viewform), formFields: Feldnummern aus dem vorausgefüllten Link (entry.123…), leer = nicht vorausfüllen; formKindLabels: Wortlaut der Auswahl „Art“ im Formular. Mehrere Werte mit derselben Feldnummer landen zusammen in diesem Feld (Kontakt und Spielangaben gehen in „Other Feedback“).",
+  "email": "",
+  "issueUrl": "",
+  "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSedDy1Mwv2xSf64MAVZGgJ-wY0cv26AC9-5KVsoFXrneCh8vg/viewform",
+  "formFields": {
+    "kind": "entry.1997980680",
+    "where": "entry.690140784",
+    "severity": "entry.1851425589",
+    "description": "entry.716649421",
+    "stars": "entry.1089463580",
+    "contact": "entry.1292211472",
+    "context": "entry.1292211472"
+  },
+  "formKindLabels": {
+    "fehler": "Error",
+    "idee": "Idea",
+    "balancing": "Balance",
+    "bedienung": "Userability",
+    "text": "Text",
+    "lob": "Compliment"
+  }
+}

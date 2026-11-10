@@ -1,0 +1,172 @@
+{
+  "chiefFirstNames": [
+    "Alex",
+    "Kim",
+    "Robin",
+    "Sascha",
+    "Charlie",
+    "Jule",
+    "Toni",
+    "Luca",
+    "Mika",
+    "Noa",
+    "Kai",
+    "Jona",
+    "Sam",
+    "Eli",
+    "Fynn",
+    "Mattis",
+    "Lio",
+    "Nika",
+    "Ronja",
+    "Tamo"
+  ],
+  "chiefLastNames": [
+    "Brandt",
+    "Weidner",
+    "Kessler",
+    "Lorenz",
+    "Falk",
+    "Hagen",
+    "Seidel",
+    "Voss",
+    "Ritter",
+    "Lindner",
+    "Sommer",
+    "Winter",
+    "Kraus",
+    "Engel",
+    "Haas",
+    "Roth",
+    "Graf",
+    "Pohl",
+    "Adler",
+    "Busch"
+  ],
+  "minArchetypes": 3,
+  "relation": {
+    "decayBp": 1000,
+    "decayNachtragendBp": 500,
+    "grudgeBp": -3000,
+    "respectBp": 3000,
+    "knownGoalBp": 4000,
+    "historyQuarters": 8
+  },
+  "memory": {
+    "licenseWon": -1000,
+    "licenseLost": 500,
+    "duelWon": -1000,
+    "duelLost": 500,
+    "cooperation": 1500,
+    "fairLicense": 1500,
+    "poachTry": -500,
+    "poachSuccess": -1500,
+    "maxEntries": 20
+  },
+  "goals": {
+    "genreFuehrer": {
+      "years": 6,
+      "archetypes": [
+        "aaa",
+        "publisher",
+        "mittelklasse"
+      ],
+      "consecutiveYears": 2
+    },
+    "engineImperium": {
+      "years": 8,
+      "archetypes": [
+        "engine"
+      ],
+      "shareBp": 3000
+    },
+    "kritikerliebling": {
+      "years": 7,
+      "archetypes": [
+        "indie",
+        "mittelklasse"
+      ],
+      "titles": 5,
+      "scoreBp": 85000
+    },
+    "wachstum": {
+      "years": 5,
+      "archetypes": [
+        "mittelklasse",
+        "publisher",
+        "indie",
+        "aaa"
+      ],
+      "factorBp": 20000
+    },
+    "spielerSchlagen": {
+      "years": 5,
+      "archetypes": [],
+      "quarters": 4,
+      "maxRelationBp": -5000
+    }
+  },
+  "goalWeightBp": 4000,
+  "mood": {
+    "confidentRevenueBp": 15000,
+    "riskBp": {
+      "selbstbewusst": 9000,
+      "normal": 10000,
+      "unterDruck": 11000,
+      "angeschlagen": 12500
+    }
+  },
+  "chiefChange": {
+    "goalFailures": 2,
+    "angeschlagenQuarters": 4,
+    "chanceBp": 3000
+  },
+  "threat": {
+    "thresholdBp": 3000,
+    "overlapFocusBp": 10000,
+    "overlapFavBp": 5000,
+    "overlapOtherBp": 2000,
+    "historyQuarters": 5
+  },
+  "counters": {
+    "extraNachtragend": 1,
+    "lessDiplomat": 1,
+    "allActorsFactor": 3,
+    "royaltyCutMinBp": 100,
+    "royaltyCutMaxBp": 300,
+    "rivalGenreWindowWeeks": 4
+  },
+  "copycat": {
+    "hitScoreBp": 85000,
+    "affinityFocusBp": 10000,
+    "affinityFavBp": 6000,
+    "affinityOtherBp": 1000,
+    "saturationTitles": 10,
+    "announceMinWeeks": 26,
+    "announceMaxWeeks": 78,
+    "windowWeeks": 104,
+    "penaltyBp": 9000,
+    "betterBp": 10500,
+    "originalFansBp": 10500
+  },
+  "duel": {
+    "windowWeeks": 4,
+    "chanceBp": 5000,
+    "dodgeWeeks": 6,
+    "minScope": "mittel",
+    "shiftCostBp": 1000
+  },
+  "engineFight": {
+    "cutMinBp": 100,
+    "cutMaxBp": 200
+  },
+  "startStrength": {
+    "entspannt": -1,
+    "leicht": 0,
+    "normal": 0,
+    "schwer": 1,
+    "hardcore": 1
+  },
+  "cooperationDiscountBp": 2000,
+  "cooperationDiplomatBp": -1000
+}

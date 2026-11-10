@@ -1,0 +1,159 @@
+{
+  "perYear": 2,
+  "maxWaitWeeks": 26,
+  "systems": [
+    {
+      "id": "auftraege",
+      "condition": {
+        "firma.releases": {
+          ">=": 1
+        }
+      },
+      "ownEvent": true
+    },
+    {
+      "id": "bewerbungen",
+      "condition": {
+        "firma.releases": {
+          ">=": 1
+        }
+      },
+      "ownEvent": true
+    },
+    {
+      "id": "zeitleiste",
+      "condition": {
+        "firma.releases": {
+          ">=": 1
+        }
+      },
+      "ownEvent": false
+    },
+    {
+      "id": "markt",
+      "condition": {
+        "firma.releases": {
+          ">=": 1
+        }
+      },
+      "ownEvent": true
+    },
+    {
+      "id": "produkttypen",
+      "condition": {
+        "firma.releases": {
+          ">=": 1
+        }
+      },
+      "ownEvent": false
+    },
+    {
+      "id": "engine",
+      "condition": {
+        "eines": [
+          {
+            "firma.releases": {
+              ">=": 2
+            }
+          },
+          {
+            "jahr": {
+              ">=": 1982
+            }
+          }
+        ]
+      },
+      "ownEvent": false
+    },
+    {
+      "id": "marken",
+      "condition": {
+        "firma.releases": {
+          ">=": 3
+        }
+      },
+      "ownEvent": false
+    },
+    {
+      "id": "firma",
+      "condition": {
+        "firma.mitarbeiter": {
+          ">=": 8
+        }
+      },
+      "ownEvent": false
+    },
+    {
+      "id": "betrieb",
+      "condition": {
+        "betrieb.ausgeloest": {
+          ">=": 1
+        }
+      },
+      "ownEvent": false
+    },
+    {
+      "id": "publisher",
+      "condition": {
+        "alle": [
+          {
+            "firma.releases": {
+              ">=": 1
+            }
+          },
+          {
+            "jahr": {
+              ">=": 1982
+            }
+          }
+        ]
+      },
+      "ownEvent": false
+    },
+    {
+      "id": "standorte",
+      "condition": {
+        "eines": [
+          {
+            "jahr": {
+              ">=": 1995
+            }
+          },
+          {
+            "firma.mitarbeiter": {
+              ">=": 60
+            }
+          }
+        ]
+      },
+      "ownEvent": false
+    },
+    {
+      "id": "zielgruppe",
+      "condition": {
+        "firma.releases": {
+          ">=": 2
+        }
+      },
+      "ownEvent": true
+    },
+    {
+      "id": "saeulen",
+      "condition": {
+        "eines": [
+          {
+            "firma.releases": {
+              ">=": 5
+            }
+          },
+          {
+            "firma.mitarbeiter": {
+              ">=": 8
+            }
+          }
+        ]
+      },
+      "ownEvent": true
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "_comment": "S07 FRM-R42 bis FRM-R47, Tabelle 5.8 (Etappe 6a.4, 6a.5): KI-Publisher und Standardangebot. Anteile in bp, Geld in 1980er-Cent (hochgerechnet mit dem Lohnniveau).",
+  "countByYear": [
+    [
+      1980,
+      3
+    ],
+    [
+      1990,
+      5
+    ],
+    [
+      2000,
+      7
+    ],
+    [
+      2010,
+      8
+    ]
+  ],
+  "startCapitalCent": 200000000,
+  "capitalFactorBp": [
+    5000,
+    30000
+  ],
+  "reputationBp": [
+    4000,
+    7000
+  ],
+  "interestThresholdBp": 3000,
+  "thresholdPerReputationBp": 2000,
+  "maxBudgetShareBp": 2500,
+  "maxAnswers": 3,
+  "offerWeeks": 4,
+  "brandFactor": {
+    "baseBp": 7000,
+    "perStrengthBp": 3000
+  },
+  "reputationFactor": {
+    "baseBp": 7000,
+    "perReputationBp": 3000
+  },
+  "sliceInterestBp": 11500,
+  "crisisNewIpBp": 9000,
+  "sliceFromPhase": "produktion",
+  "concession": {
+    "baseBp": 5000,
+    "perInterestMarginBp": 20000,
+    "perRivalOfferBp": 2500,
+    "sliceBp": 2000,
+    "maxBp": 15000,
+    "ipBp": 5000,
+    "sequelBp": 2500
+  },
+  "defaults": {
+    "advanceBp": 10000,
+    "splitBeforeBp": 2000,
+    "splitAfterBp": 5000,
+    "markupBp": 1000,
+    "termYears": 5,
+    "ipPublisher": true,
+    "sequelOption": true,
+    "patience": 3
+  },
+  "ranges": {
+    "advanceBp": [
+      6000,
+      13000
+    ],
+    "splitBeforeBp": [
+      1000,
+      3500
+    ],
+    "splitAfterBp": [
+      3500,
+      7000
+    ],
+    "markupBp": [
+      0,
+      2500
+    ],
+    "termYears": [
+      3,
+      10
+    ]
+  },
+  "personalities": {
+    "grosszuegig": {
+      "advanceBp": 11500,
+      "splitBeforeBp": 1500,
+      "ipFixed": true,
+      "patience": 2
+    },
+    "markenfreundlich": {
+      "advanceBp": 8000,
+      "ipPublisher": false,
+      "patience": 3
+    },
+    "ausgewogen": {
+      "patience": 4
+    }
+  },
+  "milestones": {
+    "lateWeeks": 4,
+    "cutBp": 2000
+  },
+  "names": {
+    "first": [
+      "Leuchtturm",
+      "Kompass",
+      "Weitblick",
+      "Silberpfeil",
+      "Goldfeder",
+      "Morgenrot",
+      "Sternwarte",
+      "Bergkristall",
+      "Wanderfalke",
+      "Fernweh",
+      "Polarstern",
+      "Nordwind"
+    ],
+    "suffix": [
+      " Verlag",
+      " Publishing",
+      " Medien",
+      " Unterhaltung"
+    ]
+  },
+  "own": {
+    "_comment": "S13 AUS-R40 bis AUS-R43 (1.3): eigenes Publishing. Pakete statt Verhandlungstisch (ANNAHME, OFFENE-FRAGEN). Vorschuss als Vielfaches der Produktionskosten (KI-Budgets sind klein gegen den Umsatz), Marketing beim Release als Anteil des Vorschusses; Mindestbudget in 1980er Preisen.",
+    "fromYear": 1988,
+    "minReleases": 3,
+    "pitchChancePerMonthBp": 3500,
+    "pitchWeeks": 8,
+    "slotsBase": 1,
+    "peoplePerSlot": 15,
+    "sliceFromBp": 3000,
+    "pitchUntilBp": 6000,
+    "conceptNoiseBp": 1500,
+    "sliceNoiseBp": 600,
+    "packages": {
+      "knapp": {
+        "advanceBp": 60000,
+        "studioShareBp": 5000,
+        "acceptBp": 4500
+      },
+      "ausgewogen": {
+        "advanceBp": 100000,
+        "studioShareBp": 4000,
+        "acceptBp": 8000
+      },
+      "grosszuegig": {
+        "advanceBp": 150000,
+        "studioShareBp": 3000,
+        "acceptBp": 10000
+      }
+    },
+    "rateAtBp": [
+      0,
+      5000,
+      9000
+    ],
+    "missBaseBp": 4500,
+    "missPerStrengthBp": 50,
+    "delayWeeks": 4,
+    "cutRateBp": 5000,
+    "cutEffortBp": 9000,
+    "demandBoostBp": 12500,
+    "profile": {
+      "startMoneyFactorBp": 40000,
+      "partners": 2
+    },
+    "releaseMarketingBp": 5000,
+    "budgetFloorCent": {
+      "klein": 300000,
+      "mittel": 1000000,
+      "gross": 3000000,
+      "aaa": 8000000
+    }
+  }
+}

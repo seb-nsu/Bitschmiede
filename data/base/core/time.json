@@ -1,0 +1,20 @@
+{
+  "msPerDisplayStep": 1000,
+  "speedFactorBp": {
+    "0.5x": 5000,
+    "1x": 10000,
+    "2x": 20000,
+    "4x": 40000
+  },
+  "autosaveIntervalWeeks": 13,
+  "autosaveSlots": 5,
+  "pauseOnEvents": [
+    "gate",
+    "prototypReview",
+    "goldReview",
+    "kritischerBug",
+    "releaseDuell",
+    "preisschock",
+    "abwerbung"
+  ]
+}

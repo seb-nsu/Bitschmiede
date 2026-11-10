@@ -1,0 +1,8 @@
+{
+  "modsBrokenRiskBp": 2500,
+  "compensationCent": 1500000,
+  "modderCostCent": 600000,
+  "modderDemandBp": 9500,
+  "majorStepBp": 4000,
+  "minorStepBp": 1000
+}

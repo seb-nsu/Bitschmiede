@@ -1,0 +1,29 @@
+{
+  "maxPillars": 2,
+  "bonusBp": 500,
+  "targetShareBp": 4000,
+  "minShareBp": 1500,
+  "missBp": -400,
+  "list": [
+    {
+      "id": "innovation", "tags": [], "minInnovation": 40000,
+      "genreWeightBp": { "denkspiel": 13000, "simulation": 12000, "abenteuer": 11000, "strategie": 11000, "aufbauspiel": 11000, "rennspiel": 9000, "lernspiel": 9000, "sportspiel": 7000, "brettspiel": 7000 }
+    },
+    {
+      "id": "zugaenglichkeit", "tags": ["komfort", "arcade"],
+      "genreWeightBp": { "jumpnrun": 14000, "musikspiel": 14000, "lernspiel": 14000, "sportspiel": 13000, "rennspiel": 13000, "kampfspiel": 12000, "brettspiel": 12000, "action": 12000, "strategie": 7000, "simulation": 8000, "rollenspiel": 7000 }
+    },
+    {
+      "id": "spieltiefe", "tags": ["system", "taktik", "denken"],
+      "genreWeightBp": { "strategie": 15000, "rollenspiel": 14000, "simulation": 14000, "aufbauspiel": 14000, "denkspiel": 13000, "kampfspiel": 11000, "jumpnrun": 7000, "musikspiel": 6000, "lernspiel": 8000, "action": 8000 }
+    },
+    {
+      "id": "praesentation", "tags": ["optik", "klang", "musik"],
+      "genreWeightBp": { "shooter": 14000, "rennspiel": 14000, "action": 13000, "musikspiel": 13000, "abenteuer": 12000, "sportspiel": 12000, "brettspiel": 7000, "denkspiel": 7000, "strategie": 8000 }
+    },
+    {
+      "id": "inhalt", "tags": ["inhalt", "erzaehlung", "mehrspieler"],
+      "genreWeightBp": { "rollenspiel": 15000, "abenteuer": 14000, "aufbauspiel": 12000, "strategie": 11000, "jumpnrun": 9000, "shooter": 9000, "denkspiel": 7000, "kampfspiel": 7000 }
+    }
+  ]
+}

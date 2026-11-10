@@ -1,0 +1,66 @@
+{
+  "manifest": {
+    "id": "beispiel-mod",
+    "name": "Beispiel: Rätselkarte und mehr Startgeld",
+    "version": "1.0.0",
+    "gameVersion": ">=0.1.0 <1.0.0",
+    "author": "Game Studio Tycoon",
+    "description": "Zeigt die drei Operationen: eine neue Karte (add), ein geändertes Genre (modify) und ein Feld der Startwerte (set).",
+    "dependencies": [],
+    "conflicts": [],
+    "loadAfter": [],
+    "tier": "daten",
+    "affectsBalance": true
+  },
+  "files": {
+    "dev/features.json": {
+      "add": [
+        {
+          "id": "beispielRaetselkiste",
+          "area": "gameplay",
+          "effort": {
+            "gameplay": 120000,
+            "story": 30000
+          },
+          "baseValue": 450000,
+          "innovation": 30000,
+          "stability": 0,
+          "fun": 20000,
+          "tags": [
+            "denken"
+          ],
+          "contentLevel": 0,
+          "availableFrom": 1981,
+          "requires": {
+            "module": "werkzeuge",
+            "level": 0
+          },
+          "performanceCost": 3
+        }
+      ]
+    },
+    "dev/genres.json": {
+      "modify": [
+        {
+          "id": "abenteuer",
+          "set": {
+            "themeFit.archaeologie": 13000
+          }
+        }
+      ]
+    },
+    "start/garage.json": {
+      "set": {
+        "startMoneyCent": 7500000
+      }
+    }
+  },
+  "texts": {
+    "de": {
+      "feature.beispielRaetselkiste": "Rätselkiste"
+    },
+    "en": {
+      "feature.beispielRaetselkiste": "Puzzle box"
+    }
+  }
+}

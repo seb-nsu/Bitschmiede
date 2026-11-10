@@ -1,0 +1,72 @@
+[
+  {
+    "a": "action",
+    "b": "optik",
+    "bp": 800
+  },
+  {
+    "a": "action",
+    "b": "klang",
+    "bp": 500
+  },
+  {
+    "a": "arcade",
+    "b": "action",
+    "bp": 800
+  },
+  {
+    "a": "erzaehlung",
+    "b": "erzaehlung",
+    "bp": 800
+  },
+  {
+    "a": "erzaehlung",
+    "b": "musik",
+    "bp": 600
+  },
+  {
+    "a": "erzaehlung",
+    "b": "optik",
+    "bp": 500
+  },
+  {
+    "a": "taktik",
+    "b": "system",
+    "bp": 800
+  },
+  {
+    "a": "denken",
+    "b": "erzaehlung",
+    "bp": 600
+  },
+  {
+    "a": "system",
+    "b": "inhalt",
+    "bp": 600
+  },
+  {
+    "a": "arcade",
+    "b": "erzaehlung",
+    "bp": -1000
+  },
+  {
+    "a": "mehrspieler",
+    "b": "erzaehlung",
+    "bp": -1000
+  },
+  {
+    "a": "arcade",
+    "b": "system",
+    "bp": -600
+  },
+  {
+    "a": "technik",
+    "b": "technik",
+    "bp": -500
+  },
+  {
+    "a": "komfort",
+    "b": "inhalt",
+    "bp": 400
+  }
+]

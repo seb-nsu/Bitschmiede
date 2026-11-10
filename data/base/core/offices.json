@@ -1,0 +1,32 @@
+{
+  "overcrowdingMaxBp": 2000,
+  "depositMonths": 3,
+  "contractMonths": 24,
+  "moveWeeks": 2,
+  "moveProductivityBp": 7000,
+  "spaceFactorsBp": { "grosszuegig": 15000, "normal": 10000, "knapp": 7500 },
+  "overcrowdMoralePerStepBp": 100,
+  "overcrowdStepBp": 500,
+  "suggestMoveBp": 9000,
+  "extension": {
+    "floor": { "placesBp": 5000, "slots": 1, "rentBp": 5000 },
+    "building": { "places": 100, "slots": 2 }
+  },
+  "aiMoveBp": 9500,
+  "aiMoveRentMonths": 6,
+  "offices": [
+    { "id": "garage", "layout": "garage", "places": 4, "slots": 1, "rentFactorBp": 10000, "availableFrom": 1980, "extension": null },
+    { "id": "etage", "layout": "etage", "places": 15, "slots": 2, "rentFactorBp": 10000, "availableFrom": 1980, "extension": null },
+    { "id": "etage_altbau", "layout": "etage", "places": 15, "slots": 2, "rentFactorBp": 8000, "availableFrom": 1980, "extension": null, "trait": { "moralePoints": -2 } },
+    { "id": "etage_gewerbepark", "layout": "etage", "places": 15, "slots": 3, "rentFactorBp": 11000, "availableFrom": 1980, "extension": null },
+    { "id": "etage_loft", "layout": "etage", "places": 15, "slots": 2, "rentFactorBp": 14000, "availableFrom": 2000, "extension": null, "trait": { "moralePoints": 3 } },
+    { "id": "buerohaus", "layout": "buerohaus", "places": 50, "slots": 4, "rentFactorBp": 10000, "availableFrom": 1985, "extension": "floor" },
+    { "id": "buerohaus_bahnhof", "layout": "buerohaus", "places": 50, "slots": 4, "rentFactorBp": 11500, "availableFrom": 1985, "extension": "floor", "trait": { "hireQualityPoints": 3 } },
+    { "id": "buerohaus_technologiepark", "layout": "buerohaus", "places": 50, "slots": 4, "rentFactorBp": 11000, "availableFrom": 1985, "extension": "floor", "trait": { "researchBp": 500 } },
+    { "id": "gebaeude", "layout": "gebaeude", "places": 150, "slots": 6, "rentFactorBp": 9400, "availableFrom": 1990, "extension": "floor" },
+    { "id": "gebaeude_fabrik", "layout": "gebaeude", "places": 150, "slots": 6, "rentFactorBp": 8500, "availableFrom": 1990, "extension": "floor", "trait": { "moralePoints": 2 } },
+    { "id": "gebaeude_glasturm", "layout": "gebaeude", "places": 150, "slots": 6, "rentFactorBp": 12000, "availableFrom": 2000, "extension": "floor", "trait": { "hireQualityPoints": 5 } },
+    { "id": "campus", "layout": "campus", "places": 500, "slots": 10, "rentFactorBp": 8700, "availableFrom": 2000, "extension": "building" },
+    { "id": "campus_innenstadt", "layout": "campus", "places": 500, "slots": 10, "rentFactorBp": 11000, "availableFrom": 2000, "extension": "building", "trait": { "hireQualityPoints": 5 } }
+  ]
+}

@@ -1,0 +1,308 @@
+[
+  {
+    "id": "standard",
+    "requires": null,
+    "revenueModel": "einmal",
+    "lifetime": {
+      "shape": "abfallend",
+      "weeks": 156
+    },
+    "teamShare": 0,
+    "brandEffect": {
+      "strength": 0,
+      "freshness": 0
+    },
+    "priceBp": 10000,
+    "effortBp": 10000,
+    "demand": "basis",
+    "ownerShareBp": 0,
+    "decayFactorBp": 10000,
+    "sameContent": false,
+    "fixedScope": null,
+    "requiresNewPlatform": false,
+    "engineSource": "current",
+    "needsNewerEngine": false,
+    "versionScaled": false,
+    "patch": null
+  },
+  {
+    "id": "port",
+    "requires": "releasedGame",
+    "revenueModel": "einmal",
+    "lifetime": {
+      "shape": "abfallend",
+      "weeks": 156
+    },
+    "teamShare": 0,
+    "brandEffect": {
+      "strength": 2000,
+      "freshness": 0
+    },
+    "priceBp": 10000,
+    "effortBp": 3000,
+    "demand": "basis",
+    "ownerShareBp": 0,
+    "decayFactorBp": 10000,
+    "sameContent": true,
+    "fixedScope": null,
+    "requiresNewPlatform": true,
+    "engineSource": "source",
+    "needsNewerEngine": false,
+    "versionScaled": false,
+    "patch": null
+  },
+  {
+    "id": "addon",
+    "requires": "releasedGame",
+    "revenueModel": "einmal",
+    "lifetime": {
+      "shape": "abfallend",
+      "weeks": 52
+    },
+    "teamShare": 0,
+    "brandEffect": {
+      "strength": 3000,
+      "freshness": -5000
+    },
+    "priceBp": 5000,
+    "effortBp": 10000,
+    "demand": "besitzer",
+    "ownerShareBp": 600,
+    "decayFactorBp": 20000,
+    "sameContent": false,
+    "fixedScope": "klein",
+    "requiresNewPlatform": false,
+    "engineSource": "source",
+    "needsNewerEngine": false,
+    "versionScaled": false,
+    "patch": null
+  },
+  {
+    "id": "technikUpdate",
+    "requires": "releasedGame",
+    "revenueModel": "einmal",
+    "lifetime": {
+      "shape": "abfallend",
+      "weeks": 156
+    },
+    "teamShare": 0,
+    "decayFactorBp": 10000,
+    "fixedScope": null,
+    "requiresNewPlatform": false,
+    "engineSource": "current",
+    "needsNewerEngine": true,
+    "brandEffect": {
+      "strength": 1000,
+      "freshness": 0
+    },
+    "priceBp": 0,
+    "effortBp": 4000,
+    "demand": "keine",
+    "ownerShareBp": 0,
+    "sameContent": true,
+    "versionScaled": true,
+    "patch": "kostenlos"
+  },
+  {
+    "id": "upgrade",
+    "requires": "releasedGame",
+    "revenueModel": "einmal",
+    "lifetime": {
+      "shape": "abfallend",
+      "weeks": 156
+    },
+    "teamShare": 0,
+    "decayFactorBp": 10000,
+    "fixedScope": null,
+    "requiresNewPlatform": false,
+    "engineSource": "current",
+    "needsNewerEngine": true,
+    "brandEffect": {
+      "strength": 1000,
+      "freshness": 0
+    },
+    "priceBp": 1500,
+    "effortBp": 4000,
+    "demand": "besitzer",
+    "ownerShareBp": 2500,
+    "sameContent": true,
+    "versionScaled": true,
+    "patch": "upgrade"
+  },
+  {
+    "id": "remaster",
+    "requires": "releasedGame",
+    "revenueModel": "einmal",
+    "lifetime": {
+      "shape": "abfallend",
+      "weeks": 156
+    },
+    "teamShare": 0,
+    "decayFactorBp": 10000,
+    "fixedScope": null,
+    "requiresNewPlatform": false,
+    "engineSource": "current",
+    "needsNewerEngine": true,
+    "brandEffect": {
+      "strength": 2000,
+      "freshness": -3000
+    },
+    "priceBp": 10000,
+    "effortBp": 4000,
+    "demand": "basis",
+    "ownerShareBp": 0,
+    "sameContent": true,
+    "versionScaled": false,
+    "patch": null
+  },
+  {
+    "id": "remake",
+    "requires": "releasedGame",
+    "revenueModel": "einmal",
+    "lifetime": {
+      "shape": "abfallend",
+      "weeks": 156
+    },
+    "teamShare": 0,
+    "decayFactorBp": 10000,
+    "fixedScope": null,
+    "requiresNewPlatform": false,
+    "engineSource": "current",
+    "needsNewerEngine": false,
+    "brandEffect": {
+      "strength": 3000,
+      "freshness": -2000
+    },
+    "priceBp": 10000,
+    "effortBp": 7000,
+    "demand": "basis",
+    "ownerShareBp": 0,
+    "sameContent": true,
+    "versionScaled": false,
+    "patch": null
+  },
+  {
+    "id": "dlc",
+    "requires": "releasedGame",
+    "revenueModel": "einmal",
+    "lifetime": {
+      "shape": "abfallend",
+      "weeks": 26
+    },
+    "teamShare": 0,
+    "brandEffect": {
+      "strength": 1000,
+      "freshness": -2000
+    },
+    "priceBp": 1500,
+    "effortBp": 2500,
+    "demand": "besitzer",
+    "ownerShareBp": 1500,
+    "decayFactorBp": 30000,
+    "sameContent": false,
+    "fixedScope": "klein",
+    "requiresNewPlatform": false,
+    "engineSource": "source",
+    "needsNewerEngine": false,
+    "versionScaled": false,
+    "patch": null,
+    "fromYear": 2005
+  },
+  {
+    "id": "mmo",
+    "requires": null,
+    "revenueModel": "kaufAbo",
+    "lifetime": {
+      "shape": "churn",
+      "weeks": 780
+    },
+    "teamShare": 3000,
+    "brandEffect": {
+      "strength": 5000,
+      "freshness": 0
+    },
+    "priceBp": 10000,
+    "effortBp": 15000,
+    "demand": "basis",
+    "ownerShareBp": 0,
+    "decayFactorBp": 5000,
+    "sameContent": false,
+    "fixedScope": null,
+    "requiresNewPlatform": false,
+    "engineSource": "current",
+    "needsNewerEngine": false,
+    "versionScaled": false,
+    "patch": null,
+    "requiresModule": {
+      "module": "netzwerk",
+      "level": 3
+    },
+    "live": "mmo",
+    "fromYear": 1997
+  },
+  {
+    "id": "liveService",
+    "requires": null,
+    "revenueModel": "season",
+    "lifetime": {
+      "shape": "churn",
+      "weeks": 520
+    },
+    "teamShare": 2000,
+    "brandEffect": {
+      "strength": 3000,
+      "freshness": 0
+    },
+    "priceBp": 8000,
+    "effortBp": 12000,
+    "demand": "basis",
+    "ownerShareBp": 0,
+    "decayFactorBp": 7000,
+    "sameContent": false,
+    "fixedScope": null,
+    "requiresNewPlatform": false,
+    "engineSource": "current",
+    "needsNewerEngine": false,
+    "versionScaled": false,
+    "patch": null,
+    "requiresModule": {
+      "module": "netzwerk",
+      "level": 2
+    },
+    "live": "liveService",
+    "fromYear": 2010
+  },
+  {
+    "id": "f2p",
+    "requires": null,
+    "revenueModel": "inGame",
+    "lifetime": {
+      "shape": "churn",
+      "weeks": 520
+    },
+    "teamShare": 2000,
+    "brandEffect": {
+      "strength": 2000,
+      "freshness": 0
+    },
+    "priceBp": 0,
+    "effortBp": 11000,
+    "demand": "basis",
+    "ownerShareBp": 0,
+    "decayFactorBp": 7000,
+    "sameContent": false,
+    "fixedScope": null,
+    "requiresNewPlatform": false,
+    "engineSource": "current",
+    "needsNewerEngine": false,
+    "versionScaled": false,
+    "patch": null,
+    "requiresModule": {
+      "module": "netzwerk",
+      "level": 2
+    },
+    "live": "f2p",
+    "fromYear": 2006,
+    "reachBp": 40000
+  }
+]

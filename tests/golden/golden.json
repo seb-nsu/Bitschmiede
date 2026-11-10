@@ -1,0 +1,67 @@
+{
+  "tableVersion": 2,
+  "dataChecksum": "2ee53e7b",
+  "years": 20,
+  "runs": [
+    {
+      "seed": "0000000000000001",
+      "strategy": "vernuenftig",
+      "checksums": {
+        "1989": "e4f86a34a41c253a",
+        "1999": "e620ee3efcb4c566"
+      },
+      "releases": 44,
+      "netWorthCent": 3640762939,
+      "people": 15,
+      "week": 1040
+    },
+    {
+      "seed": "0000000000000002",
+      "strategy": "wachstum",
+      "checksums": {
+        "1989": "5484c451ee1dbe84",
+        "1999": "05cb3096c759891f"
+      },
+      "releases": 38,
+      "netWorthCent": 5435562488,
+      "people": 20,
+      "week": 1040
+    },
+    {
+      "seed": "0000000000000003",
+      "strategy": "gierig",
+      "checksums": {
+        "1989": "e285c8e4e6ba7a5b",
+        "1999": "59bf60359399f2e1"
+      },
+      "releases": 51,
+      "netWorthCent": 3904051435,
+      "people": 3,
+      "week": 1040
+    },
+    {
+      "seed": "0000000000000004",
+      "strategy": "auftraege",
+      "checksums": {
+        "1989": "a56b605475c2376d",
+        "1999": "b397fdfcb221894e"
+      },
+      "releases": 47,
+      "netWorthCent": 389227306,
+      "people": 6,
+      "week": 1040
+    },
+    {
+      "seed": "0000000000000005",
+      "strategy": "durchschnitt",
+      "checksums": {
+        "1989": "a38d348eb0fc7a7f",
+        "1999": "5ce156fcccaa5490"
+      },
+      "releases": 64,
+      "netWorthCent": 1327566557,
+      "people": 5,
+      "week": 1040
+    }
+  ]
+}

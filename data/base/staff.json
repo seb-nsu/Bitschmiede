@@ -1,0 +1,43 @@
+{
+  "search": { "minStrength": 40, "maxStrength": 90, "feeSalaries": 2, "feeDivisor": 25, "baseWeeks": 2, "weeksDivisor": 10, "reachBonus": 20, "maxCandidates": 3, "farChanceBp": 5000, "spread": 15, "deadlineWeeks": 4 },
+  "teamMinStaff": 8,
+  "autoTeamStaff": 20,
+  "teamMinMembers": 2,
+  "teamFocus": { "inAreaBp": 1000, "outAreaBp": -1000, "qaFindRateBp": 600, "qaMinMembers": 2 },
+  "projectsPerTeam": 1,
+  "sizeFreeUpTo": 7,
+  "sizeExponentBp": 8500,
+  "onboardingWeeks": 4,
+  "onboardingStartBp": 5000,
+  "morale": { "startBp": 7000, "baseFactorBp": 6000, "hit": 500, "flop": -500, "layoff": -1000, "crunchWeek": -300, "salaryHighMonth": 100, "salaryLowMonth": -100 },
+  "burnout": { "crunchWeek": 600, "overloadWeek": 200, "recoverWeek": 300, "freeBp": 4000, "spanBp": 6000, "lossFactorBp": 5000, "quitAtBp": 6000, "quitChanceBp": 1000 },
+  "crunch": { "bonusBp": 2500, "goldWeeks": 8, "bugsBp": 500 },
+  "hitScoreBp": 80000,
+  "flopScoreBp": 50000,
+  "severanceMonths": 3,
+  "mentoring": { "shareBp": 2500, "gapPoints": 15, "pointsPerMonth": 1 },
+  "salaryPolicy": {
+    "unter": { "wageBp": 8500, "qualityPoints": -15, "loyaltyMonth": -200 },
+    "markt": { "wageBp": 10000, "qualityPoints": 0, "loyaltyMonth": 0 },
+    "ueber": { "wageBp": 11500, "qualityPoints": 10, "loyaltyMonth": 100 }
+  },
+  "hiresPerMonth": 2,
+  "key": {
+    "strengthMin": 70,
+    "roles": { "technik": "technischerDirektor", "gameplay": "leadDesigner", "grafik": "artDirector", "sound": "audioDirector", "story": "autor" },
+    "roleTempoBp": { "technischerDirektor": 1000, "leadDesigner": 0, "artDirector": 0, "audioDirector": 0, "autor": 0 },
+    "traits": ["ehrgeizig", "loyal", "gierig", "mentor", "kreativ"],
+    "loyaltyStartBp": 7000,
+    "loyalty": { "crunchWeek": -100, "offer": -500, "hit": 500, "raise": 1000, "bonus": 1000, "storyDenied": -1000 },
+    "offerBelowBp": 4000,
+    "offerChanceBp": 1500,
+    "quitBelowBp": 2000,
+    "quitChanceBp": 1000,
+    "counterRaiseBp": 2000,
+    "counterLoyaltyBp": 1500,
+    "bonusMonths": 3,
+    "storyRaiseBp": 1500
+  },
+  "legendary": { "strengthMin": 90, "perYear": 2, "chancePerQuarterBp": 2500 },
+  "poach": { "baseBp": 5000, "raiseFactor": 2, "maxBp": 9000, "relationAttempt": -1000, "relationSuccess": -1000, "rivalKeyPeople": 2, "strengthLoss": 5, "loyaltyRange": [3000, 8000] }
+}

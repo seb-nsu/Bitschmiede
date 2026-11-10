@@ -1,0 +1,20 @@
+{
+  "_comment": "S08 MRK-R57, MRK-R58, MRK-R68, Tabelle 5.8 und 5.11, Design „Die Zukunftsepoche“ (Etappe 6a.7). Wendepunkte ab 2025 aus dem Seed; Plattform-Faktoren in bp auf die erreichbare Basis.",
+  "fromYear": 2025,
+  "lastYear": 2040,
+  "count": [4, 6],
+  "chainCount": [2, 3],
+  "rumor": { "leadMonths": [24, 36], "fuzzMonths": { "keine": 24, "grundlegend": 12, "intensiv": 6 }, "falseAlarmBp": 1500, "shownChanceBp": 8500 },
+  "bet": { "windowMonths": 12, "maxStakeBp": 2000, "platformExperienceBp": 3000, "returnFactorBp": 20000 },
+  "investBoost": { "shareBp": 2000, "maxBp": 3000, "lookbackWeeks": 104 },
+  "points": [
+    { "id": "vr", "area": "plattformen", "years": [2027, 2034], "platforms": ["brille"], "chanceBp": 5000, "hit": { "brille": 16000 }, "miss": { "brille": 5000 } },
+    { "id": "cloud", "area": "technik", "years": [2032, 2039], "platforms": ["wolke"], "chanceBp": 5000, "hit": { "wolke": 16000, "helios4": 8500 }, "miss": { "wolke": 5000 } },
+    { "id": "handhelds", "area": "plattformen", "years": [2025, 2032], "platforms": ["wandel2", "reisepc"], "hit": { "wandel2": 12500, "reisepc": 12500 } },
+    { "id": "indieBoom", "area": "markt", "years": [2026, 2038], "phase": "boom" },
+    { "id": "konsolidierung", "area": "markt", "years": [2026, 2038], "phase": "krise" },
+    { "id": "kiWerkzeugWelle", "area": "werkzeuge", "years": [2025, 2032], "chain": "kiWerkzeugWelle" },
+    { "id": "letzteKonsolengeneration", "area": "technik", "years": [2030, 2038], "chain": "letzteKonsolengeneration" },
+    { "id": "regulierungswelle", "area": "regulierung", "years": [2026, 2038], "chain": "regulierungswelle" }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "_comment": "S09 UEB-R01 bis UEB-R42, Formeln 5 und Startwerte (Etappe 6b). Faktoren in bp, Beträge in Cent (Preise des Jahres, wo nicht anders vermerkt).",
+  "unlockYear": 2005,
+  "unlockPeople": 60,
+  "value": {
+    "earningsMultBp": 80000,
+    "earningsYears": 3,
+    "brandFactorBp": 6000,
+    "engineMultBp": 60000,
+    "platformMultBp": 40000,
+    "teamFactorBp": 5000,
+    "strengthPivot": 50
+  },
+  "range": {
+    "offsetBp": 2500,
+    "widthBp": 4000,
+    "checkedWidthBp": 1000
+  },
+  "diligence": {
+    "costBp": 150,
+    "minCostCent": 5000000,
+    "weeksBySize": [
+      [
+        0,
+        4
+      ],
+      [
+        50,
+        8
+      ],
+      [
+        300,
+        12
+      ]
+    ]
+  },
+  "findings": {
+    "countMax": 2,
+    "chanceBp": 5000,
+    "types": {
+      "schulden": [
+        -2000,
+        -500
+      ],
+      "projektSchieflage": [
+        -1500,
+        -500
+      ],
+      "wechselwillig": [
+        -1000,
+        -300
+      ],
+      "rechtsstreit": [
+        -1500,
+        -500
+      ],
+      "technikschuld": [
+        -1000,
+        -300
+      ],
+      "positivPrototyp": [
+        500,
+        1500
+      ]
+    }
+  },
+  "price": {
+    "controlBp": 3000,
+    "bidderBp": 1000,
+    "maxBidders": 3,
+    "bidderChanceBp": 2500,
+    "phaseBp": {
+      "boom": 12000,
+      "normal": 10000,
+      "krise": 9000
+    },
+    "rivalGrudgeBp": 1500,
+    "counterFromBp": 8500,
+    "blockWeeks": 26,
+    "answerWeeks": 1
+  },
+  "warnMonths": 3,
+  "integration": {
+    "weeksBySize": [
+      [
+        0,
+        52
+      ],
+      [
+        50,
+        78
+      ],
+      [
+        300,
+        104
+      ]
+    ],
+    "capacityBase": 1,
+    "capacityMax": 4,
+    "overloadBp": 2500,
+    "moralePerWeekBp": 50,
+    "delayBp": 1000,
+    "cultureMinFitBp": 5000,
+    "cultureLongerBp": 2500,
+    "cultureMoraleBp": -1000
+  },
+  "leave": {
+    "q0Bp": 400,
+    "cultureBp": 800,
+    "directiveBp": 600,
+    "retentionBp": 800,
+    "retentionWeeks": 104,
+    "autoRetentionShareBp": 5000,
+    "autoRetentionCashFactor": 4
+  },
+  "synergyMaxBp": 1000,
+  "synergyFromBp": 5000,
+  "writeDownBelowBp": 6000,
+  "transferBp": 7000,
+  "steeredMoraleBp": -1000,
+  "steeredSpreadBp": 7000,
+  "closeReputation": [
+    500,
+    2000
+  ],
+  "engineRamp": {
+    "malusBp": 3000,
+    "weeksSame": 8,
+    "weeksOther": 16
+  },
+  "ai": {
+    "archetypes": [
+      "aaa",
+      "publisher"
+    ],
+    "chancePerQuarterBp": 500,
+    "cashFactorBp": 15000,
+    "bidBp": [
+      10000,
+      14000
+    ],
+    "capacity": 1,
+    "maxTargetValueBp": 5000
+  },
+  "withdrawMoraleBp": -500
+}

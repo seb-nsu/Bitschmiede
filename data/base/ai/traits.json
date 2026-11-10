@@ -1,0 +1,19 @@
+{
+  "traits": {
+    "visionaer": { "weightsBp": { "risiko": 7000, "qualitaet": 10000, "kosten": 10000, "marke": 10000, "plattform": 12000 }, "gut": "neuheit", "reserveMonths": 0 },
+    "zahlenmensch": { "weightsBp": { "kosten": 13000, "marke": 12000 }, "gut": "billig", "reserveMonths": 0 },
+    "perfektionist": { "weightsBp": { "qualitaet": 13000, "risiko": 11000 }, "gut": "qualitaet", "reserveMonths": 0 },
+    "draufgaenger": { "weightsBp": { "risiko": 6000 }, "gut": "neuheit", "reserveMonths": 0 },
+    "diplomat": { "weightsBp": { "dichte": 12000 }, "gut": "ruhe", "reserveMonths": 0 },
+    "nachtragend": { "weightsBp": {}, "gut": "schwerpunkt", "reserveMonths": 0 },
+    "sparsam": { "weightsBp": { "kosten": 12000 }, "gut": "billig", "reserveMonths": 2 },
+    "showman": { "weightsBp": { "plattform": 13000 }, "gut": "gross", "reserveMonths": 0 }
+  },
+  "byArchetype": {
+    "indie": ["visionaer", "perfektionist", "sparsam", "draufgaenger", "diplomat"],
+    "mittelklasse": ["zahlenmensch", "perfektionist", "diplomat", "sparsam", "showman", "nachtragend"],
+    "aaa": ["showman", "perfektionist", "zahlenmensch", "draufgaenger", "visionaer"],
+    "engine": ["visionaer", "perfektionist", "zahlenmensch", "diplomat"],
+    "publisher": ["zahlenmensch", "showman", "sparsam", "nachtragend", "draufgaenger"]
+  }
+}

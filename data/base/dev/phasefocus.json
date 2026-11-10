@@ -1,0 +1,21 @@
+{
+  "default": "ausgewogen",
+  "groups": { "preprod": "preprod", "vslice": "preprod", "produktion": "produktion", "alpha": "produktion", "beta": "beta" },
+  "options": {
+    "preprod": [
+      { "id": "ausgewogen", "tempoBp": 10000, "qualityBp": 10000, "bugsBp": 10000 },
+      { "id": "gruendlich", "tempoBp": 8500, "qualityBp": 12000, "bugsBp": 9000 },
+      { "id": "zuegig", "tempoBp": 11500, "qualityBp": 9000, "bugsBp": 10500 }
+    ],
+    "produktion": [
+      { "id": "ausgewogen", "tempoBp": 10000, "qualityBp": 10000, "bugsBp": 10000 },
+      { "id": "feinschliff", "tempoBp": 9000, "qualityBp": 10600, "bugsBp": 10000 },
+      { "id": "tempo", "tempoBp": 11000, "qualityBp": 10000, "bugsBp": 12000 }
+    ],
+    "beta": [
+      { "id": "ausgewogen", "tempoBp": 10000, "qualityBp": 10000, "bugsBp": 10000 },
+      { "id": "bugjagd", "tempoBp": 8500, "qualityBp": 10000, "bugsBp": 6000 },
+      { "id": "tempo", "tempoBp": 11500, "qualityBp": 10000, "bugsBp": 12500 }
+    ]
+  }
+}

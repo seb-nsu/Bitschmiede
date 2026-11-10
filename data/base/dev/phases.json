@@ -1,0 +1,108 @@
+{
+  "scopeEffortFactorBp": {
+    "klein": 4000,
+    "mittel": 10000,
+    "gross": 25000,
+    "aaa": 50000
+  },
+  "phases": {
+    "klein": [
+      {
+        "id": "konzept",
+        "untilBp": 1000
+      },
+      {
+        "id": "produktion",
+        "untilBp": 10000
+      }
+    ],
+    "mittel": [
+      {
+        "id": "konzept",
+        "untilBp": 500
+      },
+      {
+        "id": "preprod",
+        "untilBp": 2000
+      },
+      {
+        "id": "produktion",
+        "untilBp": 8000
+      },
+      {
+        "id": "beta",
+        "untilBp": 10000
+      }
+    ],
+    "gross": [
+      {
+        "id": "konzept",
+        "untilBp": 400
+      },
+      {
+        "id": "preprod",
+        "untilBp": 1200
+      },
+      {
+        "id": "vslice",
+        "untilBp": 2200
+      },
+      {
+        "id": "produktion",
+        "untilBp": 7000
+      },
+      {
+        "id": "alpha",
+        "untilBp": 8500
+      },
+      {
+        "id": "beta",
+        "untilBp": 10000
+      }
+    ],
+    "aaa": [
+      {
+        "id": "konzept",
+        "untilBp": 400
+      },
+      {
+        "id": "preprod",
+        "untilBp": 1200
+      },
+      {
+        "id": "vslice",
+        "untilBp": 2200
+      },
+      {
+        "id": "produktion",
+        "untilBp": 7000
+      },
+      {
+        "id": "alpha",
+        "untilBp": 8500
+      },
+      {
+        "id": "beta",
+        "untilBp": 10000
+      }
+    ]
+  },
+  "freeze": {
+    "klein": {
+      "phase": "produktion",
+      "shareBp": 6000
+    },
+    "mittel": {
+      "phase": "beta",
+      "shareBp": 0
+    },
+    "gross": {
+      "phase": "alpha",
+      "shareBp": 0
+    },
+    "aaa": {
+      "phase": "alpha",
+      "shareBp": 0
+    }
+  }
+}

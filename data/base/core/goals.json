@@ -1,0 +1,460 @@
+{
+  "milestones": [
+    {
+      "id": "ersterRelease"
+    },
+    {
+      "id": "ersterHit",
+      "scoreBp": 80000
+    },
+    {
+      "id": "ersteNeun",
+      "scoreBp": 90000
+    },
+    {
+      "id": "ersteEngine"
+    },
+    {
+      "id": "ersteLizenz"
+    },
+    {
+      "id": "ersteLizenzAaa"
+    },
+    {
+      "id": "markeDreiGenres",
+      "count": 3
+    },
+    {
+      "id": "konsoleZehnJahre",
+      "later": true
+    },
+    {
+      "id": "launchTitel"
+    },
+    {
+      "id": "mmoZehnJahre",
+      "weeks": 520
+    },
+    {
+      "id": "hundertMitarbeiter",
+      "count": 100
+    },
+    {
+      "id": "campus"
+    },
+    {
+      "id": "boersengang"
+    },
+    {
+      "id": "ersteUebernahme"
+    },
+    {
+      "id": "engineDesJahres"
+    },
+    {
+      "id": "studioDesJahres"
+    },
+    {
+      "id": "branchenfuehrer"
+    },
+    {
+      "id": "integration"
+    },
+    {
+      "id": "nieEigeneEngine",
+      "year": 2040,
+      "count": 3
+    },
+    {
+      "id": "engineStandardZukunft",
+      "fromYear": 2025
+    },
+    {
+      "id": "plattformDerZukunft",
+      "fromYear": 2025,
+      "count": 2,
+      "scoreBp": 80000,
+      "platforms": [
+        "brille",
+        "wolke"
+      ]
+    },
+    {
+      "id": "filmFranchise",
+      "fromYear": 2025
+    },
+    {
+      "id": "groessterKonzernZukunft",
+      "fromYear": 2025
+    }
+  ],
+  "longTermGoals": [
+    "engineMarktfuehrer",
+    "groessteMarke",
+    "unabhaengig",
+    "groessterKonzern"
+  ],
+  "goalEndYear": 2040,
+  "hallOfFameSize": 10,
+  "awards": {
+    "categories": [
+      "spiel",
+      "engine",
+      "studio",
+      "newcomer",
+      "innovation"
+    ],
+    "nominees": 5,
+    "drawTop": 3,
+    "gameTypes": [
+      "standard",
+      "remake"
+    ],
+    "salesBoostBp": 2000,
+    "salesBoostWeeks": 8,
+    "reputationBp": 300,
+    "newcomerMaxWeeks": 156,
+    "enginePointsPerContract": 10000,
+    "growthWeightBp": 5000,
+    "growthCapBp": 10000
+  },
+  "legacy": {
+    "defaultEndYear": 2040,
+    "minEndYear": 2000,
+    "lastYear": 2100,
+    "weights": {
+      "marken": 2500,
+      "engines": 2000,
+      "umsatz": 2000,
+      "preise": 1500,
+      "rivalen": 1000,
+      "ruf": 1000
+    }
+  },
+  "scenarios": [
+    {
+      "id": "garagenTraum",
+      "startYear": 1980,
+      "deadlineYear": 1995,
+      "start": {},
+      "goal": {
+        "kind": "spielWertung",
+        "scoreBp": 90000
+      }
+    },
+    {
+      "id": "retteDieKonsole",
+      "startYear": 2004,
+      "deadlineYear": 2012,
+      "start": {
+        "moneyCent": 300000000,
+        "office": "etage",
+        "hires": 6,
+        "strengthBonus": 15,
+        "relations": {
+          "lichtblick": 8000
+        },
+        "reputationBp": 4000
+      },
+      "goal": {
+        "kind": "plattformErhalten",
+        "platform": "zenit",
+        "plannedEndYear": 2005,
+        "minScoreBp": 70000
+      }
+    },
+    {
+      "id": "lizenznehmer",
+      "startYear": 1998,
+      "deadlineYear": 2008,
+      "start": {
+        "moneyCent": 150000000,
+        "office": "etage",
+        "hires": 4,
+        "strengthBonus": 10,
+        "reputationBp": 3000
+      },
+      "goal": {
+        "kind": "engineMarktfuehrer"
+      }
+    },
+    {
+      "id": "indieDurchbruch",
+      "startYear": 2015,
+      "deadlineYear": 2020,
+      "start": {
+        "moneyCent": 60000000,
+        "office": "etage",
+        "hires": 3,
+        "strengthBonus": 10,
+        "reputationBp": 2000
+      },
+      "goal": {
+        "kind": "interesseRelease",
+        "interest": 500000
+      }
+    },
+    {
+      "id": "liveServiceRettung",
+      "startYear": 2018,
+      "deadlineYear": 2019,
+      "start": {
+        "moneyCent": 800000000,
+        "office": "etage",
+        "hires": 10,
+        "strengthBonus": 10,
+        "reputationBp": 5000,
+        "liveProduct": {
+          "title": "Sternenreich Online",
+          "type": "mmo",
+          "genre": "rollenspiel",
+          "theme": "fantasy",
+          "scope": "mittel",
+          "features": [
+            "fortschrittssystem",
+            "hdGrafik",
+            "koopModus",
+            "onlineRanglisten",
+            "persistenteWelt"
+          ],
+          "players": 40000,
+          "satisfactionBp": 4500,
+          "pauseWeeks": 30,
+          "ageWeeks": 78,
+          "scoreBp": 72000
+        }
+      },
+      "goal": {
+        "kind": "spielerbasisSteigern",
+        "factorBp": 20000
+      }
+    },
+    {
+      "id": "konzernIntegration",
+      "startYear": 2020,
+      "deadlineYear": 2022,
+      "start": {
+        "moneyCent": 3000000000,
+        "office": "buerohaus",
+        "hires": 28,
+        "strengthBonus": 15,
+        "reputationBp": 6000,
+        "subsidiaries": {
+          "count": 3,
+          "minPeople": 10,
+          "maxPeople": 49
+        }
+      },
+      "goal": {
+        "kind": "integrationOhneAbwanderung",
+        "maxLeft": 2
+      }
+    }
+  ],
+  "motivation": {
+    "conference": {
+      "offers": 3,
+      "pickWithinWeeks": 6,
+      "gameTypes": [
+        "standard",
+        "remake",
+        "mmo",
+        "liveService",
+        "f2p"
+      ],
+      "goals": [
+        {
+          "id": "hit",
+          "kind": "wertung",
+          "scoreBp": 80000,
+          "reward": {
+            "kind": "ruf",
+            "bp": 400
+          }
+        },
+        {
+          "id": "trendHit",
+          "kind": "wertungTrend",
+          "scoreBp": 75000,
+          "reward": {
+            "kind": "fans",
+            "bp": 1500
+          }
+        },
+        {
+          "id": "releases",
+          "kind": "releases",
+          "extra": 1,
+          "min": 1,
+          "reward": {
+            "kind": "ruf",
+            "bp": 300
+          }
+        },
+        {
+          "id": "newPlatform",
+          "kind": "plattformNeu",
+          "reward": {
+            "kind": "fans",
+            "bp": 1000
+          }
+        },
+        {
+          "id": "rank",
+          "kind": "rangliste",
+          "reward": {
+            "kind": "ruf",
+            "bp": 500
+          }
+        },
+        {
+          "id": "revenue",
+          "kind": "umsatz",
+          "growthBp": 2000,
+          "reward": {
+            "kind": "ruf",
+            "bp": 400
+          }
+        },
+        {
+          "id": "award",
+          "kind": "preis",
+          "reward": {
+            "kind": "fans",
+            "bp": 2000
+          }
+        }
+      ]
+    },
+    "archrival": {
+      "windowWeeks": 13,
+      "relationDropBp": 2000,
+      "keepDuels": 30
+    },
+    "epochs": [
+      {
+        "id": "garage",
+        "from": 1980,
+        "to": 1989,
+        "metric": "hits",
+        "tiers": [
+          1,
+          3,
+          6
+        ]
+      },
+      {
+        "id": "dreiD",
+        "from": 1990,
+        "to": 1999,
+        "metric": "hitsModuleLevel",
+        "module": "rendering",
+        "minLevel": 4,
+        "tiers": [
+          1,
+          3,
+          5
+        ]
+      },
+      {
+        "id": "online",
+        "from": 2000,
+        "to": 2009,
+        "metric": "liveGames",
+        "productTypes": [
+          "mmo",
+          "liveService",
+          "f2p"
+        ],
+        "scoreBp": 70000,
+        "tiers": [
+          1,
+          2,
+          4
+        ]
+      },
+      {
+        "id": "mobil",
+        "from": 2010,
+        "to": 2019,
+        "metric": "platformTypeGames",
+        "platformTypes": [
+          "mobil",
+          "handheld"
+        ],
+        "tiers": [
+          1,
+          3,
+          5
+        ]
+      },
+      {
+        "id": "branche",
+        "from": 2020,
+        "to": 2029,
+        "metric": "rank",
+        "tiers": [
+          5,
+          3,
+          1
+        ]
+      },
+      {
+        "id": "zukunft",
+        "from": 2030,
+        "to": 2039,
+        "metric": "hitsModuleLevel",
+        "module": "rendering",
+        "minLevel": 12,
+        "tiers": [
+          1,
+          3,
+          5
+        ]
+      }
+    ]
+  },
+  "endgame": {
+    "_comment": "Endgame-Themen (Auftrag Projektleitung 04.11.2026, Bewertung Fable 04.11.2026). Punkte · 100 wie die Vermächtnis-Wertung. ANNAHME: alle Werte neu, siehe OFFENE-FRAGEN.",
+    "challenges": {
+      "maxActive": 3,
+      "decades": [
+        1980,
+        1990,
+        2000,
+        2010,
+        2020,
+        2030
+      ],
+      "offerBelowBp": 5000,
+      "rankFromYear": 2000,
+      "list": [
+        {
+          "id": "dreiMarken",
+          "metric": "markenSpanne",
+          "target": 3,
+          "years": 20,
+          "points": 500
+        },
+        {
+          "id": "jedeEpoche",
+          "metric": "epochenHits",
+          "target": null,
+          "points": 600
+        },
+        {
+          "id": "marktfuehrer",
+          "metric": "rangEinsJahre",
+          "target": 5,
+          "points": 500
+        },
+        {
+          "id": "krisenfest",
+          "metric": "krisen",
+          "target": 3,
+          "points": 300
+        }
+      ]
+    }
+  }
+}

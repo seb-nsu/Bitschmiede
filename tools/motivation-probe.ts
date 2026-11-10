@@ -1,0 +1,20 @@
+// Prüfhilfe Langzeitmotivation: Jahresziele, Erzrivale und Epochen einer Bot-Partie (npx tsx tools/motivation-probe.ts <strategie> <bisJahr> [seed]).
+import { loadBaseData } from "../src/mods/loadBase";
+import { newGame, DEFAULT_SETTINGS } from "../src/sim/game";
+import { tick } from "../src/sim/tick";
+import { dateOf } from "../src/sim/calendar";
+import { monthCosts } from "../src/sim/systems/finanzen";
+import { botInputs, createBot, type StrategyId } from "./bots";
+const [strategy, toYear, seedArg] = process.argv.slice(2);
+const data = loadBaseData();
+const seed = seedArg ?? "00000000000000a1";
+let s = newGame(data, seed, { ...DEFAULT_SETTINGS });
+const bot = createBot(strategy as StrategyId, seed);
+while (dateOf(s.startYear, s.week).year < Number(toYear) && !s.gameOver) s = tick(s, data, botInputs(bot, data, s));
+const m = s.motivation;
+console.log("annual", m.annualHistory.map((h) => `${h.year}:${h.id}:${h.status === "erreicht" ? "+" : "-"}`).join(" "));
+console.log("streak", m.streak, "best", m.bestStreak, "now", JSON.stringify(m.annual), "offers", m.offers.map((o) => o.id).join(","));
+console.log("rival", m.archrival && { ...m.archrival, duels: m.archrival.duels.length }, "former", JSON.stringify(m.formerRivals));
+console.log("epochs", JSON.stringify(m.epochTitles), "announced", m.epochAnnounced.join(","));
+const costs = s.finance.ledger.slice(-12).reduce((a, m) => a + monthCosts(m), 0);
+console.log("year", dateOf(s.startYear, s.week).year, "cash", Math.round(s.moneyCent / 100), "people", s.people.length, "cashMonths", costs > 0 ? Math.round((s.moneyCent * 12) / costs) : "-");

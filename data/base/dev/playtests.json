@@ -1,0 +1,26 @@
+{
+  "weeks": 1,
+  "phases": {
+    "preprod": {
+      "spreadBp": 12000,
+      "offsetBp": 15000
+    },
+    "vslice": {
+      "spreadBp": 10000,
+      "offsetBp": 12000
+    },
+    "produktion": {
+      "spreadBp": 8000,
+      "offsetBp": 10000
+    },
+    "alpha": {
+      "spreadBp": 6000,
+      "offsetBp": 7000
+    },
+    "beta": {
+      "spreadBp": 4000,
+      "offsetBp": 5000
+    }
+  },
+  "smallLateFromBp": 6000
+}

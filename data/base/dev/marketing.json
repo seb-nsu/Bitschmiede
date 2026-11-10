@@ -1,0 +1,40 @@
+{
+  "budgetDefaultPermille": 300,
+  "budgetMaxPermille": 1500,
+  "decayBp": 200,
+  "wordOfMouthBp": 300,
+  "reachCostCentPerPersonAt1990": 400,
+  "halfEffectShareBp": 100,
+  "mediumBudgetPersonMonths": 60,
+  "brandInterestBp": 100,
+  "autoAnnounceWeeks": 52,
+  "startWeekShareBp": 1000,
+  "aiBudgetPermille": {
+    "indie": 100,
+    "mittelklasse": 200,
+    "aaa": 600,
+    "engine": 100,
+    "publisher": 400
+  },
+  "fairInterestShareBp": 50,
+  "disappointmentThresholdBp": 15000,
+  "disappointmentFullBp": 30000,
+  "userPenaltyBp": [
+    5000,
+    20000
+  ],
+  "brandPenaltyBp": [
+    500,
+    1500
+  ],
+  "demoUpBp": 1500,
+  "demoDownBp": 1000,
+  "lateMinProgressBp": 8000,
+  "genreAverageWeeks": 104,
+  "genreAverageDefaultBp": 70000,
+  "creatorFromYear": 2010,
+  "creatorWeeks": 4,
+  "creatorSevereBp": 10000,
+  "creatorWeaknessPenaltyBp": 1000,
+  "studioReputationStartBp": 2000
+}

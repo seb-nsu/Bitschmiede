@@ -1,0 +1,1927 @@
+[
+  {
+    "id": "adaptiveSpielwelt",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 340000,
+      "technik": 260000
+    },
+    "baseValue": 2710000,
+    "innovation": 50000,
+    "stability": -20000,
+    "fun": 30000,
+    "tags": [
+      "system",
+      "action"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2032,
+    "requires": {
+      "module": "ki",
+      "level": 5
+    },
+    "performanceCost": 35
+  },
+  {
+    "id": "analogSteuerung",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 280000,
+      "technik": 80000
+    },
+    "baseValue": 800000,
+    "innovation": 30000,
+    "stability": 0,
+    "fun": 20000,
+    "tags": [
+      "action"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1996,
+    "requires": {
+      "module": "physik",
+      "level": 1
+    },
+    "performanceCost": 10,
+    "successor": "bewegungssteuerung"
+  },
+  {
+    "id": "animierteFiguren",
+    "area": "grafik",
+    "effort": {
+      "grafik": 320000
+    },
+    "baseValue": 700000,
+    "innovation": 20000,
+    "stability": 0,
+    "fun": 20000,
+    "tags": [
+      "optik",
+      "action"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1990,
+    "requires": {
+      "module": "rendering",
+      "level": 3
+    },
+    "performanceCost": 18,
+    "successor": "motionCapture"
+  },
+  {
+    "id": "automatischesSpeichern",
+    "area": "technik",
+    "effort": {
+      "technik": 140000,
+      "gameplay": 20000
+    },
+    "baseValue": 600000,
+    "innovation": 10000,
+    "stability": 20000,
+    "fun": 10000,
+    "tags": [
+      "komfort"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1995,
+    "requires": {
+      "module": "streaming",
+      "level": 0
+    },
+    "performanceCost": 7,
+    "successor": "cloudSpeicher"
+  },
+  {
+    "id": "bewegungssteuerung",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 260000,
+      "technik": 200000
+    },
+    "baseValue": 1160000,
+    "innovation": 40000,
+    "stability": -20000,
+    "fun": 20000,
+    "tags": [
+      "action",
+      "komfort"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2006,
+    "requires": {
+      "module": "plattformen",
+      "level": 2
+    },
+    "performanceCost": 14,
+    "successor": "vrSteuerung"
+  },
+  {
+    "id": "cdSoundtrack",
+    "area": "sound",
+    "effort": {
+      "sound": 300000
+    },
+    "baseValue": 800000,
+    "innovation": 20000,
+    "stability": 10000,
+    "fun": 10000,
+    "tags": [
+      "klang",
+      "musik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1993,
+    "successor": "orchestraleMusik",
+    "requires": {
+      "module": "audio",
+      "level": 4
+    },
+    "performanceCost": 21
+  },
+  {
+    "id": "cloudSpeicher",
+    "area": "technik",
+    "effort": {
+      "technik": 160000
+    },
+    "baseValue": 1410000,
+    "innovation": 10000,
+    "stability": 10000,
+    "fun": 10000,
+    "tags": [
+      "komfort"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2012,
+    "requires": {
+      "module": "netzwerk",
+      "level": 4
+    },
+    "performanceCost": 4,
+    "successor": "sofortStart"
+  },
+  {
+    "id": "crossplay",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 160000,
+      "technik": 320000
+    },
+    "baseValue": 1830000,
+    "innovation": 30000,
+    "stability": -20000,
+    "fun": 20000,
+    "tags": [
+      "mehrspieler",
+      "technik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2020,
+    "requires": {
+      "module": "netzwerk",
+      "level": 5
+    },
+    "performanceCost": 15
+  },
+  {
+    "id": "dialogbaum",
+    "area": "story",
+    "effort": {
+      "story": 320000,
+      "gameplay": 60000
+    },
+    "baseValue": 740000,
+    "innovation": 20000,
+    "stability": 0,
+    "fun": 10000,
+    "tags": [
+      "erzaehlung"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1990,
+    "successor": "verzweigteHandlung",
+    "requires": {
+      "module": "ki",
+      "level": 1
+    },
+    "performanceCost": 9
+  },
+  {
+    "id": "dialoge",
+    "area": "story",
+    "effort": {
+      "story": 220000,
+      "gameplay": 40000
+    },
+    "baseValue": 550000,
+    "innovation": 20000,
+    "stability": 0,
+    "fun": 10000,
+    "tags": [
+      "erzaehlung"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "dialogbaum",
+    "requires": {
+      "module": "werkzeuge",
+      "level": 0
+    },
+    "performanceCost": 4
+  },
+  {
+    "id": "digitaleEffekte",
+    "area": "sound",
+    "effort": {
+      "sound": 160000,
+      "technik": 60000
+    },
+    "baseValue": 520000,
+    "innovation": 20000,
+    "stability": 0,
+    "fun": 10000,
+    "tags": [
+      "klang",
+      "technik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1988,
+    "successor": "raumklang",
+    "requires": {
+      "module": "audio",
+      "level": 3
+    },
+    "performanceCost": 18
+  },
+  {
+    "id": "drastischeEffekte",
+    "area": "grafik",
+    "effort": {
+      "grafik": 100000,
+      "sound": 40000
+    },
+    "baseValue": 400000,
+    "innovation": 10000,
+    "stability": 0,
+    "fun": 10000,
+    "tags": [
+      "action"
+    ],
+    "contentLevel": 2,
+    "availableFrom": 1980,
+    "requires": {
+      "module": "rendering",
+      "level": 1
+    },
+    "performanceCost": 13
+  },
+  {
+    "id": "dynamischeMusik",
+    "area": "sound",
+    "effort": {
+      "sound": 360000,
+      "technik": 100000
+    },
+    "baseValue": 1090000,
+    "innovation": 30000,
+    "stability": -10000,
+    "fun": 10000,
+    "tags": [
+      "klang",
+      "musik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2004,
+    "requires": {
+      "module": "audio",
+      "level": 6
+    },
+    "performanceCost": 20
+  },
+  {
+    "id": "echtzeitkampf",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 300000,
+      "technik": 80000
+    },
+    "baseValue": 740000,
+    "innovation": 30000,
+    "stability": -10000,
+    "fun": 20000,
+    "tags": [
+      "taktik",
+      "action"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1992,
+    "requires": {
+      "module": "ki",
+      "level": 2
+    },
+    "performanceCost": 15
+  },
+  {
+    "id": "einfachePhysik",
+    "area": "technik",
+    "effort": {
+      "technik": 200000,
+      "gameplay": 60000
+    },
+    "baseValue": 550000,
+    "innovation": 30000,
+    "stability": -20000,
+    "fun": 20000,
+    "tags": [
+      "technik",
+      "system"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "rigidBody",
+    "requires": {
+      "module": "physik",
+      "level": 0
+    },
+    "performanceCost": 9
+  },
+  {
+    "id": "einfacheSteuerung",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 200000,
+      "technik": 40000
+    },
+    "baseValue": 450000,
+    "innovation": 0,
+    "stability": 20000,
+    "fun": 20000,
+    "tags": [
+      "action"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "analogSteuerung",
+    "requires": {
+      "module": "werkzeuge",
+      "level": 0
+    },
+    "performanceCost": 5
+  },
+  {
+    "id": "farbgrafik",
+    "area": "grafik",
+    "effort": {
+      "grafik": 180000,
+      "technik": 40000
+    },
+    "baseValue": 450000,
+    "innovation": 0,
+    "stability": 10000,
+    "fun": 10000,
+    "tags": [
+      "optik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "feinePixelgrafik",
+    "requires": {
+      "module": "rendering",
+      "level": 1
+    },
+    "performanceCost": 13
+  },
+  {
+    "id": "feinePixelgrafik",
+    "area": "grafik",
+    "effort": {
+      "grafik": 260000,
+      "technik": 40000
+    },
+    "baseValue": 620000,
+    "innovation": 10000,
+    "stability": 10000,
+    "fun": 10000,
+    "tags": [
+      "optik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1987,
+    "successor": "hochaufloesend",
+    "requires": {
+      "module": "werkzeuge",
+      "level": 1
+    },
+    "performanceCost": 13
+  },
+  {
+    "id": "fortschrittssystem",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 240000,
+      "technik": 60000
+    },
+    "baseValue": 1200000,
+    "innovation": 30000,
+    "stability": 0,
+    "fun": 20000,
+    "tags": [
+      "system",
+      "inhalt"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2007,
+    "requires": {
+      "module": "werkzeuge",
+      "level": 3
+    },
+    "performanceCost": 6
+  },
+  {
+    "id": "fotorealismus",
+    "area": "grafik",
+    "effort": {
+      "grafik": 520000,
+      "technik": 260000
+    },
+    "baseValue": 1410000,
+    "innovation": 30000,
+    "stability": -10000,
+    "fun": 10000,
+    "tags": [
+      "optik",
+      "technik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2012,
+    "requires": {
+      "module": "rendering",
+      "level": 9
+    },
+    "performanceCost": 40,
+    "successor": "raytracing"
+  },
+  {
+    "id": "gegnerKi",
+    "area": "technik",
+    "effort": {
+      "technik": 180000,
+      "gameplay": 80000
+    },
+    "baseValue": 550000,
+    "innovation": 20000,
+    "stability": -10000,
+    "fun": 20000,
+    "tags": [
+      "taktik",
+      "system"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "wegfindung",
+    "requires": {
+      "module": "ki",
+      "level": 0
+    },
+    "performanceCost": 7
+  },
+  {
+    "id": "generativeGrafik",
+    "area": "grafik",
+    "effort": {
+      "grafik": 300000,
+      "technik": 300000
+    },
+    "baseValue": 2540000,
+    "innovation": 50000,
+    "stability": -20000,
+    "fun": 10000,
+    "tags": [
+      "optik",
+      "inhalt"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2030,
+    "requires": {
+      "module": "werkzeuge",
+      "level": 5
+    },
+    "performanceCost": 40
+  },
+  {
+    "id": "generierteDialoge",
+    "area": "story",
+    "effort": {
+      "story": 300000,
+      "technik": 200000
+    },
+    "baseValue": 2380000,
+    "innovation": 50000,
+    "stability": -20000,
+    "fun": 10000,
+    "tags": [
+      "erzaehlung",
+      "system"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2028,
+    "requires": {
+      "module": "ki",
+      "level": 5
+    },
+    "performanceCost": 20
+  },
+  {
+    "id": "generierteSprache",
+    "area": "sound",
+    "effort": {
+      "sound": 260000,
+      "story": 200000,
+      "technik": 120000
+    },
+    "baseValue": 2230000,
+    "innovation": 50000,
+    "stability": -20000,
+    "fun": 10000,
+    "tags": [
+      "klang",
+      "erzaehlung"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2026,
+    "requires": {
+      "module": "ki",
+      "level": 4
+    },
+    "performanceCost": 25
+  },
+  {
+    "id": "gesampelteMusik",
+    "area": "sound",
+    "effort": {
+      "sound": 240000,
+      "technik": 40000
+    },
+    "baseValue": 680000,
+    "innovation": 20000,
+    "stability": 0,
+    "fun": 10000,
+    "tags": [
+      "klang",
+      "musik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1988,
+    "successor": "cdSoundtrack",
+    "requires": {
+      "module": "audio",
+      "level": 3
+    },
+    "performanceCost": 16
+  },
+  {
+    "id": "grosseSprites",
+    "area": "grafik",
+    "effort": {
+      "grafik": 220000
+    },
+    "baseValue": 500000,
+    "innovation": 10000,
+    "stability": 0,
+    "fun": 10000,
+    "tags": [
+      "optik",
+      "action"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "animierteFiguren",
+    "requires": {
+      "module": "rendering",
+      "level": 1
+    },
+    "performanceCost": 13
+  },
+  {
+    "id": "hdGrafik",
+    "area": "grafik",
+    "effort": {
+      "grafik": 400000,
+      "technik": 120000
+    },
+    "baseValue": 1160000,
+    "innovation": 30000,
+    "stability": 0,
+    "fun": 10000,
+    "tags": [
+      "optik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2006,
+    "requires": {
+      "module": "rendering",
+      "level": 7
+    },
+    "performanceCost": 25,
+    "successor": "ultraHd"
+  },
+  {
+    "id": "hochaufloesend",
+    "area": "grafik",
+    "effort": {
+      "grafik": 340000,
+      "technik": 80000
+    },
+    "baseValue": 750000,
+    "innovation": 20000,
+    "stability": 0,
+    "fun": 10000,
+    "tags": [
+      "optik",
+      "technik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1992,
+    "requires": {
+      "module": "rendering",
+      "level": 3
+    },
+    "performanceCost": 20,
+    "successor": "hdGrafik"
+  },
+  {
+    "id": "komplexeWirtschaft",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 320000,
+      "technik": 120000
+    },
+    "baseValue": 760000,
+    "innovation": 20000,
+    "stability": -10000,
+    "fun": 10000,
+    "tags": [
+      "system"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1991,
+    "requires": {
+      "module": "ki",
+      "level": 1
+    },
+    "performanceCost": 10
+  },
+  {
+    "id": "koopModus",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 220000,
+      "technik": 200000
+    },
+    "baseValue": 1020000,
+    "innovation": 30000,
+    "stability": -10000,
+    "fun": 30000,
+    "tags": [
+      "mehrspieler"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2002,
+    "requires": {
+      "module": "netzwerk",
+      "level": 3
+    },
+    "performanceCost": 12
+  },
+  {
+    "id": "lernendeGegner",
+    "area": "technik",
+    "effort": {
+      "technik": 320000,
+      "gameplay": 160000
+    },
+    "baseValue": 1720000,
+    "innovation": 40000,
+    "stability": -20000,
+    "fun": 20000,
+    "tags": [
+      "taktik",
+      "system"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2018,
+    "requires": {
+      "module": "ki",
+      "level": 4
+    },
+    "performanceCost": 20,
+    "successor": "adaptiveSpielwelt"
+  },
+  {
+    "id": "levelEditor",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 200000,
+      "technik": 180000
+    },
+    "baseValue": 750000,
+    "innovation": 20000,
+    "stability": 0,
+    "fun": 20000,
+    "tags": [
+      "inhalt",
+      "komfort"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1993,
+    "requires": {
+      "module": "werkzeuge",
+      "level": 2
+    },
+    "performanceCost": 15,
+    "successor": "modWerkzeuge"
+  },
+  {
+    "id": "levelVielfalt",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 240000,
+      "grafik": 60000
+    },
+    "baseValue": 500000,
+    "innovation": 10000,
+    "stability": 0,
+    "fun": 20000,
+    "tags": [
+      "inhalt"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "levelEditor",
+    "requires": {
+      "module": "werkzeuge",
+      "level": 0
+    },
+    "performanceCost": 5
+  },
+  {
+    "id": "mehrstimmigeMusik",
+    "area": "sound",
+    "effort": {
+      "sound": 180000,
+      "technik": 60000
+    },
+    "baseValue": 550000,
+    "innovation": 30000,
+    "stability": -10000,
+    "fun": 10000,
+    "tags": [
+      "klang",
+      "musik",
+      "technik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1982,
+    "successor": "gesampelteMusik",
+    "requires": {
+      "module": "audio",
+      "level": 1
+    },
+    "performanceCost": 13
+  },
+  {
+    "id": "modWerkzeuge",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 240000,
+      "technik": 260000
+    },
+    "baseValue": 1130000,
+    "innovation": 30000,
+    "stability": 0,
+    "fun": 20000,
+    "tags": [
+      "inhalt",
+      "komfort"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2005,
+    "requires": {
+      "module": "werkzeuge",
+      "level": 3
+    },
+    "performanceCost": 10
+  },
+  {
+    "id": "moralSystem",
+    "area": "story",
+    "effort": {
+      "story": 400000,
+      "gameplay": 120000
+    },
+    "baseValue": 1200000,
+    "innovation": 30000,
+    "stability": 0,
+    "fun": 10000,
+    "tags": [
+      "erzaehlung",
+      "taktik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2007,
+    "requires": {
+      "module": "ki",
+      "level": 3
+    },
+    "performanceCost": 10,
+    "successor": "generierteDialoge"
+  },
+  {
+    "id": "motionCapture",
+    "area": "grafik",
+    "effort": {
+      "grafik": 380000,
+      "story": 100000
+    },
+    "baseValue": 1130000,
+    "innovation": 30000,
+    "stability": -10000,
+    "fun": 10000,
+    "tags": [
+      "optik",
+      "erzaehlung"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2005,
+    "requires": {
+      "module": "rendering",
+      "level": 7
+    },
+    "performanceCost": 22
+  },
+  {
+    "id": "nahtloseWelt",
+    "area": "story",
+    "effort": {
+      "story": 240000,
+      "gameplay": 280000,
+      "grafik": 200000,
+      "technik": 200000
+    },
+    "baseValue": 1160000,
+    "innovation": 40000,
+    "stability": -30000,
+    "fun": 20000,
+    "tags": [
+      "inhalt",
+      "erzaehlung",
+      "system"
+    ],
+    "contentLevel": 1,
+    "availableFrom": 2006,
+    "requires": {
+      "module": "streaming",
+      "level": 2
+    },
+    "performanceCost": 22
+  },
+  {
+    "id": "netzwerkspiel",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 200000,
+      "technik": 220000
+    },
+    "baseValue": 780000,
+    "innovation": 40000,
+    "stability": -20000,
+    "fun": 30000,
+    "tags": [
+      "mehrspieler",
+      "technik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1993,
+    "successor": "onlineMehrspieler",
+    "requires": {
+      "module": "netzwerk",
+      "level": 1
+    },
+    "performanceCost": 12
+  },
+  {
+    "id": "objektAudio",
+    "area": "sound",
+    "effort": {
+      "sound": 380000,
+      "technik": 180000
+    },
+    "baseValue": 1510000,
+    "innovation": 30000,
+    "stability": -10000,
+    "fun": 10000,
+    "tags": [
+      "klang",
+      "technik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2014,
+    "requires": {
+      "module": "audio",
+      "level": 8
+    },
+    "performanceCost": 30
+  },
+  {
+    "id": "offeneWelt",
+    "area": "story",
+    "effort": {
+      "story": 240000,
+      "gameplay": 240000,
+      "grafik": 140000,
+      "technik": 140000
+    },
+    "baseValue": 950000,
+    "innovation": 40000,
+    "stability": -30000,
+    "fun": 20000,
+    "tags": [
+      "inhalt",
+      "erzaehlung",
+      "system"
+    ],
+    "contentLevel": 1,
+    "availableFrom": 1997,
+    "requires": {
+      "module": "ki",
+      "level": 2
+    },
+    "performanceCost": 14,
+    "successor": "nahtloseWelt"
+  },
+  {
+    "id": "onlineMehrspieler",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 260000,
+      "technik": 320000
+    },
+    "baseValue": 900000,
+    "innovation": 40000,
+    "stability": -30000,
+    "fun": 30000,
+    "tags": [
+      "mehrspieler",
+      "technik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1997,
+    "requires": {
+      "module": "netzwerk",
+      "level": 2
+    },
+    "performanceCost": 17,
+    "successor": "persistenteWelt"
+  },
+  {
+    "id": "onlineRanglisten",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 120000,
+      "technik": 160000
+    },
+    "baseValue": 1060000,
+    "innovation": 30000,
+    "stability": 0,
+    "fun": 10000,
+    "tags": [
+      "mehrspieler",
+      "arcade"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2003,
+    "requires": {
+      "module": "netzwerk",
+      "level": 3
+    },
+    "performanceCost": 6
+  },
+  {
+    "id": "orchestraleMusik",
+    "area": "sound",
+    "effort": {
+      "sound": 400000
+    },
+    "baseValue": 920000,
+    "innovation": 20000,
+    "stability": 10000,
+    "fun": 10000,
+    "tags": [
+      "klang",
+      "musik",
+      "erzaehlung"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1998,
+    "requires": {
+      "module": "audio",
+      "level": 5
+    },
+    "performanceCost": 21,
+    "successor": "dynamischeMusik"
+  },
+  {
+    "id": "parallaxScrolling",
+    "area": "grafik",
+    "effort": {
+      "grafik": 200000,
+      "technik": 140000
+    },
+    "baseValue": 660000,
+    "innovation": 30000,
+    "stability": -10000,
+    "fun": 10000,
+    "tags": [
+      "optik",
+      "technik",
+      "action"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1988,
+    "requires": {
+      "module": "werkzeuge",
+      "level": 1
+    },
+    "performanceCost": 15
+  },
+  {
+    "id": "persistenteWelt",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 300000,
+      "technik": 400000
+    },
+    "baseValue": 1320000,
+    "innovation": 40000,
+    "stability": -30000,
+    "fun": 20000,
+    "tags": [
+      "mehrspieler",
+      "system",
+      "inhalt"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2010,
+    "requires": {
+      "module": "netzwerk",
+      "level": 4
+    },
+    "performanceCost": 25
+  },
+  {
+    "id": "physikRaetsel",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 260000,
+      "technik": 140000
+    },
+    "baseValue": 850000,
+    "innovation": 40000,
+    "stability": -10000,
+    "fun": 20000,
+    "tags": [
+      "denken",
+      "system"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1998,
+    "requires": {
+      "module": "physik",
+      "level": 2
+    },
+    "performanceCost": 15
+  },
+  {
+    "id": "physikZerstoerung",
+    "area": "technik",
+    "effort": {
+      "technik": 360000,
+      "gameplay": 120000,
+      "grafik": 80000
+    },
+    "baseValue": 1320000,
+    "innovation": 40000,
+    "stability": -20000,
+    "fun": 20000,
+    "tags": [
+      "technik",
+      "action",
+      "system"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2010,
+    "requires": {
+      "module": "physik",
+      "level": 4
+    },
+    "performanceCost": 30
+  },
+  {
+    "id": "pointAndClick",
+    "area": "story",
+    "effort": {
+      "story": 220000,
+      "gameplay": 100000,
+      "technik": 60000
+    },
+    "baseValue": 680000,
+    "innovation": 20000,
+    "stability": 10000,
+    "fun": 10000,
+    "tags": [
+      "erzaehlung",
+      "denken",
+      "komfort"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1987,
+    "requires": {
+      "module": "ki",
+      "level": 1
+    },
+    "performanceCost": 9
+  },
+  {
+    "id": "polygon3d",
+    "area": "grafik",
+    "effort": {
+      "grafik": 300000,
+      "technik": 260000
+    },
+    "baseValue": 850000,
+    "innovation": 40000,
+    "stability": -30000,
+    "fun": 10000,
+    "tags": [
+      "optik",
+      "technik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1995,
+    "successor": "texturen3d",
+    "requires": {
+      "module": "rendering",
+      "level": 5
+    },
+    "performanceCost": 25
+  },
+  {
+    "id": "prozeduraleInhalte",
+    "area": "technik",
+    "effort": {
+      "technik": 280000,
+      "gameplay": 160000
+    },
+    "baseValue": 1240000,
+    "innovation": 40000,
+    "stability": -20000,
+    "fun": 20000,
+    "tags": [
+      "system",
+      "inhalt"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2008,
+    "requires": {
+      "module": "werkzeuge",
+      "level": 4
+    },
+    "performanceCost": 20,
+    "successor": "simulierteWelt"
+  },
+  {
+    "id": "prozeduraleWelten",
+    "area": "technik",
+    "effort": {
+      "technik": 300000,
+      "gameplay": 100000
+    },
+    "baseValue": 850000,
+    "innovation": 40000,
+    "stability": -20000,
+    "fun": 20000,
+    "tags": [
+      "system",
+      "inhalt"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1996,
+    "requires": {
+      "module": "ki",
+      "level": 2
+    },
+    "performanceCost": 17,
+    "successor": "prozeduraleInhalte"
+  },
+  {
+    "id": "pseudo3d",
+    "area": "grafik",
+    "effort": {
+      "grafik": 160000,
+      "technik": 160000
+    },
+    "baseValue": 650000,
+    "innovation": 40000,
+    "stability": -30000,
+    "fun": 10000,
+    "tags": [
+      "optik",
+      "technik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "polygon3d",
+    "requires": {
+      "module": "rendering",
+      "level": 1
+    },
+    "performanceCost": 15
+  },
+  {
+    "id": "punktejagd",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 140000
+    },
+    "baseValue": 350000,
+    "innovation": -10000,
+    "stability": 20000,
+    "fun": 10000,
+    "tags": [
+      "arcade"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "requires": {
+      "module": "werkzeuge",
+      "level": 0
+    },
+    "performanceCost": 5
+  },
+  {
+    "id": "raetselmechanik",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 180000,
+      "story": 40000
+    },
+    "baseValue": 450000,
+    "innovation": 10000,
+    "stability": 10000,
+    "fun": 10000,
+    "tags": [
+      "denken"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "physikRaetsel",
+    "requires": {
+      "module": "ki",
+      "level": 0
+    },
+    "performanceCost": 5
+  },
+  {
+    "id": "raumklang",
+    "area": "sound",
+    "effort": {
+      "sound": 260000,
+      "technik": 120000
+    },
+    "baseValue": 850000,
+    "innovation": 30000,
+    "stability": -10000,
+    "fun": 10000,
+    "tags": [
+      "klang",
+      "technik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2000,
+    "requires": {
+      "module": "audio",
+      "level": 6
+    },
+    "performanceCost": 28,
+    "successor": "objektAudio"
+  },
+  {
+    "id": "raytracing",
+    "area": "grafik",
+    "effort": {
+      "grafik": 560000,
+      "technik": 340000
+    },
+    "baseValue": 1830000,
+    "innovation": 40000,
+    "stability": -20000,
+    "fun": 10000,
+    "tags": [
+      "optik",
+      "technik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2020,
+    "requires": {
+      "module": "rendering",
+      "level": 11
+    },
+    "performanceCost": 55
+  },
+  {
+    "id": "rigidBody",
+    "area": "technik",
+    "effort": {
+      "technik": 340000,
+      "gameplay": 80000
+    },
+    "baseValue": 920000,
+    "innovation": 40000,
+    "stability": -30000,
+    "fun": 20000,
+    "tags": [
+      "technik",
+      "system"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1998,
+    "requires": {
+      "module": "physik",
+      "level": 2
+    },
+    "performanceCost": 19,
+    "successor": "physikZerstoerung"
+  },
+  {
+    "id": "rundenkampf",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 200000,
+      "story": 40000
+    },
+    "baseValue": 500000,
+    "innovation": 10000,
+    "stability": 10000,
+    "fun": 10000,
+    "tags": [
+      "taktik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "echtzeitkampf",
+    "requires": {
+      "module": "ki",
+      "level": 0
+    },
+    "performanceCost": 5
+  },
+  {
+    "id": "shaderEffekte",
+    "area": "grafik",
+    "effort": {
+      "grafik": 420000,
+      "technik": 200000
+    },
+    "baseValue": 1020000,
+    "innovation": 40000,
+    "stability": -20000,
+    "fun": 10000,
+    "tags": [
+      "optik",
+      "technik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2002,
+    "requires": {
+      "module": "rendering",
+      "level": 7
+    },
+    "performanceCost": 30,
+    "successor": "fotorealismus"
+  },
+  {
+    "id": "simulierteWelt",
+    "area": "technik",
+    "effort": {
+      "technik": 400000,
+      "gameplay": 300000
+    },
+    "baseValue": 2380000,
+    "innovation": 50000,
+    "stability": -30000,
+    "fun": 20000,
+    "tags": [
+      "system",
+      "inhalt"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2028,
+    "requires": {
+      "module": "ki",
+      "level": 5
+    },
+    "performanceCost": 45
+  },
+  {
+    "id": "sofortStart",
+    "area": "technik",
+    "effort": {
+      "technik": 240000
+    },
+    "baseValue": 1960000,
+    "innovation": 20000,
+    "stability": 0,
+    "fun": 10000,
+    "tags": [
+      "komfort",
+      "technik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2022,
+    "requires": {
+      "module": "streaming",
+      "level": 3
+    },
+    "performanceCost": 12
+  },
+  {
+    "id": "soundeffekte",
+    "area": "sound",
+    "effort": {
+      "sound": 80000
+    },
+    "baseValue": 300000,
+    "innovation": -10000,
+    "stability": 20000,
+    "fun": 10000,
+    "tags": [
+      "klang"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "digitaleEffekte",
+    "requires": {
+      "module": "audio",
+      "level": 0
+    },
+    "performanceCost": 6
+  },
+  {
+    "id": "spielstand",
+    "area": "technik",
+    "effort": {
+      "technik": 120000,
+      "gameplay": 20000
+    },
+    "baseValue": 400000,
+    "innovation": 10000,
+    "stability": 20000,
+    "fun": 10000,
+    "tags": [
+      "komfort"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "automatischesSpeichern",
+    "requires": {
+      "module": "streaming",
+      "level": 0
+    },
+    "performanceCost": 7
+  },
+  {
+    "id": "sprachausgabe",
+    "area": "sound",
+    "effort": {
+      "sound": 140000,
+      "technik": 100000
+    },
+    "baseValue": 600000,
+    "innovation": 40000,
+    "stability": -20000,
+    "fun": 10000,
+    "tags": [
+      "klang",
+      "technik",
+      "erzaehlung"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "vollvertonung",
+    "requires": {
+      "module": "audio",
+      "level": 0
+    },
+    "performanceCost": 8
+  },
+  {
+    "id": "standbilder",
+    "area": "grafik",
+    "effort": {
+      "grafik": 200000,
+      "story": 40000
+    },
+    "baseValue": 450000,
+    "innovation": 10000,
+    "stability": 10000,
+    "fun": 0,
+    "tags": [
+      "optik",
+      "erzaehlung"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "zwischensequenzen",
+    "requires": {
+      "module": "rendering",
+      "level": 1
+    },
+    "performanceCost": 13
+  },
+  {
+    "id": "texteingabe",
+    "area": "story",
+    "effort": {
+      "story": 180000,
+      "technik": 80000
+    },
+    "baseValue": 500000,
+    "innovation": 10000,
+    "stability": 0,
+    "fun": 0,
+    "tags": [
+      "erzaehlung",
+      "denken"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "pointAndClick",
+    "requires": {
+      "module": "werkzeuge",
+      "level": 0
+    },
+    "performanceCost": 4
+  },
+  {
+    "id": "texturen3d",
+    "area": "grafik",
+    "effort": {
+      "grafik": 400000,
+      "technik": 260000
+    },
+    "baseValue": 950000,
+    "innovation": 30000,
+    "stability": -20000,
+    "fun": 10000,
+    "tags": [
+      "optik",
+      "technik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1998,
+    "requires": {
+      "module": "rendering",
+      "level": 6
+    },
+    "performanceCost": 25,
+    "successor": "shaderEffekte"
+  },
+  {
+    "id": "titelmelodie",
+    "area": "sound",
+    "effort": {
+      "sound": 140000
+    },
+    "baseValue": 400000,
+    "innovation": 0,
+    "stability": 10000,
+    "fun": 10000,
+    "tags": [
+      "klang",
+      "musik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "mehrstimmigeMusik",
+    "requires": {
+      "module": "audio",
+      "level": 0
+    },
+    "performanceCost": 6
+  },
+  {
+    "id": "touchSteuerung",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 200000,
+      "technik": 120000
+    },
+    "baseValue": 1240000,
+    "innovation": 30000,
+    "stability": 0,
+    "fun": 20000,
+    "tags": [
+      "komfort",
+      "arcade"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2008,
+    "requires": {
+      "module": "plattformen",
+      "level": 3
+    },
+    "performanceCost": 8
+  },
+  {
+    "id": "ultraHd",
+    "area": "grafik",
+    "effort": {
+      "grafik": 480000,
+      "technik": 160000
+    },
+    "baseValue": 1610000,
+    "innovation": 30000,
+    "stability": 0,
+    "fun": 10000,
+    "tags": [
+      "optik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2016,
+    "requires": {
+      "module": "rendering",
+      "level": 10
+    },
+    "performanceCost": 35
+  },
+  {
+    "id": "verhaltensbaeume",
+    "area": "technik",
+    "effort": {
+      "technik": 280000,
+      "gameplay": 120000
+    },
+    "baseValue": 1090000,
+    "innovation": 30000,
+    "stability": -10000,
+    "fun": 20000,
+    "tags": [
+      "taktik",
+      "system"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2004,
+    "requires": {
+      "module": "ki",
+      "level": 3
+    },
+    "performanceCost": 18,
+    "successor": "lernendeGegner"
+  },
+  {
+    "id": "verzweigteHandlung",
+    "area": "story",
+    "effort": {
+      "story": 380000,
+      "gameplay": 60000
+    },
+    "baseValue": 820000,
+    "innovation": 30000,
+    "stability": -10000,
+    "fun": 10000,
+    "tags": [
+      "erzaehlung"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1993,
+    "requires": {
+      "module": "werkzeuge",
+      "level": 1
+    },
+    "performanceCost": 9,
+    "successor": "moralSystem"
+  },
+  {
+    "id": "vollvertonung",
+    "area": "sound",
+    "effort": {
+      "sound": 360000,
+      "story": 100000
+    },
+    "baseValue": 880000,
+    "innovation": 30000,
+    "stability": 0,
+    "fun": 10000,
+    "tags": [
+      "klang",
+      "erzaehlung"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1995,
+    "requires": {
+      "module": "audio",
+      "level": 4
+    },
+    "performanceCost": 21,
+    "successor": "generierteSprache"
+  },
+  {
+    "id": "vrSteuerung",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 300000,
+      "technik": 300000
+    },
+    "baseValue": 1770000,
+    "innovation": 50000,
+    "stability": -30000,
+    "fun": 20000,
+    "tags": [
+      "action",
+      "technik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 2019,
+    "requires": {
+      "module": "plattformen",
+      "level": 4
+    },
+    "performanceCost": 35
+  },
+  {
+    "id": "wegfindung",
+    "area": "technik",
+    "effort": {
+      "technik": 260000,
+      "gameplay": 100000
+    },
+    "baseValue": 780000,
+    "innovation": 30000,
+    "stability": -10000,
+    "fun": 20000,
+    "tags": [
+      "taktik",
+      "system"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1992,
+    "requires": {
+      "module": "ki",
+      "level": 2
+    },
+    "performanceCost": 17,
+    "successor": "verhaltensbaeume"
+  },
+  {
+    "id": "weichesScrolling",
+    "area": "grafik",
+    "effort": {
+      "grafik": 140000,
+      "technik": 120000
+    },
+    "baseValue": 550000,
+    "innovation": 30000,
+    "stability": -20000,
+    "fun": 10000,
+    "tags": [
+      "optik",
+      "technik"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "parallaxScrolling",
+    "requires": {
+      "module": "rendering",
+      "level": 1
+    },
+    "performanceCost": 15
+  },
+  {
+    "id": "weltkarte",
+    "area": "story",
+    "effort": {
+      "story": 120000,
+      "gameplay": 100000,
+      "grafik": 60000
+    },
+    "baseValue": 550000,
+    "innovation": 20000,
+    "stability": 0,
+    "fun": 20000,
+    "tags": [
+      "inhalt",
+      "erzaehlung"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "offeneWelt",
+    "requires": {
+      "module": "streaming",
+      "level": 0
+    },
+    "performanceCost": 4
+  },
+  {
+    "id": "wirtschaftskreislauf",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 220000,
+      "technik": 100000
+    },
+    "baseValue": 550000,
+    "innovation": 20000,
+    "stability": -10000,
+    "fun": 10000,
+    "tags": [
+      "system"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "komplexeWirtschaft",
+    "requires": {
+      "module": "ki",
+      "level": 0
+    },
+    "performanceCost": 5
+  },
+  {
+    "id": "zufallswelten",
+    "area": "technik",
+    "effort": {
+      "technik": 220000,
+      "gameplay": 60000
+    },
+    "baseValue": 600000,
+    "innovation": 40000,
+    "stability": -30000,
+    "fun": 20000,
+    "tags": [
+      "system",
+      "inhalt"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "prozeduraleWelten",
+    "requires": {
+      "module": "ki",
+      "level": 0
+    },
+    "performanceCost": 7
+  },
+  {
+    "id": "zweiSpieler",
+    "area": "gameplay",
+    "effort": {
+      "gameplay": 120000,
+      "technik": 80000
+    },
+    "baseValue": 400000,
+    "innovation": 20000,
+    "stability": -10000,
+    "fun": 30000,
+    "tags": [
+      "mehrspieler"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1980,
+    "successor": "netzwerkspiel",
+    "requires": {
+      "module": "netzwerk",
+      "level": 0
+    },
+    "performanceCost": 5
+  },
+  {
+    "id": "zwischensequenzen",
+    "area": "grafik",
+    "effort": {
+      "grafik": 300000,
+      "story": 120000
+    },
+    "baseValue": 800000,
+    "innovation": 20000,
+    "stability": 0,
+    "fun": 10000,
+    "tags": [
+      "optik",
+      "erzaehlung"
+    ],
+    "contentLevel": 0,
+    "availableFrom": 1994,
+    "requires": {
+      "module": "rendering",
+      "level": 4
+    },
+    "performanceCost": 18
+  }
+]

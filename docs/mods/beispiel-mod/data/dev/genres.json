@@ -1,0 +1,5 @@
+{
+  "modify": [
+    { "id": "abenteuer", "set": { "themeFit.archaeologie": 13000 } }
+  ]
+}

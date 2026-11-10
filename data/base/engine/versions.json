@@ -1,0 +1,4 @@
+{
+  "majorShareBp": 3000,
+  "defaultPlan": { "researchBp": 5000, "maintenanceBp": 2500, "requestsBp": 2500 }
+}
