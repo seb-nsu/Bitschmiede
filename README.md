@@ -4,6 +4,33 @@ Arbeitstitel bis 04.11.2026: „Game Studio Tycoon“ (Name gibt es schon als ec
 
 Wirtschaftssimulation: ein Spiele- und Engine-Studio von 1980 bis 2040 – Spiele und Engines entwickeln und lizenzieren, Marken aufbauen und handeln, Live-Betrieb, Konkurrenz mit Charakter.
 
+> **English:** Business simulation game: run a game and engine studio from 1980 to 2040. Built in stages against a binding specification with rule IDs. The documents and the game texts are in German.
+
+**Im Browser spielen:** https://seb-nsu.github.io/Bitschmiede/
+
+![Zentrale mit Kennzahlen, Bühne und wartender Entscheidung](shots/p-zentrale.png)
+
+![Projektansicht mit Phasen, Prognose und offenen Bugs](shots/p-projekte.png)
+
+Die Bilder zeigen einen frühen Stand mit dem Arbeitstitel.
+
+## Meine Rolle und wichtigste Entscheidungen
+
+Ich bin Projektleiter und Product Owner dieses Projekts. Design-Dokument, Spezifikation, Etappenplan und Abnahme stammen von mir; den Code haben KI-Agenten (Claude Code) nach meiner Spezifikation geschrieben.
+
+| Entscheidung | Begründung | Nachzulesen in |
+| --- | --- | --- |
+| Verbindliche Spezifikation mit Regel-IDs | Jede Regel ist in Tests, Code und Commits wiederzufinden | [S00 Übersicht](docs/spec/S00-Uebersicht-und-Abgleich.md) |
+| Eine Abgleichstabelle entscheidet Widersprüche (A01–A47) | Widersprüche zwischen den Spezifikationen werden einmal und sichtbar gelöst | [S00, Abgleich](docs/spec/S00-Uebersicht-und-Abgleich.md#abgleich-zwischen-den-spezifikationen) |
+| Offene Fragen werden dokumentiert, nicht still entschieden | Fehlt etwas in der Spezifikation, gilt die kleinste plausible Annahme, im Code markiert | [Offene Fragen](docs/OFFENE-FRAGEN.md) |
+| Bau in Etappen, nichts wird vorgebaut | Jede Etappe hat einen Umsetzungsplan und wird einzeln abgenommen | [Roadmap](docs/ROADMAP.md) |
+| Balancing über automatische Simulationsläufe | Alle Balancing-Zahlen liegen in Daten, nicht im Code; Bots spielen ganze Läufe durch | [Balancing-Bericht](reports/simulate.md) |
+| Keine echten Firmen-, Marken- oder Personennamen | Das Spiel ist frei von fremden Rechten | [Projektregeln](CLAUDE.md) |
+
+- **Konzept:** [Design-Dokument](docs/design/Design-Dokument.md) · [Spezifikation S00–S14](docs/spec/)
+- **Planung:** [Roadmap bis 2.0](docs/ROADMAP.md) · [Umsetzungsplan Etappe 1](docs/UMSETZUNGSPLAN-Etappe-1.md)
+- **Abnahme:** [Spieltest 1.0](docs/SPIELTEST-1.0.md) · [externer Prüfbericht](docs/archiv/Pruefbericht-3-Fable.md)
+
 ## Inhalt
 
 | Pfad | Was |
@@ -47,3 +74,7 @@ npm run golden:update  # Golden-Runs bewusst neu freigeben (mit Begründung im C
 npm run bench        # Leistungsmessung, Bericht in reports/bench.md
 npm run tables       # Nachschlagetabellen neu erzeugen (src/sim/tables)
 ```
+
+## Lizenz
+
+Code: [MIT](LICENSE). Grafik und Ton stammen aus freien Paketen unter CC0; jede Datei steht mit Quelle in [public/CREDITS.md](public/CREDITS.md).
