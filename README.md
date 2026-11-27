@@ -6,13 +6,13 @@ Wirtschaftssimulation: ein Spiele- und Engine-Studio von 1980 bis 2040 – Spiel
 
 > **English:** Business simulation game: run a game and engine studio from 1980 to 2040. Built in stages against a binding specification with rule IDs. The documents and the game texts are in German.
 
-**Im Browser spielen:** https://seb-nsu.github.io/Bitschmiede/
+**Im Browser spielen:** https://seb-nsu.github.io/Bitschmiede/ · **Für Windows herunterladen:** [neueste Version](https://github.com/seb-nsu/Bitschmiede/releases/latest) (ZIP entpacken, `Bitschmiede.exe` doppelklicken)
 
 ![Zentrale mit Kennzahlen, Bühne und wartender Entscheidung](shots/p-zentrale.png)
 
 ![Projektansicht mit Phasen, Prognose und offenen Bugs](shots/p-projekte.png)
 
-Die Bilder zeigen einen frühen Stand mit dem Arbeitstitel.
+Die Bilder zeigen einen frühen Stand mit dem Arbeitstitel „Game Studio Tycoon“; neue Bilder folgen mit dem nächsten Release (`npm run ui:smoke` bzw. Bildschirmfotos aus dem Browser).
 
 ## Meine Rolle und wichtigste Entscheidungen
 

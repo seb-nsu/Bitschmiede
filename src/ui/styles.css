@@ -281,7 +281,7 @@ button.linklike { background: none; border: 0; padding: 0; color: var(--accent);
 @media (max-width: 1100px) { .frame { grid-template-columns: 9rem minmax(0, 1fr); grid-template-areas: "top top" "side main" "side right" "foot foot"; } }
 @media (max-width: 860px) { .frame { grid-template-columns: 1fr; grid-template-areas: "top" "side" "main" "right" "foot"; } .sidebar { display: flex; flex-wrap: wrap; } }
 /* Zentrale */
-.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 0.6rem; margin-bottom: 1rem; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.6rem; margin-bottom: 1rem; }
 .tile { border: 1px solid var(--line); border-radius: 10px; padding: 0.6rem 0.7rem; display: grid; gap: 0.15rem; position: relative; }
 .tile-title { font-size: 0.85rem; color: var(--muted); }
 .tile-value { font-size: 1.3rem; }
@@ -774,3 +774,9 @@ ul.motivation { list-style: none; margin: 0.6rem 0; padding: 0; display: grid; g
 
 /* S13 AUS-R40: Pakete eines Pitches. */
 .pub-actions { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+/* UX-Review 11/2026: gesperrte Zeitknöpfe sagen sichtbar, warum; Bühne einklappbar */
+.time button:disabled { opacity: 0.55; }
+.time-hint { font-size: 0.85rem; font-weight: 600; color: var(--accent); white-space: nowrap; }
+.stage-box { margin: 0.6rem 0 1rem; }
+.stage-box > summary { cursor: pointer; font-weight: 600; padding: 0.25rem 0; }
