@@ -1,0 +1,45 @@
+# Builds a ready-to-run Windows desktop version and the browser ZIP and attaches both to a GitHub release.
+# Trigger: push a tag such as v1.0.0 (git tag v1.0.0 && git push origin v1.0.0) or run it by hand.
+# Players then download "Bitschmiede-windows-x64.zip", unpack it and double-click Bitschmiede.exe – no Node.js needed.
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag for the release (e.g. v1.0.0)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      # Packs only what the app needs at runtime: electron/ and dist/ (Vite build). No installer, no admin rights.
+      - name: Package desktop app
+        shell: bash
+        run: |
+          npx --yes @electron/packager@18 . Bitschmiede --platform=win32 --arch=x64 --out=release --overwrite \
+            --ignore='^/(src|tests|docs|data|tools|reports|shots|public|concepts|\.github)($|/)' --ignore='^/node_modules($|/)'
+          cd release && 7z a -tzip Bitschmiede-windows-x64.zip "Bitschmiede-win32-x64" > /dev/null
+      - run: npm run itch
+      - name: Publish release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.inputs.tag || github.ref_name }}
+        run: |
+          gh release view "$TAG" > /dev/null 2>&1 || gh release create "$TAG" --title "Bitschmiede $TAG" \
+            --notes "Windows: ZIP entpacken, Bitschmiede.exe doppelklicken. Browser: https://seb-nsu.github.io/Bitschmiede/"
+          gh release upload "$TAG" release/Bitschmiede-windows-x64.zip release/bitschmiede-web.zip --clobber

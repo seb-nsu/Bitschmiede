@@ -66,6 +66,8 @@
   "studio.resumeHint": "Resume with all free people; three weeks of onboarding.",
   "studio.resumeNoFree": "Nobody is free.",
   "time.decideFirst": "Answer the open decision first.",
+  "time.decideFirstShort": "Waiting for your decision (right)",
+  "stage.toggle": "Office",
   "start.preset": "Difficulty",
   "start.advanced": "Advanced",
   "start.pressRandom": "Press randomness",

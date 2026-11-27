@@ -471,6 +471,7 @@ export function App() {
             </button>
           ))}
         </div>
+        {blocked && <span className="time-hint" role="status">{t("time.decideFirstShort")}</span>}
         <YearBar view={view} t={t} />
       </footer>
 

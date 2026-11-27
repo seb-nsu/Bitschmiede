@@ -66,6 +66,8 @@
   "studio.resumeHint": "Mit allen freien Personen fortsetzen; drei Wochen Einarbeitung.",
   "studio.resumeNoFree": "Niemand ist frei.",
   "time.decideFirst": "Erst die offene Entscheidung beantworten.",
+  "time.decideFirstShort": "Wartet auf deine Entscheidung (rechts)",
+  "stage.toggle": "Büro",
   "start.preset": "Schwierigkeit",
   "start.advanced": "Erweitert",
   "start.pressRandom": "Presse-Zufall",

@@ -1,4 +1,5 @@
 // Zentrale (S11 Bildschirm A): Kacheln mit Ampel und ein Satz (S11), Bühne mit Tischen, Figuren und Requisiten je Büro und Epoche (UI-R70, Plan A, S11 8.3).
+import type { ReactNode } from "react";
 import { displayPrefs, reducedMotion } from "../display";
 import type { ViewModel } from "../../sim/view/view";
 import type { StageView } from "../../sim/view/buehneView";
@@ -134,6 +135,24 @@ function Table({ table, x, y, index, epoch, brokenTenths, t, coffee, onOpen }: {
 }
 
 /** Bühne (UI-R70, Plan A): Kulisse nach Grundriss und Epoche, Tische je Projekt, Requisiten als Symptome (S11 8.3). */
+// UX-Review 11/2026: Die Bühne lässt sich einklappen (Zustand pro Gerät), damit Kacheln und Projekte mehr Platz haben.
+const STAGE_KEY = "bitschmiede.stageOpen";
+function stageOpenInitial(): boolean {
+  try {
+    return localStorage.getItem(STAGE_KEY) !== "0";
+  } catch {
+    return true;
+  }
+}
+function StageBox({ t, children }: { t: T; children: ReactNode }) {
+  return (
+    <details className="stage-box" open={stageOpenInitial()}
+      onToggle={(e) => { try { localStorage.setItem(STAGE_KEY, (e.currentTarget as HTMLDetailsElement).open ? "1" : "0"); } catch { /* ohne Speicher */ } }}>
+      <summary>{t("stage.toggle")}</summary>
+      {children}
+    </details>
+  );
+}
 function Stage({ view, t, onOpenProjects }: { view: ViewModel; t: T; onOpenProjects: () => void }) {
   const st = view.stage;
   const cols = 3;
@@ -281,7 +300,7 @@ export function Zentrale({ view, sim, t, lang, onOpenProjects }: { view: ViewMod
       </div>
       <MotivationBox view={view} sim={sim} t={t} lang={lang} />
       <ProjectPulseList view={view} t={t} onOpen={onOpenProjects} />
-      <Stage view={view} t={t} onOpenProjects={onOpenProjects} />
+      <StageBox t={t}><Stage view={view} t={t} onOpenProjects={onOpenProjects} /></StageBox>
       <Roadmap view={view} t={t} />
     </section>
   );
